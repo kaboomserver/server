@@ -40,7 +40,7 @@ clipboard:
 
 lighting:
   # If packet sending should be delayed until relight is finished
-  delay-packet-sending: true
+  delay-packet-sending: false
   async: true
   # The relighting mode to use:
   #  - 0 = None (Do no relighting)
