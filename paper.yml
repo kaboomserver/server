@@ -72,13 +72,13 @@ world-settings:
       hard: 128
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
-    water-over-lava-flow-speed: 30
+    water-over-lava-flow-speed: 50
     fast-drain:
-      lava: true
-      water: true
+      lava: false
+      water: false
     lava-flow-speed:
-      normal: 50
-      nether: 40
+      normal: 70
+      nether: 50
     lootables:
       auto-replenish: false
       restrict-player-reloot: true
