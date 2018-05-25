@@ -21,14 +21,8 @@ aliases:
   - []
   clear:
   - minecraft:clear $1-
-  ekill:
-  - suicide
   enchant:
   - minecraft:enchant $1-
-  essentials:ekill:
-  - suicide
-  essentials:kill:
-  - suicide
   gamemode:
   - minecraft:gamemode $1-
   give:
@@ -57,10 +51,6 @@ aliases:
   - []
   rl:
   - []
-  skin:
-  - setskin $1-
-  skins:
-  - setskin $1-
   spigot:restart:
   - []
   stop:
