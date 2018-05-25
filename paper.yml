@@ -77,8 +77,8 @@ world-settings:
       lava: true
       water: true
     lava-flow-speed:
-      normal: 70
-      nether: 50
+      normal: 50
+      nether: 40
     lootables:
       auto-replenish: false
       restrict-player-reloot: true
