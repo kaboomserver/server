@@ -1,0 +1,182 @@
+# This is the main configuration file for Spigot.
+# As you can see, there's tons to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# For a reference for any variable inside this file, check out the Spigot wiki at
+# http://www.spigotmc.org/wiki/spigot-configuration/
+# 
+# If you need help with the configuration or have any questions related to Spigot,
+# join us at the IRC or drop by our forums and leave a post.
+# 
+# IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
+# Forums: http://www.spigotmc.org/
+
+config-version: 11
+settings:
+  save-user-cache-on-stop-only: false
+  sample-count: 12
+  bungeecord: false
+  late-bind: true
+  player-shuffle: 0
+  filter-creative-items: false
+  user-cache-size: 1000
+  int-cache-limit: 1024
+  moved-wrongly-threshold: 100.0
+  moved-too-quickly-multiplier: 100.0
+  item-dirty-ticks: 20
+  timeout-time: 60
+  restart-on-crash: false
+  restart-script:
+  netty-threads: 8
+  attribute:
+    maxHealth:
+      max: 2048.0
+    movementSpeed:
+      max: 2048.0
+    attackDamage:
+      max: 2048.0
+  debug: false
+commands:
+  tab-complete: 0
+  log: false
+  spam-exclusions:
+  - /skill
+  silent-commandblock-console: true
+  replace-commands:
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
+messages:
+  whitelist: The server is temporarily down for maintenance. Please try again later!
+  unknown-command: Unknown command. Type "/help" for help.
+  server-full: The server is temporarily down for maintenance. Please try again later!
+  outdated-client: Your client is outdated. Please join with Minecraft version {0}!
+  outdated-server: The server is outdated. Please join with Minecraft version {0}!
+  restart: The server is restarting. Please wait...
+advancements:
+  disable-saving: false
+  disabled:
+  - minecraft:adventure/adventuring_time
+  - minecraft:adventure/kill_a_mob
+  - minecraft:adventure/kill_all_mobs
+  - minecraft:adventure/root
+  - minecraft:adventure/shoot_arrow
+  - minecraft:adventure/sleep_in_bed
+  - minecraft:adventure/sniper_duel
+  - minecraft:adventure/summon_iron_golem
+  - minecraft:adventure/totem_of_undying
+  - minecraft:adventure/trade
+  - minecraft:end/dragon_breath
+  - minecraft:end/dragon_egg
+  - minecraft:end/elytra
+  - minecraft:end/enter_end_gateway
+  - minecraft:end/find_end_city
+  - minecraft:end/kill_dragon
+  - minecraft:end/levitate
+  - minecraft:end/respawn_dragon
+  - minecraft:end/root
+  - minecraft:husbandry/balanced_diet
+  - minecraft:husbandry/break_diamond_hoe
+  - minecraft:husbandry/bred_all_animals
+  - minecraft:husbandry/breed_an_animal
+  - minecraft:husbandry/plant_seed
+  - minecraft:husbandry/root
+  - minecraft:husbandry/tame_an_animal
+  - minecraft:nether/all_effects
+  - minecraft:nether/all_potions
+  - minecraft:nether/brew_potion
+  - minecraft:nether/create_beacon
+  - minecraft:nether/create_full_beacon
+  - minecraft:nether/fast_travel
+  - minecraft:nether/find_fortress
+  - minecraft:nether/get_wither_skull
+  - minecraft:nether/obtain_blaze_rod
+  - minecraft:nether/return_to_sender
+  - minecraft:nether/root
+  - minecraft:nether/summon_wither
+  - minecraft:nether/uneasy_alliance
+  - minecraft:story/cure_zombie_villager
+  - minecraft:story/deflect_arrow
+  - minecraft:story/enchant_item
+  - minecraft:story/enter_the_end
+  - minecraft:story/enter_the_nether
+  - minecraft:story/follow_ender_eye
+  - minecraft:story/form_obsidian
+  - minecraft:story/iron_tools
+  - minecraft:story/lava_bucket
+  - minecraft:story/mine_diamond
+  - minecraft:story/mine_stone
+  - minecraft:story/obtain_armor
+  - minecraft:story/root
+  - minecraft:story/shiny_gear
+  - minecraft:story/smelt_iron
+  - minecraft:story/upgrade_tools
+stats:
+  disable-saving: false
+  forced-stats: {}
+world-settings:
+  default:
+    verbose: false
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+      netherwart-modifier: 100
+      vine-modifier: 100
+      cocoa-modifier: 100
+    entity-activation-range:
+      animals: 16
+      monsters: 24
+      misc: 4
+      tick-inactive-villagers: false
+    mob-spawn-range: 3
+    entity-tracking-range:
+      players: 48
+      animals: 48
+      monsters: 48
+      misc: 32
+      other: 64
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 1
+    hopper-amount: 1
+    random-light-updates: false
+    save-structure-info: false
+    dragon-death-sound-radius: 0
+    seed-village: 10387312
+    seed-feature: 14357617
+    seed-monument: 10387313
+    seed-slime: 987234911
+    hunger:
+      jump-walk-exhaustion: 0.05
+      jump-sprint-exhaustion: 0.2
+      combat-exhaustion: 0.1
+      regen-exhaustion: 6.0
+      swim-multiplier: 0.01
+      sprint-multiplier: 0.1
+      other-multiplier: 0.0
+    max-tnt-per-tick: 5
+    max-tick-time:
+      tile: 20
+      entity: 20
+    squid-spawn-range:
+      min: 45.0
+    item-despawn-rate: 6000
+    merge-radius:
+      item: 4.0
+      exp: 6.0
+    view-distance: 5
+    arrow-despawn-rate: 1200
+    enable-zombie-pigmen-portal-spawns: true
+    wither-spawn-sound-radius: 0
+    hanging-tick-frequency: 100
+    zombie-aggressive-towards-villager: false
+    nerf-spawner-mobs: false
+    max-entity-collisions: 1
+  world:
+    mob-spawn-range: 0
+    max-tnt-per-tick: 0

@@ -1,0 +1,75 @@
+# This is the commands configuration file for Bukkit.
+# For documentation on how to make use of this file, check out the Bukkit Wiki at
+# http://wiki.bukkit.org/Commands.yml
+# 
+# If you need help on this file, feel free to join us on irc or leave a message
+# on the forums asking for advice.
+# 
+# IRC: #spigot @ irc.spi.gt
+#    (If this means nothing to you, just go to http://www.spigotmc.org/pages/irc/ )
+# Forums: http://www.spigotmc.org/
+# Bug tracker: http://www.spigotmc.org/go/bugs
+
+command-block-overrides: []
+unrestricted-advancements: false
+aliases:
+  ban:
+  - minecraft:ban $1-
+  bukkit:reload:
+  - []
+  bukkit:rl:
+  - []
+  clear:
+  - minecraft:clear $1-
+  ekill:
+  - suicide
+  enchant:
+  - minecraft:enchant $1-
+  essentials:ekill:
+  - suicide
+  essentials:kill:
+  - suicide
+  gamemode:
+  - minecraft:gamemode $1-
+  give:
+  - minecraft:give $1-
+  help:
+  - bukkit:help $1-
+  kick:
+  - minecraft:kick $1-
+  kill:
+  - minecraft:kill $1-
+  icanhasbukkit:
+  - version $1-
+  list:
+  - minecraft:list $1-
+  me:
+  - minecraft:me $1-
+  minecraft:stop:
+  - []
+  pardon:
+  - minecraft:pardon $1-
+  recipe:
+  - minecraft:recipe $1-
+  reload:
+  - minecraft:reload $1-
+  restart:
+  - []
+  rl:
+  - []
+  skin:
+  - setskin $1-
+  skins:
+  - setskin $1-
+  spigot:restart:
+  - []
+  stop:
+  - []
+  teleport:
+  - minecraft:teleport $1-
+  time:
+  - minecraft:time $1-
+  weather:
+  - minecraft:weather $1-
+  xp:
+  - minecraft:xp $1-

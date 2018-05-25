@@ -1,0 +1,10 @@
+global:
+  auto updater:
+    notify: false
+    download: false
+    delay: 43200
+  metrics: false
+  background compiler: true
+  debug: false
+  detailed error: false
+  script engine: rhino
