@@ -54,7 +54,7 @@ messages:
   outdated-server: The server is outdated. Please join with Minecraft version {0}!
   restart: The server is restarting. Please wait...
 advancements:
-  disable-saving: false
+  disable-saving: true
   disabled:
   - minecraft:adventure/adventuring_time
   - minecraft:adventure/kill_a_mob
