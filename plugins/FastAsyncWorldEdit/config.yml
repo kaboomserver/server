@@ -100,7 +100,7 @@ experimental:
   #  - Set your server view distance to 1 (spigot.yml, server.properties)
   #  - Based on tps and player movement
   #  - Please provide feedback
-  dynamic-chunk-rendering: false
+  dynamic-chunk-rendering: -1
   # [SAFE] Allows brushes to be persistent
   persistent-brushes: false
   # [SAFE] Enable CUI without needing the mod installed (Requires ProtocolLib)
