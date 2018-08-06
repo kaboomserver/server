@@ -1,1 +1,13 @@
-SETSKIN_USAGE: 'Usage: /setskin <username>'
+SKINCOMMAND_USAGE: 'Usage: /setskin <username>'
+NO_PERMISSION: '&cYou do not have a permission for this.'
+SKINCOMMAND_SUCCESSFUL_FRESH: '&aSkin set successfully!'
+SKINCOMMAND_SUCCESSFUL_CACHE: '&aSkin set from cache successfully!'
+SKINCOMMAND_FAILED: '&cFailed to set skin because: &4%reason%.'
+REASON_UNKNOWN: Unknown
+REASON_NOT_PREMIUM: Skin does not exist
+REASON_RATE_LIMITED: Skin was requested too many times
+NOT_PLAYER: '&cYou have to be a player!'
+PLAYAER_DOES_NOT_EXIST: '&cPlayer does not exist!'
+MYSKINCOMMAND_RELOADED: '&eMySkin was reloaded!'
+SKINSEARCH_TITLE: '&a&lSkin Search'
+SKINSEARCH_SKIN_LOAD_FAILED: '&lCould not load this skin!'

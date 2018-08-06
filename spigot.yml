@@ -17,12 +17,9 @@ settings:
   bungeecord: false
   late-bind: true
   player-shuffle: 0
-  filter-creative-items: false
   user-cache-size: 1000
-  int-cache-limit: 1024
   moved-wrongly-threshold: 100.0
   moved-too-quickly-multiplier: 100.0
-  item-dirty-ticks: 20
   timeout-time: 60
   restart-on-crash: false
   restart-script:
@@ -35,9 +32,17 @@ settings:
     attackDamage:
       max: 2048.0
   debug: false
+  filter-creative-items: false
+  int-cache-limit: 1024
+  item-dirty-ticks: 20
+messages:
+  whitelist: The server is temporarily down for maintenance. Please try again later!
+  unknown-command: Unknown command. Type "/help" for help.
+  server-full: The server is temporarily down for maintenance. Please try again later!
+  outdated-client: Your client is outdated. Please join with Minecraft version {0}!
+  outdated-server: The server is outdated. Please join with Minecraft version {0}!
+  restart: The server is restarting. Please wait...
 commands:
-  tab-complete: 0
-  log: false
   spam-exclusions:
   - /skill
   silent-commandblock-console: true
@@ -46,13 +51,9 @@ commands:
   - summon
   - testforblock
   - tellraw
-messages:
-  whitelist: The server is temporarily down for maintenance. Please try again later!
-  unknown-command: Unknown command. Type "/help" for help.
-  server-full: The server is temporarily down for maintenance. Please try again later!
-  outdated-client: Your client is outdated. Please join with Minecraft version {0}!
-  outdated-server: The server is outdated. Please join with Minecraft version {0}!
-  restart: The server is restarting. Please wait...
+  tab-complete: 0
+  send-namespaced: true
+  log: false
 advancements:
   disable-saving: true
   disabled:
@@ -117,6 +118,7 @@ stats:
 world-settings:
   default:
     verbose: false
+    mob-spawn-range: 3
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -133,7 +135,6 @@ world-settings:
       monsters: 24
       misc: 4
       tick-inactive-villagers: false
-    mob-spawn-range: 3
     entity-tracking-range:
       players: 48
       animals: 48
@@ -145,11 +146,15 @@ world-settings:
       hopper-check: 1
     hopper-amount: 1
     random-light-updates: false
-    save-structure-info: false
     dragon-death-sound-radius: 0
     seed-village: 10387312
-    seed-feature: 14357617
+    seed-desert: 14357617
+    seed-igloo: 14357618
+    seed-jungle: 14357619
+    seed-swamp: 14357620
     seed-monument: 10387313
+    seed-shipwreck: 165745295
+    seed-ocean: 14357621
     seed-slime: 987234911
     hunger:
       jump-walk-exhaustion: 0.05
@@ -165,18 +170,20 @@ world-settings:
       entity: 20
     squid-spawn-range:
       min: 45.0
-    item-despawn-rate: 6000
+    view-distance: 5
+    enable-zombie-pigmen-portal-spawns: true
     merge-radius:
       item: 4.0
       exp: 6.0
-    view-distance: 5
     arrow-despawn-rate: 1200
-    enable-zombie-pigmen-portal-spawns: true
+    item-despawn-rate: 6000
     wither-spawn-sound-radius: 0
     hanging-tick-frequency: 100
-    zombie-aggressive-towards-villager: false
     nerf-spawner-mobs: false
+    zombie-aggressive-towards-villager: false
     max-entity-collisions: 1
+    save-structure-info: false
+    seed-feature: 14357617
   world:
     mob-spawn-range: 0
     max-tnt-per-tick: 0
