@@ -12,7 +12,7 @@
 # Should ViaVersion check for updates?
 checkforupdates: false
 # Send the supported versions with the Status (Ping) response packet
-send-supported-versions: false
+send-supported-versions: true
 # Block specific Minecraft protocols that ViaVersion allows
 # List of all Minecraft protocol versions: http://wiki.vg/Protocol_version_numbers
 block-protocols: []
@@ -33,14 +33,14 @@ reload-disconnect-msg: Server reload, please rejoin!
 # 
 # What is the maximum per second a client can send (Use %pps to display their pps)
 # Use -1 to disable.
-max-pps: 800
+max-pps: -1
 max-pps-kick-msg: You are sending too many packets!
 # 
 # We can also kick them if over a period they send over a threshold a certain amount of times.
 # 
 # Period to track (in seconds)
 # Use -1 to disable.
-tracking-period: 6
+tracking-period: -1
 # How many packets per second counts as a warning
 tracking-warning-pps: 120
 # How many warnings over the interval can we have

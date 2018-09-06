@@ -25,6 +25,12 @@ aliases:
   - minecraft:clear $1-
   enchant:
   - minecraft:enchant $1-
+  - essentials:etpall:
+  - []
+  - essentials:tpall:
+  - []
+  - etpall:
+  - []
   gamemode:
   - minecraft:gamemode $1-
   give:
@@ -39,6 +45,8 @@ aliases:
   - minecraft:list $1-
   me:
   - minecraft:me $1-
+  minecraft:save-off:
+  - []
   minecraft:stop:
   - []
   pardon:
@@ -51,6 +59,8 @@ aliases:
   - []
   rl:
   - []
+  save-off:
+  - []
   spigot:restart:
   - []
   stop:
@@ -59,6 +69,8 @@ aliases:
   - minecraft:teleport $1-
   time:
   - minecraft:time $1-
+  tpall:
+  - []
   weather:
   - minecraft:weather $1-
   xp:

@@ -12,7 +12,6 @@
                 <MarkerFilter marker="NETWORK_PACKETS" onMatch="DENY" onMismatch="NEUTRAL" />
             </filters>
             <AppenderRef ref="WINDOWS_COMPAT"/>
-            <AppenderRef ref="File"/>
             <AppenderRef ref="TerminalConsole"/>
         </Root>
     </Loggers>

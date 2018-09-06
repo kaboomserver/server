@@ -200,13 +200,13 @@ history:
   # A value of 0 is faster simply because it doesn't bother loading the chunks or waiting.
   chunk-wait-ms: 1000
   # Delete history on disk after a number of days
-  delete-after-days: 7
+  delete-after-days: 1
   # Delete history in memory on logout (does not effect disk)
   delete-on-logout: true
   # If history should be enabled by default for plugins using WorldEdit:
   #  - It is faster to have disabled
   #  - Use of the FAWE API will not be effected
-  enable-for-console: true
+  enable-for-console: false
   # Should redo information be stored:
   #  - History is about 20% larger
   #  - Enables use of /redo

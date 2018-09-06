@@ -2,7 +2,7 @@ global:
   auto updater:
     notify: false
     download: false
-    delay: 43200
+    delay: 2147483647
   metrics: false
   background compiler: true
   debug: false
