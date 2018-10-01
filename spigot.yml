@@ -11,19 +11,39 @@
 # Forums: http://www.spigotmc.org/
 
 config-version: 11
+commands:
+  log: true
+  tab-complete: 0
+  spam-exclusions:
+  - /skill
+  silent-commandblock-console: false
+  replace-commands:
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
+messages:
+  whitelist: The server is temporarily down for maintenance. Please try again later!
+  unknown-command: Unknown command. Type "/help" for help.
+  server-full: The server is temporarily down for maintenance. Please try again later!
+  outdated-client: Your client is outdated. Please join with Minecraft version {0}!
+  outdated-server: The server is outdated. Please join with Minecraft version {0}!
+  restart: The server is restarting. Please wait...
 settings:
-  save-user-cache-on-stop-only: false
-  sample-count: 12
+  timeout-time: 60
+  restart-on-crash: true
+  restart-script: ./restart.sh
   bungeecord: false
+  netty-threads: 8
   late-bind: true
+  sample-count: 12
   player-shuffle: 0
+  filter-creative-items: false
   user-cache-size: 1000
+  save-user-cache-on-stop-only: false
+  int-cache-limit: 1024
   moved-wrongly-threshold: 100.0
   moved-too-quickly-multiplier: 100.0
-  timeout-time: 60
-  restart-on-crash: false
-  restart-script:
-  netty-threads: 8
   attribute:
     maxHealth:
       max: 2048.0
@@ -32,28 +52,10 @@ settings:
     attackDamage:
       max: 2048.0
   debug: false
-  filter-creative-items: false
-  int-cache-limit: 1024
   item-dirty-ticks: 20
-messages:
-  whitelist: The server is temporarily down for maintenance. Please try again later!
-  unknown-command: Unknown command. Type "/help" for help.
-  server-full: The server is temporarily down for maintenance. Please try again later!
-  outdated-client: Your client is outdated. Please join with Minecraft version {0}!
-  outdated-server: The server is outdated. Please join with Minecraft version {0}!
-  restart: The server is restarting. Please wait...
-commands:
-  spam-exclusions:
-  - /skill
-  silent-commandblock-console: true
-  replace-commands:
-  - setblock
-  - summon
-  - testforblock
-  - tellraw
-  tab-complete: 0
-  send-namespaced: true
-  log: false
+stats:
+  disable-saving: false
+  forced-stats: {}
 advancements:
   disable-saving: true
   disabled:
@@ -112,13 +114,9 @@ advancements:
   - minecraft:story/shiny_gear
   - minecraft:story/smelt_iron
   - minecraft:story/upgrade_tools
-stats:
-  disable-saving: false
-  forced-stats: {}
 world-settings:
   default:
     verbose: false
-    mob-spawn-range: 3
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -130,6 +128,12 @@ world-settings:
       netherwart-modifier: 100
       vine-modifier: 100
       cocoa-modifier: 100
+    merge-radius:
+      item: 4.0
+      exp: 6.0
+    view-distance: 5
+    mob-spawn-range: 3
+    item-despawn-rate: 6000
     entity-activation-range:
       animals: 16
       monsters: 24
@@ -146,15 +150,16 @@ world-settings:
       hopper-check: 1
     hopper-amount: 1
     random-light-updates: false
+    save-structure-info: false
+    arrow-despawn-rate: 1200
+    zombie-aggressive-towards-villager: false
+    nerf-spawner-mobs: false
+    enable-zombie-pigmen-portal-spawns: true
     dragon-death-sound-radius: 0
+    wither-spawn-sound-radius: 0
     seed-village: 10387312
-    seed-desert: 14357617
-    seed-igloo: 14357618
-    seed-jungle: 14357619
-    seed-swamp: 14357620
+    seed-feature: 14357617
     seed-monument: 10387313
-    seed-shipwreck: 165745295
-    seed-ocean: 14357621
     seed-slime: 987234911
     hunger:
       jump-walk-exhaustion: 0.05
@@ -165,25 +170,10 @@ world-settings:
       sprint-multiplier: 0.1
       other-multiplier: 0.0
     max-tnt-per-tick: 5
+    hanging-tick-frequency: 100
     max-tick-time:
       tile: 20
       entity: 20
     squid-spawn-range:
       min: 45.0
-    view-distance: 5
-    enable-zombie-pigmen-portal-spawns: true
-    merge-radius:
-      item: 4.0
-      exp: 6.0
-    arrow-despawn-rate: 1200
-    item-despawn-rate: 6000
-    wither-spawn-sound-radius: 0
-    hanging-tick-frequency: 100
-    nerf-spawner-mobs: false
-    zombie-aggressive-towards-villager: false
     max-entity-collisions: 1
-    save-structure-info: false
-    seed-feature: 14357617
-  world:
-    mob-spawn-range: 0
-    max-tnt-per-tick: 0
