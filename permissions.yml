@@ -1,4 +1,5 @@
-server.op:
+op:
+    default: op
     children:
         essentials.ban.exempt: false
         essentials.invsee.preventmodify: false
@@ -11,10 +12,7 @@ server.op:
         essentials.sudo.multiple: false
         essentials.vanish.see: false
         fawe.bypass: false
-    default: op
-    description: "Default permissions for OP"
-server.deop:
+deop:
+    default: not-op
     children:
         minecraft.command.op: true
-    default: not-op
-    description: "Default permissions for DeOP"

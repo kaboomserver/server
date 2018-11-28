@@ -48,7 +48,7 @@ lighting:
   #  - 2 = All (Slowly relight every blocks)
   mode: 1
   # If existing lighting should be removed before relighting
-  remove-first: false
+  remove-first: true
 
 # Generic tick limiter (not necessarily WorldEdit related, but useful to stop abuse)
 tick-limiter:
@@ -268,4 +268,4 @@ limits:
     # 2 = Inventory for placing (survival)
     inventory-mode: 0
     # Should large edits require confirmation (>16384 chunks)
-    confirm-large: true
+    confirm-large: false

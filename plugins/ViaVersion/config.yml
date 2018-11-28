@@ -12,7 +12,7 @@
 # Should ViaVersion check for updates?
 checkforupdates: false
 # Send the supported versions with the Status (Ping) response packet
-send-supported-versions: true
+send-supported-versions: false
 # Block specific Minecraft protocols that ViaVersion allows
 # List of all Minecraft protocol versions: http://wiki.vg/Protocol_version_numbers
 block-protocols: []
@@ -33,14 +33,14 @@ reload-disconnect-msg: Server reload, please rejoin!
 # 
 # What is the maximum per second a client can send (Use %pps to display their pps)
 # Use -1 to disable.
-max-pps: -1
+max-pps: 800
 max-pps-kick-msg: You are sending too many packets!
 # 
 # We can also kick them if over a period they send over a threshold a certain amount of times.
 # 
 # Period to track (in seconds)
 # Use -1 to disable.
-tracking-period: -1
+tracking-period: 6
 # How many packets per second counts as a warning
 tracking-warning-pps: 120
 # How many warnings over the interval can we have
@@ -66,6 +66,10 @@ chat-nbt-fix: true
 quick-move-action-fix: false
 # Should we use prefix for team colour on 1.13 and above clients
 team-colour-fix: true
+# We warn when there's a error converting from pre-1.13 to 1.13, should we suppress these? (Only suggested if spamming)
+suppress-1_13-conversion-errors: true
+# 1.13 introduced new auto complete which can trigger "Kicked for spamming" for servers older than 1.13, the following option will disable it completely.
+disable-1_13-auto-complete: false
 # 
 # ----------------------------------------------------------#
 #         1.9 & 1.10 CLIENTS ON 1.8 SERVERS OPTIONS        #
@@ -102,3 +106,11 @@ replace-pistons: false
 replacement-piston-id: 0
 # Force the string -> json transform
 force-json-transform: false
+# Minimize the cooldown animation in 1.8 servers
+minimize-cooldown: true
+# Enable serverside block-connections for 1.13+ clients
+serverside-blockconnections: true
+# Sets the method for the block connections (world for world-level or packet for packet-level)
+blockconnection-method: world
+# When activated, only the most important blocks are stored in the blockstorage. (fences, glass panes etc. won't connect to solid blocks)
+reduce-blockstorage-memory: false

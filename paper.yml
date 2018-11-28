@@ -23,7 +23,7 @@ timings:
 settings:
   min-chunk-load-threads: 8
   sleep-between-chunk-saves: false
-  load-permissions-yml-before-plugins: false
+  load-permissions-yml-before-plugins: true
   region-file-cache-size: 256
   enable-player-collisions: true
   save-empty-scoreboard-teams: false

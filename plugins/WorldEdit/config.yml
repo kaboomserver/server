@@ -18,12 +18,12 @@
 limits:
     allow-extra-data-values: true
     max-blocks-changed:
-        default: 200000
-        maximum: 200000
+        default: 20000000
+        maximum: 20000000
     max-polygonal-points:
         default: -1
         maximum: 20
-    max-radius: 20
+    max-radius: 100
     max-super-pickaxe-size: 5
     max-brush-radius: 5
     butcher-radius:

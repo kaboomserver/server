@@ -19,14 +19,6 @@ aliases:
   - []
   bukkit:rl:
   - []
-  essentials:etpall:
-  - []
-  essentials:tpall:
-  - []
-  etpall:
-  - []
-  minecraft:save-off:
-  - []
   minecraft:stop:
   - []
   reload:
@@ -35,12 +27,8 @@ aliases:
   - []
   rl:
   - []
-  save-off:
-  - []
   spigot:restart:
   - []
   stop:
-  - []
-  tpall:
   - []
 ignore-vanilla-permissions: false
