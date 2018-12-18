@@ -236,9 +236,9 @@ limits:
     # Max actions that can be run concurrently (i.e. commands)
     max-actions: 1
     # Max number of block changes (e.g. by `//set stone`).
-    max-changes: 20000000
+    max-changes: 1000000
     # Max number of blocks checked (e.g. `//count stone` which doesn't change blocks)
-    max-checks: 20000000
+    max-checks: 1000000
     # Number of times a change can fail (e.g. if the player can't access that region)
     max-fails: 20000000
     # Allowed brush iterations (e.g. `//brush smooth`)

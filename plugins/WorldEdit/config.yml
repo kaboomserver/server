@@ -18,8 +18,8 @@
 limits:
     allow-extra-data-values: true
     max-blocks-changed:
-        default: 20000000
-        maximum: 20000000
+        default: 1000000
+        maximum: 1000000
     max-polygonal-points:
         default: -1
         maximum: 20

@@ -32,7 +32,7 @@ messages:
 settings:
   timeout-time: 60
   restart-on-crash: true
-  restart-script: .bin/restart.sh
+  restart-script: restart.sh
   bungeecord: false
   netty-threads: 8
   late-bind: true
@@ -169,7 +169,7 @@ world-settings:
       swim-multiplier: 0.01
       sprint-multiplier: 0.1
       other-multiplier: 0.0
-    max-tnt-per-tick: 5
+    max-tnt-per-tick: 10
     hanging-tick-frequency: 100
     max-tick-time:
       tile: 20

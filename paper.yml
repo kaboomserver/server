@@ -41,6 +41,9 @@ settings:
   spam-limiter:
     tab-spam-increment: 10
     tab-spam-limit: 500
+  book-size:
+    page-max: 2560
+    total-multiplier: 0.98
 messages:
   kick:
     flying-player: Flying is not enabled on this server

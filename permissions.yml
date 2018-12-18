@@ -6,7 +6,7 @@ op:
         essentials.jail.exempt: false
         essentials.joinfullserver: false
         essentials.kick.exempt: false
-        essentials.kill.force: false
+        essentials.kill.exempt: false
         essentials.mute.exempt: false
         essentials.sudo.exempt: false
         essentials.sudo.multiple: false
