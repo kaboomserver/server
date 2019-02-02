@@ -2,14 +2,19 @@ op:
     default: op
     children:
         essentials.ban.exempt: false
+        essentials.commandcooldowns.bypass: false
         essentials.invsee.preventmodify: false
         essentials.jail.exempt: false
         essentials.joinfullserver: false
         essentials.kick.exempt: false
         essentials.kill.exempt: false
+        essentials.list.hidden: false
         essentials.mute.exempt: false
+        essentials.near.maxexempt: false
         essentials.sudo.exempt: false
-        essentials.sudo.multiple: false
+        essentials.tempban.exempt: false
+        essentials.vanish.effect: false
+        essentials.vanish.interact: false
         essentials.vanish.see: false
         fawe.bypass: false
 deop:

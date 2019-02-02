@@ -67,7 +67,7 @@ world-settings:
     tnt-entity-height-nerf: 0
     water-over-lava-flow-speed: 5
     nether-ceiling-void-damage: false
-    queue-light-updates: true
+    queue-light-updates: false
     game-mechanics:
       disable-end-credits: false
       disable-chest-cat-detection: false

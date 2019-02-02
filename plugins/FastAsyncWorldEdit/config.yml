@@ -53,7 +53,7 @@ lighting:
 # Generic tick limiter (not necessarily WorldEdit related, but useful to stop abuse)
 tick-limiter:
   # Enable the limiter
-  enabled: true
+  enabled: false
   # The interval in ticks
   interval: 20
   # Max falling blocks per interval (per chunk)

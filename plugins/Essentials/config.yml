@@ -317,7 +317,7 @@ enabledSigns:
 # How many times per second can Essentials signs be interacted with per player.
 # Values should be between 1-20, 20 being virtually no lag protection.
 # Lower numbers will reduce the possibility of lag, but may annoy players.
-sign-use-per-second: 4
+sign-use-per-second: 2
 
 # List of sign names Essentials should not protect. This feature is especially useful when
 # another plugin provides a sign that EssentialsX provides, but Essentials overrides.
@@ -370,7 +370,7 @@ remove-god-on-disconnect: false
 # After this timeout in seconds, the user will be set as AFK.
 # This feature requires the player to have essentials.afk.auto node.
 # Set to -1 for no timeout.
-auto-afk: 300
+auto-afk: -1
 
 # Auto-AFK Kick
 # After this timeout in seconds, the user will be kicked from the server.
@@ -395,7 +395,7 @@ cancel-afk-on-interact: true
 # Should we automatically remove afk status when a player moves?
 # Player will be removed from AFK on chat/command regardless of this setting.
 # Disable this to reduce server lag.
-cancel-afk-on-move: true
+cancel-afk-on-move: false
 
 # Set the player's list name when they are AFK. This is none by default which specifies that Essentials 
 # should not interfere with the AFK player's list name.
@@ -480,7 +480,7 @@ last-message-reply-recipient-timeout: 180
 milk-bucket-easter-egg: true
 
 # Toggles whether or not the fly status message should be sent to players on join
-send-fly-enable-on-join: true
+send-fly-enable-on-join: false
 
 # Set to true to enable per-world permissions for setting time for individual worlds with essentials commands.
 # This applies to /time, /day, /eday, /night, /enight, /etime.
