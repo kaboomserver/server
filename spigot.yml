@@ -32,7 +32,7 @@ messages:
 settings:
   timeout-time: 60
   restart-on-crash: true
-  restart-script: restart.sh
+  restart-script: stop
   bungeecord: false
   netty-threads: 8
   late-bind: true

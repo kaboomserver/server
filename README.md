@@ -1,3 +1,3 @@
-# kaboom-base-files
+# base-files
 
-Base files for the Kaboom.pw server
+Base files for the Kaboom server
