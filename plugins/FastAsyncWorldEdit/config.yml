@@ -248,7 +248,7 @@ limits:
     # Blockstates include Banner, Beacon, BrewingStand, Chest, CommandBlock, 
     # CreatureSpawner, Dispenser, Dropper, EndGateway, Furnace, Hopper, Jukebox, 
     # NoteBlock, Sign, Skull, Structure
-    max-blockstates: 1337
+    max-blockstates: -1
     # Maximum size of the player's history in Megabytes:
     #  - History on disk or memory will be deleted
     max-history-mb: -1

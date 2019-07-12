@@ -179,3 +179,4 @@ world-settings:
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
     armor-stands-tick: true
+    prevent-moving-into-unloaded-chunks: true
