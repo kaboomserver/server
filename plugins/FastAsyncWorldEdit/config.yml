@@ -1,17 +1,14 @@
 # These first 6 aren't configurable
-issues: "https://github.com/boy0001/FastAsyncWorldedit/issues"
+issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit-1.13/issues"
 wiki: "https://github.com/boy0001/FastAsyncWorldedit/wiki/"
-date: "6 Jun 2018 00:00:00 GMT"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit/1108"
-commit: "https://github.com/boy0001/FastAsyncWorldedit/commit/d9e79f"
+date: "10 Aug 2019 21:00:00 GMT"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit-Breaking/7"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit-1.13/commit/f0cabb7"
 platform: "bukkit"
-# Options: de, ru, tr
-# Create a PR to contribute a translation: https://github.com/boy0001/FastAsyncWorldedit/new/master/core/src/main/resources
+# Options: cn, de, es, fr, it, nl, ru, tr
+# Create a PR to contribute a translation: https://github.com/IntellectualSites/FastAsyncWorldEdit-1.13/tree/master/worldedit-core/src/main/resources
 language: ''
-# Enable or disable automatic updates
-#  - true = update automatically in the background
-update: "false"
-# Send anonymous usage statistics
+# @deprecated - use bstats config.yml
 metrics: false
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
@@ -96,25 +93,29 @@ experimental:
   #  - IMPROPER USE CAN CAUSE WORLD CORRUPTION!
   anvil-queue-mode: false
   # [SAFE] Dynamically increase the number of chunks rendered
-  #  - Requires Paper: ci.destroystokyo.com/job/PaperSpigot/
+  #  - Requires Paper: ci.destroystokyo.com/job/Paper-1.13/
   #  - Set your server view distance to 1 (spigot.yml, server.properties)
   #  - Based on tps and player movement
-  #  - Please provide feedback
+  #  - Note: If entities become hidden, increase the server view distance to 3
   dynamic-chunk-rendering: -1
-  # [SAFE] Allows brushes to be persistent
-  persistent-brushes: false
-  # [SAFE] Enable CUI without needing the mod installed (Requires ProtocolLib)
-  vanilla-cui: false
+  # Allows brushes to be persistent (default: true)
+  persistent-brushes: true
   # Disable using native libraries
   disable-natives: false
   # [SAFE] Keep entities that are positioned in non-air blocks when editing an area
   # Might cause client-side FPS lagg in some situations
   keep-entities-in-blocks: false
+  # [SAFE] Experimental scripting support for Java 9
+  #  - https://github.com/boy0001/FastAsyncWorldedit/wiki/JavaScript-API
+  modern-craftscripts: false
+  # [SAFE] Experimental freebuild region restrictions
+  #  - PERM: fawe.freebuild
+  #  - PERM: fawe.freebuild.<plugin>
+  freebuild: false
 
 # This relates to how FAWE places chunks
 queue:
   # This should equal the number of processors you have
-  #  - Set this to 1 if you need reliable `/timings`
   parallel-threads: 8
   progress:
     # Display constant titles about the progress of a user's edit
@@ -227,6 +228,18 @@ paths:
   clipboard: "clipboard"
   # Each player has their own sub directory for schematics
   per-player-schematics: false
+  commands: "commands"
+
+# Region restriction settings
+region-restrictions-options:
+  # What type of users are allowed to WorldEdit in a region
+  #  - MEMBER = Players added to a region
+  #  - OWNER = Players who own the region
+  mode: "MEMBER"
+
+# Enable or disable core components
+enabled-components:
+  commands: true
 # The "default" limit group affects those without a specific limit permission.
 # To grant someone different limits, copy the default limits group
 # and give it a different name (e.g. newbie). Then give the user the limit 
@@ -240,7 +253,7 @@ limits:
     # Max number of blocks checked (e.g. `//count stone` which doesn't change blocks)
     max-checks: 1000000
     # Number of times a change can fail (e.g. if the player can't access that region)
-    max-fails: 20000000
+    max-fails: 50000000
     # Allowed brush iterations (e.g. `//brush smooth`)
     max-iterations: 1000
     # Max allowed entities (e.g. cows)
@@ -269,3 +282,5 @@ limits:
     inventory-mode: 0
     # Should large edits require confirmation (>16384 chunks)
     confirm-large: false
+    # List of blocks to strip nbt from
+    strip-nbt: []

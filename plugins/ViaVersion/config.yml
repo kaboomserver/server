@@ -67,12 +67,34 @@ quick-move-action-fix: false
 # Should we use prefix for team colour on 1.13 and above clients
 team-colour-fix: true
 # We warn when there's a error converting from pre-1.13 to 1.13, should we suppress these? (Only suggested if spamming)
-suppress-1_13-conversion-errors: true
+suppress-1_13-conversion-errors: false
 # 1.13 introduced new auto complete which can trigger "Kicked for spamming" for servers older than 1.13, the following option will disable it completely.
 disable-1_13-auto-complete: false
+# The following option will delay the tab complete request in x ticks if greater than 0, if other tab-complete is received, the previous is cancelled
+1_13-tab-complete-delay: 0
+# For 1.13 clients the smallest (1 layer) snow doesn't have collision, this will send these as 2 snowlayers for 1.13+ clients to prevent them bugging through them
+fix-low-snow-collision: false
+# In 1.14 the client page limit has been upped to 100 (from 50). Some anti-exploit plugins ban when clients go higher than 50. This option cuts edited books to 50 pages.
+truncate-1_14-books: false
+# This prevents clients using 1.9-1.13 on 1.8 servers from receiving no knockback/having velocity bugs whilst sneaking under a block.
+change-1_9-hitbox: false
+# Similar to the above, but for 1.14+ players on 1.8-1.13 servers.
+# WARNING: This gives 1.14+ players the ability to sneak under blocks, that players under that version cannot (sneaking in places that are only 1.5 blocks high)!
+# Another thing to remember is that those players might be missed by projectiles and other hits directed at the very top of their head whilst sneaking.
+change-1_14-hitbox: true
+# 
+# Enable serverside block-connections for 1.13+ clients
+serverside-blockconnections: true
+# Sets the method for the block connections (world for highly experimental (USE AT OWN RISK) world-level or packet for packet-level)
+blockconnection-method: packet
+# When activated, only the most important blocks are stored in the blockstorage. (fences, glass panes etc. won't connect to solid blocks)
+reduce-blockstorage-memory: true
+# When activated with serverside-blockconnections, flower parts with blocks above will be sent as stems
+# Useful for lobbyservers where users can't build and those stems are used decoratively
+flowerstem-when-block-above: false
 # 
 # ----------------------------------------------------------#
-#         1.9 & 1.10 CLIENTS ON 1.8 SERVERS OPTIONS        #
+#             1.9+ CLIENTS ON 1.8 SERVERS OPTIONS          #
 # ----------------------------------------------------------#
 # 
 # No collide options, these allow you to configure how collision works.
@@ -82,7 +104,7 @@ prevent-collision: true
 auto-team: true
 # When enabled if certain metadata can't be read we won't tell you about it
 suppress-metadata-errors: false
-# When enabled 1.9 & 1.10 will be able to block by using shields
+# When enabled 1.9+ will be able to block by using shields
 shield-blocking: true
 # Enable player tick simulation, this fixes eating, drinking, nether portals.
 simulate-pt: true
@@ -90,15 +112,15 @@ simulate-pt: true
 nms-player-ticking: true
 # Should we patch boss bars so they work? (Default: true, disable if you're having issues)
 bossbar-patch: true
-# If your boss bar flickers on 1.9 & 1.10, set this to 'true'. It will keep all boss bars on 100% (not recommended)
+# If your boss bar flickers on 1.9+, set this to 'true'. It will keep all boss bars on 100% (not recommended)
 bossbar-anti-flicker: false
-# This will show the new effect indicator in the top-right corner for 1.9 & 1.10 players.
+# This will show the new effect indicator in the top-right corner for 1.9+ players.
 use-new-effect-indicator: true
-# Show the new death messages for 1.9 & 1.10 on the death screen
+# Show the new death messages for 1.9+ on the death screen
 use-new-deathmessages: true
 # Should we cache our items, this will prevent server from being lagged out, however the cost is a constant task caching items
 item-cache: true
-# Patch the Anti xray to work on 1.9 & 1.10 (If your server is 1.8) This can cost more performance, so disable it if you don't use it.
+# Patch the anti xray to work on 1.9+ (If your server is 1.8) This can cost more performance, so disable it if you don't use it.
 anti-xray-patch: true
 # Should we replace extended pistons to fix 1.10.1 (Only on chunk load)
 replace-pistons: false
@@ -108,9 +130,5 @@ replacement-piston-id: 0
 force-json-transform: false
 # Minimize the cooldown animation in 1.8 servers
 minimize-cooldown: true
-# Enable serverside block-connections for 1.13+ clients
-serverside-blockconnections: true
-# Sets the method for the block connections (world for world-level or packet for packet-level)
-blockconnection-method: world
-# When activated, only the most important blocks are stored in the blockstorage. (fences, glass panes etc. won't connect to solid blocks)
-reduce-blockstorage-memory: false
+# Left handed handling on 1.8 servers
+left-handed-handling: true

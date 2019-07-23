@@ -11,9 +11,35 @@
 # Forums: http://www.spigotmc.org/
 
 config-version: 11
+settings:
+  save-user-cache-on-stop-only: false
+  sample-count: 12
+  bungeecord: false
+  late-bind: true
+  player-shuffle: 0
+  user-cache-size: 1000
+  moved-wrongly-threshold: 100.0
+  moved-too-quickly-multiplier: 100.0
+  timeout-time: 360
+  restart-on-crash: true
+  restart-script: stop
+  netty-threads: 8
+  debug: false
+  attribute:
+    maxHealth:
+      max: 2048.0
+    movementSpeed:
+      max: 2048.0
+    attackDamage:
+      max: 2048.0
+messages:
+  whitelist: The server is temporarily down for maintenance. Please try again later!
+  unknown-command: Unknown command. Type "/help" for help.
+  server-full: The server is temporarily down for maintenance. Please try again later!
+  outdated-client: Your client is outdated. Please join with Minecraft version 1.14.4!
+  outdated-server: The server is outdated. Please join with Minecraft version 1.14.4!
+  restart: The server is restarting. Please wait...
 commands:
-  log: true
-  tab-complete: 0
   spam-exclusions:
   - /skill
   silent-commandblock-console: true
@@ -22,53 +48,30 @@ commands:
   - summon
   - testforblock
   - tellraw
-messages:
-  whitelist: The server is temporarily down for maintenance. Please try again later!
-  unknown-command: Unknown command. Type "/help" for help.
-  server-full: The server is temporarily down for maintenance. Please try again later!
-  outdated-client: Your client is outdated. Please join with Minecraft version 1.14.3!
-  outdated-server: The server is outdated. Please join with Minecraft version 1.14.3!
-  restart: The server is restarting. Please wait...
-settings:
-  timeout-time: 60
-  restart-on-crash: true
-  restart-script: stop
-  bungeecord: false
-  netty-threads: 8
-  late-bind: true
-  sample-count: 12
-  player-shuffle: 0
-  filter-creative-items: false
-  user-cache-size: 1000
-  save-user-cache-on-stop-only: false
-  int-cache-limit: 1024
-  moved-wrongly-threshold: 100.0
-  moved-too-quickly-multiplier: 100.0
-  attribute:
-    maxHealth:
-      max: 2048.0
-    movementSpeed:
-      max: 2048.0
-    attackDamage:
-      max: 2048.0
-  debug: false
-  item-dirty-ticks: 20
-stats:
-  disable-saving: false
-  forced-stats: {}
+  log: true
+  tab-complete: 0
+  send-namespaced: true
 advancements:
   disable-saving: true
   disabled:
   - minecraft:adventure/adventuring_time
+  - minecraft:adventure/arbalistic
+  - minecraft:adventure/hero_of_the_village
   - minecraft:adventure/kill_a_mob
   - minecraft:adventure/kill_all_mobs
+  - minecraft:adventure/ol_betsy
   - minecraft:adventure/root
   - minecraft:adventure/shoot_arrow
   - minecraft:adventure/sleep_in_bed
   - minecraft:adventure/sniper_duel
   - minecraft:adventure/summon_iron_golem
+  - minecraft:adventure/throw_trident
   - minecraft:adventure/totem_of_undying
   - minecraft:adventure/trade
+  - minecraft:adventure/two_birds_one_arrow
+  - minecraft:adventure/very_very_frightening
+  - minecraft:adventure/voluntary_exile
+  - minecraft:adventure/whos_the_pillager_now
   - minecraft:end/dragon_breath
   - minecraft:end/dragon_egg
   - minecraft:end/elytra
@@ -82,8 +85,11 @@ advancements:
   - minecraft:husbandry/break_diamond_hoe
   - minecraft:husbandry/bred_all_animals
   - minecraft:husbandry/breed_an_animal
+  - minecraft:husbandry/complete_catalogue
+  - minecraft:husbandry/fishy_business
   - minecraft:husbandry/plant_seed
   - minecraft:husbandry/root
+  - minecraft:husbandry/tactical_fishing
   - minecraft:husbandry/tame_an_animal
   - minecraft:nether/all_effects
   - minecraft:nether/all_potions
@@ -114,9 +120,36 @@ advancements:
   - minecraft:story/shiny_gear
   - minecraft:story/smelt_iron
   - minecraft:story/upgrade_tools
+stats:
+  disable-saving: false
+  forced-stats: {}
 world-settings:
   default:
+    random-light-updates: false
+    view-distance: 5
     verbose: false
+    mob-spawn-range: 3
+    hopper-amount: 1
+    dragon-death-sound-radius: 0
+    seed-village: 10387312
+    seed-desert: 14357617
+    seed-igloo: 14357618
+    seed-jungle: 14357619
+    seed-swamp: 14357620
+    seed-monument: 10387313
+    seed-shipwreck: 165745295
+    seed-ocean: 14357621
+    seed-outpost: 165745296
+    seed-slime: 987234911
+    max-tnt-per-tick: 10
+    enable-zombie-pigmen-portal-spawns: true
+    item-despawn-rate: 6000
+    arrow-despawn-rate: 1200
+    wither-spawn-sound-radius: 0
+    hanging-tick-frequency: 100
+    zombie-aggressive-towards-villager: false
+    nerf-spawner-mobs: false
+    max-entity-collisions: 1
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -124,21 +157,26 @@ world-settings:
       mushroom-modifier: 100
       pumpkin-modifier: 100
       sapling-modifier: 100
+      beetroot-modifier: 100
+      carrot-modifier: 100
+      potato-modifier: 100
       wheat-modifier: 100
       netherwart-modifier: 100
       vine-modifier: 100
       cocoa-modifier: 100
-    merge-radius:
-      item: 4.0
-      exp: 6.0
-    view-distance: 5
-    mob-spawn-range: 3
-    item-despawn-rate: 6000
+      bamboo-modifier: 100
+      sweetberry-modifier: 100
+      kelp-modifier: 100
     entity-activation-range:
+      water: 16
       animals: 16
       monsters: 24
+      raiders: 32
       misc: 4
       tick-inactive-villagers: false
+    merge-radius:
+      exp: 3.0
+      item: 2.5
     entity-tracking-range:
       players: 48
       animals: 48
@@ -148,19 +186,6 @@ world-settings:
     ticks-per:
       hopper-transfer: 8
       hopper-check: 1
-    hopper-amount: 1
-    random-light-updates: false
-    save-structure-info: false
-    arrow-despawn-rate: 1200
-    zombie-aggressive-towards-villager: false
-    nerf-spawner-mobs: false
-    enable-zombie-pigmen-portal-spawns: true
-    dragon-death-sound-radius: 0
-    wither-spawn-sound-radius: 0
-    seed-village: 10387312
-    seed-feature: 14357617
-    seed-monument: 10387313
-    seed-slime: 987234911
     hunger:
       jump-walk-exhaustion: 0.05
       jump-sprint-exhaustion: 0.2
@@ -169,11 +194,8 @@ world-settings:
       swim-multiplier: 0.01
       sprint-multiplier: 0.1
       other-multiplier: 0.0
-    max-tnt-per-tick: 10
-    hanging-tick-frequency: 100
     max-tick-time:
       tile: 20
       entity: 20
     squid-spawn-range:
       min: 45.0
-    max-entity-collisions: 1
