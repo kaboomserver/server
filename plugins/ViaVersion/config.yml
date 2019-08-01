@@ -33,14 +33,14 @@ reload-disconnect-msg: Server reload, please rejoin!
 # 
 # What is the maximum per second a client can send (Use %pps to display their pps)
 # Use -1 to disable.
-max-pps: 800
+max-pps: -1
 max-pps-kick-msg: You are sending too many packets!
 # 
 # We can also kick them if over a period they send over a threshold a certain amount of times.
 # 
 # Period to track (in seconds)
 # Use -1 to disable.
-tracking-period: 6
+tracking-period: -1
 # How many packets per second counts as a warning
 tracking-warning-pps: 120
 # How many warnings over the interval can we have
@@ -99,29 +99,29 @@ flowerstem-when-block-above: false
 # 
 # No collide options, these allow you to configure how collision works.
 # Do you want us to prevent collision?
-prevent-collision: true
+prevent-collision: false
 # If the above is true, should we automatically team players until you do?
-auto-team: true
+auto-team: false
 # When enabled if certain metadata can't be read we won't tell you about it
 suppress-metadata-errors: false
 # When enabled 1.9+ will be able to block by using shields
-shield-blocking: true
+shield-blocking: false
 # Enable player tick simulation, this fixes eating, drinking, nether portals.
-simulate-pt: true
+simulate-pt: false
 # Should we use nms player to simulate packets, (may fix anti-cheat issues)
-nms-player-ticking: true
+nms-player-ticking: false
 # Should we patch boss bars so they work? (Default: true, disable if you're having issues)
-bossbar-patch: true
+bossbar-patch: false
 # If your boss bar flickers on 1.9+, set this to 'true'. It will keep all boss bars on 100% (not recommended)
 bossbar-anti-flicker: false
 # This will show the new effect indicator in the top-right corner for 1.9+ players.
-use-new-effect-indicator: true
+use-new-effect-indicator: false
 # Show the new death messages for 1.9+ on the death screen
-use-new-deathmessages: true
+use-new-deathmessages: false
 # Should we cache our items, this will prevent server from being lagged out, however the cost is a constant task caching items
-item-cache: true
+item-cache: false
 # Patch the anti xray to work on 1.9+ (If your server is 1.8) This can cost more performance, so disable it if you don't use it.
-anti-xray-patch: true
+anti-xray-patch: false
 # Should we replace extended pistons to fix 1.10.1 (Only on chunk load)
 replace-pistons: false
 # What id should we replace with, default is air. (careful of players getting stuck standing on them)
@@ -129,6 +129,6 @@ replacement-piston-id: 0
 # Force the string -> json transform
 force-json-transform: false
 # Minimize the cooldown animation in 1.8 servers
-minimize-cooldown: true
+minimize-cooldown: false
 # Left handed handling on 1.8 servers
-left-handed-handling: true
+left-handed-handling: false

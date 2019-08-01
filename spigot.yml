@@ -20,7 +20,7 @@ settings:
   user-cache-size: 1000
   moved-wrongly-threshold: 100.0
   moved-too-quickly-multiplier: 100.0
-  timeout-time: 360
+  timeout-time: 120
   restart-on-crash: true
   restart-script: stop
   netty-threads: 8
