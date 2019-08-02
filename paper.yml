@@ -74,7 +74,7 @@ world-settings:
     max-chunk-gens-per-tick: 10
     skip-entity-ticking-in-chunks-scheduled-for-unload: true
     prevent-moving-into-unloaded-chunks: true
-    max-auto-save-chunks-per-tick: 24
+    max-auto-save-chunks-per-tick: 12
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     filter-nbt-data-from-spawn-eggs-and-related: false
@@ -96,7 +96,7 @@ world-settings:
     disable-ice-and-snow: false
     keep-spawn-loaded-range: 10
     keep-spawn-loaded: false
-    auto-save-interval: -1
+    auto-save-interval: 200
     armor-stands-do-collision-entity-lookups: true
     nether-ceiling-void-damage-height: 0
     water-over-lava-flow-speed: 5
