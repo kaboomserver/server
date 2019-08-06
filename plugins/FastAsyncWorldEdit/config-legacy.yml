@@ -20,11 +20,11 @@ limits:
     max-blocks-changed:
         # Ignored, use FAWE config limits
         default: -1
-        maximum: -1
+        maximum: 2000000
     max-polygonal-points:
         default: -1
         maximum: 20
-    max-radius: 100
+    max-radius: 75
     max-super-pickaxe-size: 5
     max-brush-radius: 10
     butcher-radius:

@@ -564,6 +564,10 @@ allow-world-in-broadcastworld: true
 # You should only change this to false if you use Minecraft China.
 safe-usermap-names: true
 
+# Should Essentials output logs when a command block executes a command?
+# Example: CommandBlock at <x>,<y>,<z> issued server command: /<command>
+log-command-block-commands: false
+
 ############################################################
 # +------------------------------------------------------+ #
 # |                   EssentialsHome                     | #
@@ -597,6 +601,9 @@ sethome-multiple:
 # Leaving this as false will retain Essentials' original behaviour, which is to always
 # change the compass' direction to point towards their first home.
 compass-towards-home-perm: false
+
+# Set the maximum speed for projectiles spawned with /fireball.
+max-projectile-speed: 8
 
 ############################################################
 # +------------------------------------------------------+ #
