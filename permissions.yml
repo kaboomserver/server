@@ -24,3 +24,4 @@ deop:
     default: not-op
     children:
         minecraft.command.op: true
+        minecraft.command.selector: true
