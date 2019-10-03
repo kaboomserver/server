@@ -116,7 +116,7 @@ experimental:
 # This relates to how FAWE places chunks
 queue:
   # This should equal the number of processors you have
-  parallel-threads: 8
+  parallel-threads: 32
   progress:
     # Display constant titles about the progress of a user's edit
     #  - false = disabled

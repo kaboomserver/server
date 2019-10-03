@@ -1,0 +1,75 @@
+# Options affecting the basic behavior of iDisguise (including the developer API)
+disguise:
+   
+   # Do disguised players see their own disguise in 3rd person view.
+   # This only works for player disguises at the moment.
+   # WARNING: DON'T ENABLE THIS FEATURE IF YOU USE BUNGEECORD, it will crash Minecraft clients.
+   view-self: false
+   
+   # Do disguised players keep their disguise when they leave the server
+   keep-disguise-leave: false
+   
+   # Do disguised players keep their disguise when you shutdown the server
+   keep-disguise-shutdown: false
+   
+   # Modify disguised players' death messages
+   # e.g. 'RobinGrether tried to swim in lava' -> 'Notch tried to swim in lava' in case RobinGrether is disguised as a player called Notch
+   modify-message-death: false
+   
+   # Modify disguised players' join message
+   # e.g. 'RobinGrether joined the game' -> 'Dinnerbone joined the game' in case RobinGrether is disguise as a player called Dinnerbone
+   modify-message-join: false
+   
+   # Modify disguised players' kill message
+   # e.g. 'Notch was slain by RobinGrether' -> 'Notch was slain by Zombie' in case RobinGrether is disguised as a zombie
+   modify-message-kill: false
+   
+   # Modify disguised players' leave message
+   # e.g. 'RobinGrether left the game' -> 'Herobrine left the game' in case RobinGrether is disguised as a player called Herobrine
+   modify-message-leave: false
+   
+   # Modify disguised players' player list entry
+   # If this is enabled disguised players are NOT shown in the player list except if they are disguised as other players,
+   # in this case the disguise name is shown instead of the original player name.
+   # Consider enabling modify-scoreboard-packets as well if you experience problems with scoreboard/nametag plugins.
+   modify-player-list-entry: false
+   
+   # Modify scoreboard packets
+   # This may help scoreboard plugins to work properly with disguised players.
+   # Furthermore, this option enables compatibility with NametagEdit and ColoredTags.
+   modify-scoreboard-packets: true
+   
+   # Show name tags with their original name for disguised players
+   # Obviously, this option does NOT affect player disguises.
+   name-tag-shown: false
+   
+   # Do disguised players sound like actual mobs
+   # e.g. a player disguised as a cow moos when he is hurt
+   replace-sound-effects: true
+   
+   # Change this to true if you use BungeeCord
+   # Explanation: BungeeCord breaks the standard player disguises, this option fixes that.
+   bungee-cord: false
+   
+# Options affecting the commands and permissions of iDisguise (these do NOT affect the developer API)
+commands:
+   
+   # Restrict some player names so your players cannot disguise as them
+   # Admins might get 'iDisguise.player.prohibited' permission to bypass this restriction
+   # The names should be lower case (won't work otherwise)
+   restricted-player-names: 
+   - player1
+   - player2
+   
+   # Do disguised players need to have 'iDisguise.undisguise' permission to be allowed to undisguise
+   undisguise-permission: false
+   
+# Options affecting the update checking feature
+updates:
+   
+   # Check whether an update is available at every server start
+   # Admins might get the 'iDisguise.update' permission node to trigger an update check whenever they log in and receive a notification if an update is available
+   check: false
+   
+   # Automatically download new updates (however a server restart is required for an update to take effect)
+   download: false

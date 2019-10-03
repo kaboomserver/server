@@ -1,0 +1,155 @@
+reload-complete: §6[iDisguise] Reload complete.
+no-permission: §cYou are not allowed to do this.
+console-use-other-command: §cUse /odisguise from the server console.
+cannot-find-targets: §cNo target entities were found.
+wrong-usage-no-name: '§cWrong usage: account name required'
+wrong-usage-two-disguise-types: '§cWrong usage: two disguise types given'
+wrong-usage-unknown-arguments: '§cWrong usage: the following arguments could not be
+  identified'
+wrong-usage-unknown-arguments2: §7 §o%argument%§7 -> %message%
+wrong-usage-see-through: '§cWrong usage: unknown argument §o%argument%'
+invalid-name: §cThe given account name is invalid.
+event-cancelled: §cAnother plugin prohibits you to do that.
+disguise-success-self: §6You disguised as a %type%.
+disguise-success-other: §6%player% disguised as a %type%.
+disguise-success-multiple: §6%share% out of %total% selected entities disguised as
+  a %type%.
+status-player-self: §6You are disguised as a %type% called %name%.
+status-player-other: §6%player% is disguised as a %type% called %name%.
+status-self: §6You are disguised as a %type%.
+status-other: §6%player% is disguised as a %type%.
+status-subtypes: §7(%subtypes%)
+status-not-disguised-self: §6You are not disguised.
+status-not-disguised-other: §6%player% is not disguised.
+outdated-server: §cYour Minecraft version does not support the given disguise type.
+undisguise-console: §cYou are not a player so you cannot undisguise.
+undisguise-not-disguised-self: §cYou are not disguised.
+undisguise-not-disguised-other: §c%player% is not disguised.
+undisguise-success-self: §6You undisguised.
+undisguise-success-other: §6%player% undisguised.
+undisguise-success-multiple: §6%share% out of %total% selected entities undisguised.
+help-base: §6§o%command% §6- %description%
+help-types: §6%types%
+help-types-available: '%type%'
+help-types-not-supported: §7§m%type%
+help-types-no-permission: §7§m%type%
+help-info: §7Use §o%command% §7to read the other pages.
+help-player-self: Disguise yourself as a player
+help-player-other: Disguise a player as a player
+help-random-self: Disguise yourself as a randomly chosen mob
+help-random-other: Disguise a player as a randomly chosen mob
+help-reload: Reload config and language file
+help-see-through-self: Indicate or toggle see-through mode for yourself
+help-see-through-other: Indicate or toggle see-through mode for a player
+help-status-self: Shows your disguise status
+help-status-other: Shows a player's disguise status
+help-undisguise-self: Undisguise yourself
+help-undisguise-all-new: Undisguise everyone (*), all online players (*o), all players
+  (*p) or all entities (*e)
+help-undisguise-other: Undisguise a player
+help-disguise-self: Disguise yourself as a mob with optional subtypes
+help-disguise-other: Disguise a player as a mob with optional subtypes
+help-subtype: Apply one (or multiple) subtypes
+join-disguised: §6You are still disguised. Use §o/disguise status§r§6 to get more
+  information.
+move-as-shulker: §cYou must not move while you are disguised as a shulker.
+update-available: '§6[iDisguise] An update is available: %version%'
+update-already-downloaded: §6[iDisguise] Update already downloaded. (Restart server
+  to apply update)
+update-downloading: §6[iDisguise] Downloading update...
+update-download-succeeded: §6[iDisguise] Download succeeded. (Restart server to apply
+  update)
+update-download-failed: §c[iDisguise] Download failed.
+update-option: §6[iDisguise] You can enable automatic updates in the config file.
+easter-egg-birthday: §eYAAAY!!! Today is my birthday! I'm %age% years old now.
+see-through-status-on-self: §6See-through mode is currently §aenabled §6for you.
+see-through-status-on-other: §6See-through mode is currently §aenabled §6for %player%.
+see-through-status-off-self: §6See-through mode is currently §cdisabled §6for you.
+see-through-status-off-other: §6See-through mode is currently §cdisabled §6for %player%.
+see-through-enable-self: §6See-through mode is now §aenabled §6for you.
+see-through-enable-other: §6See-through mode is now §aenabled §6for %player%.
+see-through-disable-self: §6See-through mode is now §cdisabled §6for you.
+see-through-disable-other: §6See-through mode is now §cdisabled §6for %player%.
+see-through-entity: §cSee-through mode is only for players.
+help-target-uid: §6<account-id> - Select a player by account id
+help-target-eid: §6[entity-id] - Select an entity/player by entity id
+help-target-vanilla: §6@p/@r/@a/@e/@s[...] - Select entities/players with vanilla
+  selector
+help-target-name-exact: §6"player-name" - Select a player by EXACT account name
+help-target-name-match: §6player-name - Match an ONLINE player
+help-target-vanilla-tip: '§7Tip: You can use vanilla target selectors in command blocks
+  like this §o#p/#r/#a/#e/#s[...]'
+help-title: §7==== §l%name% §7%version% ==== §l%title% §7(%page%/%total%) ====
+help-title-disguise: Disguise
+help-title-undisguise: Undisguise
+help-title-types: Types
+help-title-features: Features
+help-title-targets: Targets
+help-undisguise-tip: '§7Tip: Append §oignore§7 to the end of the command to bypass
+  the plugin''s API.'
+disguise-alias-bat: ''
+disguise-alias-blaze: ''
+disguise-alias-cave-spider: cavespider, bluespider, blue-spider
+disguise-alias-chicken: chick
+disguise-alias-cod: ''
+disguise-alias-cow: cattle, ox
+disguise-alias-creeper: ''
+disguise-alias-dolphin: ''
+disguise-alias-donkey: ''
+disguise-alias-drowned: ''
+disguise-alias-elder-guardian: ''
+disguise-alias-ender-dragon: ''
+disguise-alias-enderman: endermen
+disguise-alias-endermite: ''
+disguise-alias-evoker: ''
+disguise-alias-ghast: ''
+disguise-alias-giant: ''
+disguise-alias-guardian: ''
+disguise-alias-horse: ''
+disguise-alias-husk: ''
+disguise-alias-illusioner: ''
+disguise-alias-iron-golem: golem
+disguise-alias-llama: ''
+disguise-alias-magma-cube: magmacube, magma-slime, magmaslime, lava-slime, lavaslime,
+  lava-cube, lavacube
+disguise-alias-mule: ''
+disguise-alias-mushroom-cow: mushroom-cow, mooshroom
+disguise-alias-ocelot: cat
+disguise-alias-parrot: ''
+disguise-alias-phantom: ''
+disguise-alias-pig: ''
+disguise-alias-pig-zombie: pigzombie, pigman, pigmen
+disguise-alias-polar-bear: polarbear, bear
+disguise-alias-pufferfish: puffer-fish
+disguise-alias-rabbit: bunny
+disguise-alias-salmon: ''
+disguise-alias-sheep: ''
+disguise-alias-shulker: ''
+disguise-alias-silverfish: ''
+disguise-alias-skeletal-horse: ''
+disguise-alias-skeleton: ''
+disguise-alias-slime: ''
+disguise-alias-snowman: ''
+disguise-alias-spider: ''
+disguise-alias-squid: ''
+disguise-alias-stray: ''
+disguise-alias-tropical-fish: tropicalfish
+disguise-alias-turtle: ''
+disguise-alias-undead-horse: undeadhorse, zombie-horse, zombiehorse
+disguise-alias-vex: ''
+disguise-alias-villager: ''
+disguise-alias-vindicator: ''
+disguise-alias-witch: ''
+disguise-alias-wither: witherboss
+disguise-alias-wither-skeleton: ''
+disguise-alias-wolf: dog
+disguise-alias-zombie: ''
+disguise-alias-zombie-villager: zombievillager, infected-villager, infectedvillager
+disguise-alias-area-effect-cloud: areaeffectcloud, effect-cloud, effectcloud
+disguise-alias-armor-stand: armorstand
+disguise-alias-boat: ''
+disguise-alias-ender-crystal: endercrystal, crystal
+disguise-alias-falling-block: fallingblock, block
+disguise-alias-item: item-stack, itemstack
+disguise-alias-minecart: cart
+version: iDisguise 5.8.2
