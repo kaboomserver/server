@@ -20,6 +20,7 @@ op:
         essentials.vanish.interact: false
         essentials.vanish.see: false
         fawe.bypass: false
+        worldedit.schematic.save.other: false
 deop:
     default: not-op
     children:

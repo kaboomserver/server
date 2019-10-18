@@ -1,0 +1,13 @@
+updateSpawnsToNewSpawnsConfig: true
+updateJailsToNewJailsConfig: true
+warnMetrics: true
+movemotdToFile: true
+moverulesToFile: true
+sanitizeAllUserFilenames: true
+updateUsersPowerToolsFormat: true
+updateUsersHomesFormat: true
+banFormatChange: true
+userMapRepaired: true
+kitsyml: true
+deleteOldItemsCsv: true
+uuidFileChange: true

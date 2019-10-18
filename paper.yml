@@ -54,7 +54,7 @@ messages:
     flying-player: Flying is not enabled on this server
     flying-vehicle: Flying is not enabled on this server
 timings:
-  enabled: true
+  enabled: false
   verbose: true
   server-name-privacy: false
   hidden-config-entries:
