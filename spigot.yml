@@ -22,7 +22,7 @@ settings:
   moved-too-quickly-multiplier: 10.0
   timeout-time: 60
   restart-on-crash: true
-  restart-script: script/stop
+  restart-script: script/stop.sh
   netty-threads: 32
   debug: false
   attribute:
