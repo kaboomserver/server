@@ -1,0 +1,60 @@
+# This is the commands configuration file for Bukkit.
+# For documentation on how to make use of this file, check out the Bukkit Wiki at
+# https://www.spigotmc.org/go/commands-yml
+# 
+# If you need help on this file, feel free to join us on irc or leave a message
+# on the forums asking for advice.
+# 
+# IRC: #spigot @ irc.spi.gt
+#    (If this means nothing to you, just go to https://www.spigotmc.org/go/irc )
+# Forums: https://www.spigotmc.org/
+# Bug tracker: https://www.spigotmc.org/go/bugs
+
+command-block-overrides: []
+ignore-vanilla-permissions: false
+aliases:
+  ban:
+  - minecraft:ban $1-
+  clear:
+  - minecraft:clear $1-
+  enchant:
+  - minecraft:enchant $1-
+  gamemode:
+  - minecraft:gamemode $1-
+  give:
+  - minecraft:give $1-
+  help:
+  - bukkit:help $1-
+  kick:
+  - minecraft:kick $1-
+  kill:
+  - minecraft:kill $1-
+  list:
+  - minecraft:list $1-
+  me:
+  - minecraft:me $1-
+  msg:
+  - minecraft:msg $1-
+  pardon:
+  - minecraft:pardon $1-
+  recipe:
+  - minecraft:recipe $1-
+  reload:
+  - minecraft:reload $1-
+  tag:
+  - minecraft:tag $1-
+  teleport:
+  - minecraft:teleport $1-
+  tell:
+  - minecraft:tell $1-
+  tellraw:
+  - minecraft:tellraw $1-
+  time:
+  - minecraft:time $1-
+  tp:
+  - minecraft:tp $1-
+  weather:
+  - minecraft:weather $1-
+  xp:
+  - minecraft:xp $1-
+unrestricted-advancements: false

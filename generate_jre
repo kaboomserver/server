@@ -1,7 +1,7 @@
 #!/bin/sh
 # This script is used as a reference to generate a stripped-down OpenJ9 JRE for the server
 rm -rf java/
-wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk11u-2019-10-12-12-08/OpenJDK11U-jdk_x64_linux_openj9_2019-10-12-12-08.tar.gz
+wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.5%2B10_openj9-0.17.0/OpenJDK11U-jdk_x64_linux_openj9_11.0.5_10_openj9-0.17.0.tar.gz
 tar -zxvf OpenJDK*
 rm OpenJDK*
 mv jdk* jdk/

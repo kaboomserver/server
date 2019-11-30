@@ -147,7 +147,7 @@ queue:
   # Loading the right amount of chunks beforehand can speed up operations
   #  - Low values may result in FAWE waiting on requests to the main thread
   #  - Higher values use more memory and isn't noticeably faster
-  preload-chunks: 32
+  preload-chunks: 1
   # Discard edits which have been idle for a certain amount of time (ms)
   #  - E.g. A plugin creates an EditSession but never does anything with it
   #  - This only applies to plugins improperly using WorldEdit's legacy API
