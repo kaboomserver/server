@@ -31,13 +31,13 @@ clipboard:
   #  - 0 = No compression
   #  - 1 = Fast compression
   #  - 2-17 = Slower compression
-  compression-level: 1
+  compression-level: 0
   # Number of days to keep history on disk before deleting it
   delete-after-days: 1
 
 lighting:
   # If packet sending should be delayed until relight is finished
-  delay-packet-sending: false
+  delay-packet-sending: true
   async: true
   # The relighting mode to use:
   #  - 0 = None (Do no relighting)
@@ -180,7 +180,7 @@ history:
   # 8 = 1 x high, 1 x medium, 2 x fast
   # 9 = 1 x high, 1 x medium, 3 x fast (best compression)
   # NOTE: If using disk, do some compression (3+) as smaller files save faster
-  compression-level: 3
+  compression-level: 0
   # The buffer size for compression:
   #  - Larger = better ratio but uses more upfront memory
   #  - Must be in the range [64, 33554432]
@@ -199,7 +199,7 @@ history:
   #  and displaying an error message.  In this case, either copy a smaller section,
   #  or increase chunk-wait-ms.
   # A value of 0 is faster simply because it doesn't bother loading the chunks or waiting.
-  chunk-wait-ms: 1000
+  chunk-wait-ms: 100
   # Delete history on disk after a number of days
   delete-after-days: 1
   # Delete history in memory on logout (does not effect disk)

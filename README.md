@@ -1,3 +1,3 @@
-# server
+# base-files
 
-Server files for the Kaboom server
+Base files for the Kaboom server

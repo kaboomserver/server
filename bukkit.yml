@@ -23,6 +23,7 @@ settings:
   deprecated-verbose: false
   shutdown-message: The server is restarting. Please wait...
   minimum-api: none
+  world-container: worlds
 spawn-limits:
   monsters: 70
   animals: 10
