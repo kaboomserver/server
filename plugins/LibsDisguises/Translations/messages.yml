@@ -1,0 +1,386 @@
+# To use translations in Lib's Disguises, you must have the purchased plugin
+# %s is where text is inserted, look up printf format codes if you're interested
+
+# Reference: BLOWN_DISGUISE
+"&cYour disguise was blown!": "&cYour disguise was blown!"
+
+# Reference: EXPIRED_DISGUISE
+"&cYour disguise has expired!": "&cYour disguise has expired!"
+
+# Reference: CAN_USE_DISGS
+"&2You can use the disguises: %s": "&2You can use the disguises: %s"
+
+# Reference: CANNOT_FIND_PLAYER
+"&cCannot find the player/uuid '%s'": "&cCannot find the player/uuid '%s'"
+
+# Reference: CLICK_TIMER
+"&cRight click a entity in the next %s seconds to grab the disguise reference!": "&cRight click a entity in the next %s seconds to grab the disguise reference!"
+
+# Reference: CLONE_HELP1
+"&2Right click a entity to get a disguise reference you can pass to other disguise commands!": "&2Right click a entity to get a disguise reference you can pass to other disguise commands!"
+
+# Reference: CLONE_HELP2
+"&2Security note: Any references you create will be available to all players able to use disguise references.": "&2Security note: Any references you create will be available to all players able to use disguise references."
+
+# Reference: CLONE_HELP3
+"&2/disguiseclone IgnoreEquipment&2(&aOptional&2)": "&2/disguiseclone IgnoreEquipment&2(&aOptional&2)"
+
+# Reference: D_HELP1
+"&2Disguise another player!": "&2Disguise another player!"
+
+# Reference: D_HELP3
+"&2/disguiseplayer <PlayerName> player <Name>": "&2/disguiseplayer <PlayerName> player <Name>"
+
+# Reference: D_HELP4
+"&2/disguiseplayer <PlayerName> <DisguiseType> <Baby>": "&2/disguiseplayer <PlayerName> <DisguiseType> <Baby>"
+
+# Reference: D_HELP5
+"&2/disguiseplayer <PlayerName> <Dropped_Item/Falling_Block> <Id> <Durability>": "&2/disguiseplayer <PlayerName> <Dropped_Item/Falling_Block> <Id> <Durability>"
+
+# Reference: D_PARSE_NOPERM
+"&cYou do not have permission to use the option %s": "&cYou do not have permission to use the option %s"
+
+# Reference: DHELP_CANTFIND
+"&cCannot find the disguise %s": "&cCannot find the disguise %s"
+
+# Reference: DHELP_HELP1
+"&c/disguisehelp <DisguiseType> &a- View the options you can set on a disguise. Add 'show' to reveal the options you don't have permission to use": "&c/disguisehelp <DisguiseType> &a- View the options you can set on a disguise. Add 'show' to reveal the options you don't have permission to use"
+
+# Reference: DHELP_HELP2
+"&c/disguisehelp <DisguiseOption> &a- View information about the disguise options such as 'RabbitType'": "&c/disguisehelp <DisguiseOption> &a- View information about the disguise options such as 'RabbitType'"
+
+# Reference: DHELP_HELP3
+"&c/disguisehelp &2%s&a - %s": "&c/disguisehelp &2%s&a - %s"
+
+# Reference: DHELP_HELP4
+"&c%s: &a%s": "&c%s: &a%s"
+
+# Reference: DHELP_HELP4_SEPERATOR
+"&c, &a": "&c, &a"
+
+# Reference: DHELP_HELP6
+"&c%s: &2%s &a%s": "&c%s: &2%s &a%s"
+
+# Reference: DHELP_OPTIONS
+"%s options: %s": "%s options: %s"
+
+# Reference: DISABLED_LIVING_TO_MISC
+"&cCan't disguise a living entity as a misc disguise. This has been disabled in the config!": "&cCan't disguise a living entity as a misc disguise. This has been disabled in the config!"
+
+# Reference: DISG_ENT_CLICK
+"&cRight click an entity in the next %s seconds to disguise it as a %s!": "&cRight click an entity in the next %s seconds to disguise it as a %s!"
+
+# Reference: DISG_ENT_HELP1
+"&2Choose a disguise then right click an entity to disguise it!": "&2Choose a disguise then right click an entity to disguise it!"
+
+# Reference: DISG_ENT_HELP3
+"&2/disguiseentity player <Name>": "&2/disguiseentity player <Name>"
+
+# Reference: DISG_ENT_HELP4
+"&2/disguiseentity <DisguiseType> <Baby>": "&2/disguiseentity <DisguiseType> <Baby>"
+
+# Reference: DISG_ENT_HELP5
+"&2/disguiseentity <Dropped_Item/Falling_Block> <Id> <Durability>": "&2/disguiseentity <Dropped_Item/Falling_Block> <Id> <Durability>"
+
+# Reference: DISG_HELP1
+"&2Choose a disguise to become the disguise!": "&2Choose a disguise to become the disguise!"
+
+# Reference: DISG_HELP2
+"&2/disguise player <Name>": "&2/disguise player <Name>"
+
+# Reference: DISG_HELP3
+"&2/disguise <DisguiseType> <Baby>": "&2/disguise <DisguiseType> <Baby>"
+
+# Reference: DISG_HELP4
+"&2/disguise <Dropped_Item/Falling_Block> <Id> <Durability>": "&2/disguise <Dropped_Item/Falling_Block> <Id> <Durability>"
+
+# Reference: DISG_PLAYER_AS_DISG
+"&cSuccessfully disguised %s as a %s!": "&cSuccessfully disguised %s as a %s!"
+
+# Reference: DISG_PLAYER_AS_DISG_FAIL
+"&cFailed to disguise %s as a %s!": "&cFailed to disguise %s as a %s!"
+
+# Reference: DISGUISED
+"&cNow disguised as a %s": "&cNow disguised as a %s"
+
+# Reference: DISRADIUS
+"&cSuccessfully disguised %s entities!": "&cSuccessfully disguised %s entities!"
+
+# Reference: DISRADIUS_FAIL
+"&cCouldn't find any entities to disguise!": "&cCouldn't find any entities to disguise!"
+
+# Reference: DMODENT_HELP1
+"&2Choose the options for a disguise then right click a entity to modify it!": "&2Choose the options for a disguise then right click a entity to modify it!"
+
+# Reference: DMODIFY_HELP1
+"&2Modify your own disguise as you wear it!": "&2Modify your own disguise as you wear it!"
+
+# Reference: DMODIFY_HELP2
+"&2/disguisemodify setBaby true setSprinting true": "&2/disguisemodify setBaby true setSprinting true"
+
+# Reference: DMODIFY_HELP3
+"&2You can modify the disguises: %s": "&2You can modify the disguises: %s"
+
+# Reference: DMODIFY_MODIFIED
+"&cYour disguise has been modified!": "&cYour disguise has been modified!"
+
+# Reference: DMODIFY_NO_PERM
+"&cNo permission to modify your disguise!": "&cNo permission to modify your disguise!"
+
+# Reference: DMODIFYENT_CLICK
+"&cRight click a disguised entity in the next %s seconds to modify their disguise!": "&cRight click a disguised entity in the next %s seconds to modify their disguise!"
+
+# Reference: DMODPLAYER_HELP1
+"&2Modify the disguise of another player!": "&2Modify the disguise of another player!"
+
+# Reference: DMODPLAYER_MODIFIED
+"&cModified the disguise of %s!": "&cModified the disguise of %s!"
+
+# Reference: DMODPLAYER_NODISGUISE
+"&cThe player '%s' is not disguised": "&cThe player '%s' is not disguised"
+
+# Reference: DMODPLAYER_NOPERM
+"&cYou do not have permission to modify this disguise": "&cYou do not have permission to modify this disguise"
+
+# Reference: DMODRADIUS
+"&cSuccessfully modified the disguises of %s entities!": "&cSuccessfully modified the disguises of %s entities!"
+
+# Reference: DMODRADIUS_HELP1
+"&2Modify the disguises in a radius! Caps at %s blocks!": "&2Modify the disguises in a radius! Caps at %s blocks!"
+
+# Reference: DHELP_SHOW
+"Show": "Show"
+
+# Reference: DHELP_NO_OPTIONS
+"&cNo options with permission to use": "&cNo options with permission to use"
+
+# Reference: DCLONE_EQUIP
+"ignoreEquip": "ignoreEquip"
+
+# Reference: DCLONE_SNEAKSPRINT
+"doSneakSprint": "doSneakSprint"
+
+# Reference: DCLONE_SNEAK
+"doSneak": "doSneak"
+
+# Reference: DCLONE_SPRINT
+"doSprint": "doSprint"
+
+# Reference: DMODRADIUS_HELP2
+"&2/disguisemodifyradius <&aDisguiseType&2(&aOptional&2)&2> <&aRadius&2> <&aDisguise Options&2>": "&2/disguisemodifyradius <&aDisguiseType&2(&aOptional&2)&2> <&aRadius&2> <&aDisguise Options&2>"
+
+# Reference: DMODRADIUS_HELP3
+"&2See the DisguiseType's usable by &a/disguisemodifyradius DisguiseType": "&2See the DisguiseType's usable by &a/disguisemodifyradius DisguiseType"
+
+# Reference: DMODRADIUS_NEEDOPTIONS
+"&cYou need to supply the disguise options as well as the radius": "&cYou need to supply the disguise options as well as the radius"
+
+# Reference: DMODRADIUS_NEEDOPTIONS_ENTITY
+"&cYou need to supply the disguise options as well as the radius and EntityType": "&cYou need to supply the disguise options as well as the radius and EntityType"
+
+# Reference: DMODRADIUS_NOENTS
+"&cCouldn't find any disguised entities!": "&cCouldn't find any disguised entities!"
+
+# Reference: DMODRADIUS_NOPERM
+"&cNo permission to modify %s disguises!": "&cNo permission to modify %s disguises!"
+
+# Reference: DMODRADIUS_UNRECOGNIZED
+"&cUnrecognised DisguiseType %s": "&cUnrecognised DisguiseType %s"
+
+# Reference: DMODRADIUS_USABLE
+"&2DisguiseTypes usable are: %s&2.": "&2DisguiseTypes usable are: %s&2."
+
+# Reference: DPLAYER_SUPPLY
+"&cYou need to supply a disguise as well as the player/uuid": "&cYou need to supply a disguise as well as the player/uuid"
+
+# Reference: DRADIUS_ENTITIES
+"&2EntityTypes usable are: %s": "&2EntityTypes usable are: %s"
+
+# Reference: DRADIUS_HELP1
+"&2Disguise all entities in a radius! Caps at %s blocks!": "&2Disguise all entities in a radius! Caps at %s blocks!"
+
+# Reference: DRADIUS_HELP3
+"&2/disguiseradius <&aEntityType&2(&aOptional&2)&2> <&aRadius&2> player <&aName&2>": "&2/disguiseradius <&aEntityType&2(&aOptional&2)&2> <&aRadius&2> player <&aName&2>"
+
+# Reference: DRADIUS_HELP4
+"&2/disguiseradius <&aEntityType&2(&aOptional&2)&2> <&aRadius&2> <&aDisguiseType&2> <&aBaby&2(&aOptional&2)&2>": "&2/disguiseradius <&aEntityType&2(&aOptional&2)&2> <&aRadius&2> <&aDisguiseType&2> <&aBaby&2(&aOptional&2)&2>"
+
+# Reference: DRADIUS_HELP5
+"&2/disguiseradius <&aEntityType&2(&aOptional&2)&2> <&aRadius&2> <&aDropped_Item/Falling_Block&2> <&aId&2> <&aDurability&2(&aOptional&2)&2>": "&2/disguiseradius <&aEntityType&2(&aOptional&2)&2> <&aRadius&2> <&aDropped_Item/Falling_Block&2> <&aId&2> <&aDurability&2(&aOptional&2)&2>"
+
+# Reference: DRADIUS_HELP6
+"&2See the EntityType's usable by &a/disguiseradius EntityTypes": "&2See the EntityType's usable by &a/disguiseradius EntityTypes"
+
+# Reference: DRADIUS_MISCDISG
+"&cFailed to disguise %s entities because the option to disguise a living entity as a non-living has been disabled in the config": "&cFailed to disguise %s entities because the option to disguise a living entity as a non-living has been disabled in the config"
+
+# Reference: DRADIUS_NEEDOPTIONS
+"&cYou need to supply a disguise as well as the radius": "&cYou need to supply a disguise as well as the radius"
+
+# Reference: DRADIUS_NEEDOPTIONS_ENTITY
+"&cYou need to supply a disguise as well as the radius and EntityType": "&cYou need to supply a disguise as well as the radius and EntityType"
+
+# Reference: FAILED_DISGIUSE
+"&cFailed to disguise as a %s": "&cFailed to disguise as a %s"
+
+# Reference: INVALID_CLONE
+"&4Unknown option '%s' - Valid options are 'IgnoreEquipment' 'DoSneakSprint' 'DoSneak' 'DoSprint'": "&4Unknown option '%s' - Valid options are 'IgnoreEquipment' 'DoSneakSprint' 'DoSneak' 'DoSprint'"
+
+# Reference: LIBS_RELOAD_WRONG
+"&c[LibsDisguises] Did you mean 'reload'?": "&c[LibsDisguises] Did you mean 'reload'?"
+
+# Reference: LIMITED_RADIUS
+"&cLimited radius to %s! Don't want to make too much lag right?": "&cLimited radius to %s! Don't want to make too much lag right?"
+
+# Reference: LISTEN_ENTITY_ENTITY_DISG_ENTITY
+"&cDisguised %s as a %s!": "&cDisguised %s as a %s!"
+
+# Reference: LISTEN_ENTITY_ENTITY_DISG_PLAYER
+"&cDisguised %s as the player %s!": "&cDisguised %s as the player %s!"
+
+# Reference: LISTEN_ENTITY_ENTITY_DISG_PLAYER_FAIL
+"&cFailed to disguise %s as the player %s!": "&cFailed to disguise %s as the player %s!"
+
+# Reference: LISTEN_ENTITY_PLAYER_DISG_ENTITY
+"&cDisguised the player %s as a %s!": "&cDisguised the player %s as a %s!"
+
+# Reference: LISTEN_ENTITY_PLAYER_DISG_ENTITY_FAIL
+"&cFailed to disguise the player %s as a %s!": "&cFailed to disguise the player %s as a %s!"
+
+# Reference: LISTEN_ENTITY_PLAYER_DISG_PLAYER
+"&cDisguised the player %s as the player %s!": "&cDisguised the player %s as the player %s!"
+
+# Reference: LISTEN_ENTITY_PLAYER_DISG_PLAYER_FAIL
+"&cFailed to disguise the player %s as the player %s!": "&cFailed to disguise the player %s as the player %s!"
+
+# Reference: LISTEN_UNDISG_ENT
+"&cUndisguised the %s": "&cUndisguised the %s"
+
+# Reference: LISTEN_UNDISG_ENT_FAIL
+"&c%s isn't disguised!": "&c%s isn't disguised!"
+
+# Reference: LISTEN_UNDISG_PLAYER
+"&cUndisguised %s": "&cUndisguised %s"
+
+# Reference: LISTEN_UNDISG_PLAYER_FAIL
+"&cThe %s isn't disguised!": "&cThe %s isn't disguised!"
+
+# Reference: LISTENER_MODIFIED_DISG
+"&cModified the disguise!": "&cModified the disguise!"
+
+# Reference: MADE_REF
+"&cConstructed a %s disguise! Your reference is %s": "&cConstructed a %s disguise! Your reference is %s"
+
+# Reference: MADE_REF_EXAMPLE
+"&cExample usage: /disguise %s": "&cExample usage: /disguise %s"
+
+# Reference: NO_CONSOLE
+"&cYou may not use this command from the console!": "&cYou may not use this command from the console!"
+
+# Reference: NO_PERM
+"&cYou are forbidden to use this command.": "&cYou are forbidden to use this command."
+
+# Reference: NO_PERM_DISGUISE
+"&cYou do not have permission for that disguise!": "&cYou do not have permission for that disguise!"
+
+# Reference: NO_PERMS_USE_OPTIONS
+"&cIgnored %s options you do not have permission to use. Add 'show' to view unusable options.": "&cIgnored %s options you do not have permission to use. Add 'show' to view unusable options."
+
+# Reference: NOT_DISGUISED
+"&cYou are not disguised!": "&cYou are not disguised!"
+
+# Reference: NOT_NUMBER
+"&cError! %s is not a number": "&cError! %s is not a number"
+
+# Reference: PARSE_CANT_DISG_UNKNOWN
+"&cError! You cannot disguise as &aUnknown!": "&cError! You cannot disguise as &aUnknown!"
+
+# Reference: PARSE_CANT_LOAD
+"&cError! This disguise couldn't be loaded!": "&cError! This disguise couldn't be loaded!"
+
+# Reference: PARSE_DISG_NO_EXIST
+"&cError! The disguise &a%s&c doesn't exist!": "&cError! The disguise &a%s&c doesn't exist!"
+
+# Reference: PARSE_EXPECTED_RECEIVED
+"&cExpected &a%s&c, received &a%s&c instead for &a%s": "&cExpected &a%s&c, received &a%s&c instead for &a%s"
+
+# Reference: PARSE_PARTICLE_BLOCK
+"&cExpected &a%s:Material&c, received &a%s&c instead": "&cExpected &a%s:Material&c, received &a%s&c instead"
+
+# Reference: PARSE_PARTICLE_ITEM
+"&cExpected &a%s:Material,Amount?,Glow?&c, received &a%s&c instead": "&cExpected &a%s:Material,Amount?,Glow?&c, received &a%s&c instead"
+
+# Reference: PARSE_PARTICLE_REDSTONE
+"&cExpected &a%s:Color,Size.0?&c, received &a%s&c instead": "&cExpected &a%s:Color,Size.0?&c, received &a%s&c instead"
+
+# Reference: PARSE_NO_ARGS
+"No arguments defined": "No arguments defined"
+
+# Reference: PARSE_NO_OPTION_VALUE
+"&cNo value was given for the option %s": "&cNo value was given for the option %s"
+
+# Reference: PARSE_NO_PERM_NAME
+"&cError! You don't have permission to use that name!": "&cError! You don't have permission to use that name!"
+
+# Reference: PARSE_NO_PERM_PARAM
+"&cError! You do not have permission to use the parameter %s on the %s disguise!": "&cError! You do not have permission to use the parameter %s on the %s disguise!"
+
+# Reference: PARSE_NO_PERM_REF
+"&cYou do not have permission to use disguise references!": "&cYou do not have permission to use disguise references!"
+
+# Reference: PARSE_NO_REF
+"&cCannot find a disguise under the reference %s": "&cCannot find a disguise under the reference %s"
+
+# Reference: PARSE_OPTION_NA
+"&cCannot find the option %s": "&cCannot find the option %s"
+
+# Reference: PARSE_SUPPLY_PLAYER
+"&cError! You need to give a player name!": "&cError! You need to give a player name!"
+
+# Reference: PARSE_TOO_MANY_ARGS
+"&cError! %s doesn't know what to do with %s!": "&cError! %s doesn't know what to do with %s!"
+
+# Reference: PARSE_INVALID_TIME
+"&cError! %s is not a valid time! Use s,m,h,d or secs,mins,hours,days": "&cError! %s is not a valid time! Use s,m,h,d or secs,mins,hours,days"
+
+# Reference: PARSE_INVALID_TIME_SEQUENCE
+"&cError! %s is not a valid time! Do amount then time, eg. 4min10sec": "&cError! %s is not a valid time! Do amount then time, eg. 4min10sec"
+
+# Reference: PARSE_USE_SECOND_NUM
+"&cError! Only the disguises %s and %s uses a second number!": "&cError! Only the disguises %s and %s uses a second number!"
+
+# Reference: REF_TOO_MANY
+"&cFailed to store the reference, too many cloned disguises. Please raise the maximum cloned disguises, or lower the time they last": "&cFailed to store the reference, too many cloned disguises. Please raise the maximum cloned disguises, or lower the time they last"
+
+# Reference: RELOADED_CONFIG
+"&a[LibsDisguises] Reloaded config.": "&a[LibsDisguises] Reloaded config."
+
+# Reference: UND_ENTITY
+"&cRight click a disguised entity to undisguise them!": "&cRight click a disguised entity to undisguise them!"
+
+# Reference: UNDISG
+"&cYou are no longer disguised": "&cYou are no longer disguised"
+
+# Reference: UNDISG_PLAYER
+"&c%s is no longer disguised": "&c%s is no longer disguised"
+
+# Reference: UNDISG_PLAYER_FAIL
+"&c%s not disguised!": "&c%s not disguised!"
+
+# Reference: UNDISG_PLAYER_HELP
+"&c/undisguiseplayer <Name>": "&c/undisguiseplayer <Name>"
+
+# Reference: UNDISRADIUS
+"&cSuccessfully undisguised %s entities!": "&cSuccessfully undisguised %s entities!"
+
+# Reference: UPDATE_READY
+"&c[LibsDisguises] &4There is a update ready to be downloaded! You are using &cv%s&4, the new version is &cv%s&4!": "&c[LibsDisguises] &4There is a update ready to be downloaded! You are using &cv%s&4, the new version is &cv%s&4!"
+
+# Reference: UPDATE_READY_SNAPSHOT
+"&c[LibsDisguises] &4There is a new build of Lib's Disguises! You are using &c#%s&4, the latest build is &c#%s&4!&c\nhttps://ci.md-5.net/job/LibsDisguises/lastSuccessfulBuild/": "&c[LibsDisguises] &4There is a new build of Lib's Disguises! You are using &c#%s&4, the latest build is &c#%s&4!&c\nhttps://ci.md-5.net/job/LibsDisguises/lastSuccessfulBuild/"
+
+# Reference: VIEW_SELF_ON
+"&aToggled viewing own disguise on!": "&aToggled viewing own disguise on!"
+
+# Reference: VIEW_SELF_OFF
+"&aToggled viewing own disguise off!": "&aToggled viewing own disguise off!"

@@ -96,7 +96,7 @@ world-settings:
     disable-ice-and-snow: false
     keep-spawn-loaded-range: 10
     keep-spawn-loaded: false
-    auto-save-interval: 200
+    auto-save-interval: 20
     armor-stands-do-collision-entity-lookups: true
     nether-ceiling-void-damage-height: 0
     water-over-lava-flow-speed: 5
@@ -115,7 +115,7 @@ world-settings:
     baby-zombie-movement-speed: 0.5
     allow-leashing-undead-horse: false
     all-chunks-are-slime-chunks: false
-    mob-spawner-tick-rate: 100
+    mob-spawner-tick-rate: 200
     max-growth-height:
       cactus: 3
       reeds: 3

@@ -1,0 +1,27 @@
+# Here you can create your own disguises and disguise into them using the normal disguise commands
+# To create them is super simple, you're using it just like you would in a command. The only tricky thing is that it must be valid yaml. TIP: Enclose the strings in '
+# Please note that this is parsed exactly like a command, no spaces in your playername.
+# The following disguises will work if you remove the '#' at the beginning of the line, this creates a disguise which you can use by /disguise libraryaddict. So simple
+
+# To get the skin signiture, you can find it on mojang's servers. Such as https://sessionserver.mojang.com/session/minecraft/profile/<uuid>?unsigned=false
+# Just remember to remove the slashes from the UUID, remember the UUID is the unique code given to a player, just google for a tool to see someone's UUID
+# Example: https://sessionserver.mojang.com/session/minecraft/profile/a149f81bf7844f8987c554afdd4db533?unsigned=false
+
+# You can also use placeholders in the disguises to create disguises that have the command users skin
+
+# %user-name% - Replaces %user-name% with the command user's name.
+# %user-skin% - Replaces %user-skin% with the command user's skin for use with player disguises.
+
+# %target-name% - Finds first viable name from: Player name, entity custom nametag, then entity type (Pig, Horse, Cow)
+# %target-skin% - If target is a player, replaces %target-skin% with their skin for use with player disguises
+# If target is not a player, will silently fail
+
+#  The below disguise would give a disguised sheep the nametag; Me: libraryaddict, Them: Sheep
+#  Example: 'cow setCustomName "Me: %user-name%, Them: %target-name%"'
+#
+#  This would give the disguised target a player disguise of their own name, but using the skin of the command user
+#  Example2: 'player %target-name% setSkin %user-skin%'
+
+Disguises:
+#  Warrior: 'zombie setArmor DIAMOND_BOOTS,DIAMOND_LEGGINGS,DIAMOND_CHESTPLATE,DIAMOND_HELMET'
+#  Topsy: 'player Dinnerbone setSkin %target-skin%'
