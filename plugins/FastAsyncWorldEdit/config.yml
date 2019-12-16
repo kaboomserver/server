@@ -1,14 +1,14 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit-1.13/issues"
 wiki: "https://github.com/boy0001/FastAsyncWorldedit/wiki/"
-date: "10 Aug 2019 21:00:00 GMT"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit-Breaking/7"
-commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit-1.13/commit/f0cabb7"
+date: "10 Jan 2020 22:00:00 GMT"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit-Breaking/208"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit-1.13/commit/14eb649"
 platform: "bukkit"
 # Options: cn, de, es, fr, it, nl, ru, tr
 # Create a PR to contribute a translation: https://github.com/IntellectualSites/FastAsyncWorldEdit-1.13/tree/master/worldedit-core/src/main/resources
 language: ''
-# @deprecated - use bstats config.yml
+# Send anonymous usage statistics
 metrics: false
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
@@ -116,6 +116,7 @@ experimental:
 # This relates to how FAWE places chunks
 queue:
   # This should equal the number of processors you have
+  #  - Set this to 1 if you need reliable `/timings`
   parallel-threads: 32
   progress:
     # Display constant titles about the progress of a user's edit
@@ -251,9 +252,9 @@ limits:
     # Max number of block changes (e.g. by `//set stone`).
     max-changes: 2000000
     # Max number of blocks checked (e.g. `//count stone` which doesn't change blocks)
-    max-checks: 1000000
+    max-checks: 2000000
     # Number of times a change can fail (e.g. if the player can't access that region)
-    max-fails: 50000000
+    max-fails: 2000000
     # Allowed brush iterations (e.g. `//brush smooth`)
     max-iterations: 1000
     # Max allowed entities (e.g. cows)
@@ -281,6 +282,6 @@ limits:
     # 2 = Inventory for placing (survival)
     inventory-mode: 0
     # Should large edits require confirmation (>16384 chunks)
-    confirm-large: false
+    confirm-large: true
     # List of blocks to strip nbt from
     strip-nbt: []

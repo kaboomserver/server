@@ -86,7 +86,7 @@ debugging:
 wand-item: minecraft:wooden_axe
 shell-save-type:
 no-double-slash: false
-no-op-permissions: false
+no-op-permissions: true
 debug: false
 show-help-on-first-use: true
 server-side-cui: true
