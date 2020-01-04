@@ -45,7 +45,7 @@ lighting:
   #  - 2 = All (Slowly relight every blocks)
   mode: 1
   # If existing lighting should be removed before relighting
-  remove-first: true
+  remove-first: false
 
 # Generic tick limiter (not necessarily WorldEdit related, but useful to stop abuse)
 tick-limiter:
@@ -133,12 +133,12 @@ queue:
   #  - A larger value will use slightly less CPU time
   #  - A smaller value will reduce memory usage
   #  - A value too small may break some operations (deform?)
-  target-size: 64
+  target-size: 0
   # Force FAWE to start placing chunks regardless of whether an edit is finished processing
   #  - A larger value will use slightly less CPU time
   #  - A smaller value will reduce memory usage
   #  - A value too small may break some operations (deform?)
-  max-wait-ms: 1000
+  max-wait-ms: 0
   # Increase or decrease queue intensity (ms) [-50,50]:
   #     0 = balance of performance / stability
   #     -10 = Allocate 10ms less for chunk placement
@@ -148,7 +148,7 @@ queue:
   # Loading the right amount of chunks beforehand can speed up operations
   #  - Low values may result in FAWE waiting on requests to the main thread
   #  - Higher values use more memory and isn't noticeably faster
-  preload-chunks: 1
+  preload-chunks: 32
   # Discard edits which have been idle for a certain amount of time (ms)
   #  - E.g. A plugin creates an EditSession but never does anything with it
   #  - This only applies to plugins improperly using WorldEdit's legacy API

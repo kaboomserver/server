@@ -23,7 +23,7 @@ settings:
   timeout-time: 60
   restart-on-crash: true
   restart-script: script/stop.sh
-  netty-threads: 32
+  netty-threads: 4
   debug: false
   attribute:
     maxHealth:
@@ -56,7 +56,7 @@ advancements:
   disabled:
   - '*'
 stats:
-  disable-saving: false
+  disable-saving: true
   forced-stats: {}
 world-settings:
   default:

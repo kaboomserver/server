@@ -96,7 +96,7 @@ world-settings:
     disable-ice-and-snow: false
     keep-spawn-loaded-range: 10
     keep-spawn-loaded: false
-    auto-save-interval: 20
+    auto-save-interval: 100
     armor-stands-do-collision-entity-lookups: true
     nether-ceiling-void-damage-height: 0
     water-over-lava-flow-speed: 5

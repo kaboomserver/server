@@ -40,6 +40,8 @@ op:
       worldedit.clipboard.paste: true
       worldedit.schematic.formats: true
       worldedit.schematic.load: true
+      worldedit.schematic.load.asset: true
+      worldedit.schematic.load.web: true
       worldedit.schematic.list: true
       worldedit.schematic.remap: true
       worldedit.schematic.save: true
