@@ -77,6 +77,8 @@ op:
       worldedit.navigation.thru.command: true
       worldedit.navigation.jumpto.command: true
       worldedit.navigation.up: true
+      worldedit.nbtinfo: true
+      worldedit.regen: true
       worldedit.region.hollow: true
       worldedit.region.line: true
       worldedit.region.curve: true
@@ -173,6 +175,8 @@ op:
       worldedit.tool.flood-fill: true
       worldedit.tool.inspect: true
       worldedit.light.fix: true
+      worldedit.light.remove: true
+      worldedit.light.set: true
       worldedit.fill.recursive: true
       worldedit.scripting.execute: true
       worldedit.drain: true

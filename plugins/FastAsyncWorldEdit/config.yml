@@ -50,13 +50,13 @@ lighting:
 # Generic tick limiter (not necessarily WorldEdit related, but useful to stop abuse)
 tick-limiter:
   # Enable the limiter
-  enabled: false
+  enabled: true
   # The interval in ticks
   interval: 20
   # Max falling blocks per interval (per chunk)
   falling: 10
   # Max physics per interval (excluding redstone)
-  physics-ms: 90
+  physics-ms: 10
   # Max item spawns per interval (per chunk)
   items: 20
   # Whether fireworks can load chunks
