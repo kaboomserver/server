@@ -16,6 +16,7 @@ Permissions:
 
 # Disables commands with the exception of /libsdisguises. Useful if you don't want the plugin to be used by anything
 #  but a plugin
+# Useful if you didn't purchase the plugin.
 DisableCommands: false
 
 # The disguise plugin stores all GameProfiles inside a folder called "GameProfiles" as a local cache
@@ -40,6 +41,9 @@ UpdateGameProfiles: true
 SaveDisguises:
   Players: false
   Entities: false
+
+# Do names go beyond the 16 char limit for player disguises?
+ExtendedNames: true
 
 # Does the player keep their disguise after they die?
 KeepDisguises:
@@ -96,6 +100,10 @@ DisguiseSounds: true
 # I disable this as it can be a little confusing when not used with self disguises
 HearSelfDisguise: true
 
+# When disguised, should a message be displayed to the player in action bar?
+# The message can be customized in translations
+NotifyPlayerDisguised: true
+
 # Shall I send the velocity packets? I REALLY recommend you don't disable.
 # This is the only thing allowing the mobs to fly without glitching out.
 SendVelocity: true
@@ -118,6 +126,12 @@ AddEntityAnimations: true
 # Please note that this will not remove the dye from their hands. This also does not check if the disguised entity is actually a sheep/wolf and wants a say in its color.
 DyeableSheep: false
 DyeableWolf: false
+DyeableCat: false
+# Can a player interact with a llama with carpet to set or change their carpet color?
+CarpetableLlama: true
+# Can a player interact with a non-saddled horse of any type, to give it a saddle?
+# This does not change what you can ride or control!
+SaddleableHorse: true
 
 # This is only called into action when the disguise is constructed using the commands.
 # And when the disguise supports that. This will not be used at all for plugins constructing the disguises for instance.
@@ -125,6 +139,7 @@ DyeableWolf: false
 # This is pretty simple. It shows the players displayname (Name as it appears in chat) above their head.
 # This also overrides any custom name they have set in their disguise options.
 # This does not take effect on player disguises
+# Permission to disable is libsdisguises.disablename
 ShowNamesAboveDisguises: false
 
 # This supports the above option.
@@ -156,6 +171,19 @@ BlowDisguisesWhenAttacking: false
 
 # Should the player's disguises be removed if they're attacked by something?
 BlowDisguisesWhenAttacked: false
+
+# Should PvP be disabled when disguised?
+DisablePvP: false
+# Should PvE be disabled when disguised? (Eg, fighting zombie)
+DisablePvE: false
+
+# How long after disguise wears off, should pvp be allowed again? Requires above to be true
+# Default value 5 seconds
+PvPTimer: 5
+
+# This works with 'DisablePvP' that if attacked by another entity, they have 'PvPTimer' amount of time
+# to attack back. Timer is reset with every successful attack
+RetaliationCombat: false
 
 #Stop shulker disguises from moving, they're weird. This option only effects PLAYERS that are disguised, other entities disguised as shulkers will NOT be effected!
 StopShulkerDisguisesFromMoving: true
@@ -208,15 +236,17 @@ DisableInvisibility: false
 # Expired message can be hidden with an empty translation message
 DynamicExpiry: false
 
+# Some players have issues with conflicting plugins where disguised entities will show the wrong armor
+# This should be left alone unless you're trying to solve this issue. Such as MM and stone blocks.
+# When true, the plugin will hide player disguises armor to prevent a minor visual bug for half a second
+PlayerHideArmor: true
+
 # This will help performance, especially with CPU
 # Due to safety reasons, self disguises can never have their packets disabled.
 PacketsEnabled:
   # This disables the animation packet. If a disguised entity sends a animation packet and they are using a non-living disguise. People will crash.
   # Disabling this also means that if a player disguised as a non-player leaves a bug. People will crash
   Animation: true
-  # Disabling this means that you can't use the setSleeping option on a player disguise. Also you will crash anyone watching when you try to sleep in a bed if disguised as a non-player
-  # This also sends a chunk packet at key positions
-  Bed: true
   # This disguises the collect packet. If a living entity disguised as a non-living entity picks up a item. People will crash. This fixes it
   # This also fixes people crashing if a item disguised as a sleeping player is picked up - Only true if Bed is enabled as well
   Collect: true

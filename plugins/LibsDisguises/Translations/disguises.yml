@@ -12,11 +12,17 @@
 # Name for the BAT disguise
 "Bat": "Bat"
 
+# Name for the BEE disguise
+"Bee": "Bee"
+
 # Name for the BLAZE disguise
 "Blaze": "Blaze"
 
 # Name for the BOAT disguise
 "Boat": "Boat"
+
+# Name for the CAT disguise
+"Cat": "Cat"
 
 # Name for the CAVE_SPIDER disguise
 "Cave Spider": "Cave Spider"
@@ -93,6 +99,9 @@
 # Name for the FISHING_HOOK disguise
 "Fishing Hook": "Fishing Hook"
 
+# Name for the FOX disguise
+"Fox": "Fox"
+
 # Name for the GHAST disguise
 "Ghast": "Ghast"
 
@@ -162,6 +171,9 @@
 # Name for the PAINTING disguise
 "Painting": "Painting"
 
+# Name for the PANDA disguise
+"Panda": "Panda"
+
 # Name for the PARROT disguise
 "Parrot": "Parrot"
 
@@ -173,6 +185,9 @@
 
 # Name for the PIG_ZOMBIE disguise
 "Pig Zombie": "Pig Zombie"
+
+# Name for the PILLAGER disguise
+"Pillager": "Pillager"
 
 # Name for the PLAYER disguise
 "Player": "Player"
@@ -188,6 +203,9 @@
 
 # Name for the RABBIT disguise
 "Rabbit": "Rabbit"
+
+# Name for the RAVAGER disguise
+"Ravager": "Ravager"
 
 # Name for the SALMON disguise
 "Salmon": "Salmon"
@@ -246,6 +264,9 @@
 # Name for the TRIDENT disguise
 "Trident": "Trident"
 
+# Name for the TRADER_LLAMA disguise
+"Trader Llama": "Trader Llama"
+
 # Name for the TROPICAL_FISH disguise
 "Tropical Fish": "Tropical Fish"
 
@@ -266,6 +287,9 @@
 
 # Name for the VINDICATOR disguise
 "Vindicator": "Vindicator"
+
+# Name for the WANDERING_TRADER disguise
+"Wandering Trader": "Wandering Trader"
 
 # Name for the WITCH disguise
 "Witch": "Witch"
@@ -288,128 +312,128 @@
 # Name for the ZOMBIE_VILLAGER disguise
 "Zombie Villager": "Zombie Villager"
 
-# Name for the Flying EntityType, this is used in radius commands
-"Flying": "Flying"
-
-# Name for the MagmaCube EntityType, this is used in radius commands
-"MagmaCube": "MagmaCube"
-
-# Name for the WaterMob EntityType, this is used in radius commands
-"WaterMob": "WaterMob"
-
-# Name for the Illager EntityType, this is used in radius commands
-"Illager": "Illager"
-
-# Name for the Weather EntityType, this is used in radius commands
-"Weather": "Weather"
-
-# Name for the PolarBear EntityType, this is used in radius commands
-"PolarBear": "PolarBear"
+# Name for the AbstractHorse EntityType, this is used in radius commands
+"AbstractHorse": "AbstractHorse"
 
 # Name for the Ageable EntityType, this is used in radius commands
 "Ageable": "Ageable"
 
-# Name for the Golem EntityType, this is used in radius commands
-"Golem": "Golem"
-
-# Name for the DragonFireball EntityType, this is used in radius commands
-"DragonFireball": "DragonFireball"
-
-# Name for the SpectralArrow EntityType, this is used in radius commands
-"SpectralArrow": "SpectralArrow"
-
-# Name for the ZombieHorse EntityType, this is used in radius commands
-"ZombieHorse": "ZombieHorse"
-
-# Name for the LlamaSpit EntityType, this is used in radius commands
-"LlamaSpit": "LlamaSpit"
-
-# Name for the Monster EntityType, this is used in radius commands
-"Monster": "Monster"
-
-# Name for the ExperienceOrb EntityType, this is used in radius commands
-"ExperienceOrb": "ExperienceOrb"
-
-# Name for the ComplexLivingEntity EntityType, this is used in radius commands
-"ComplexLivingEntity": "ComplexLivingEntity"
-
-# Name for the EnderCrystal EntityType, this is used in radius commands
-"EnderCrystal": "EnderCrystal"
-
-# Name for the TropicalFish EntityType, this is used in radius commands
-"TropicalFish": "TropicalFish"
-
-# Name for the EnderSignal EntityType, this is used in radius commands
-"EnderSignal": "EnderSignal"
-
-# Name for the Boss EntityType, this is used in radius commands
-"Boss": "Boss"
-
-# Name for the IronGolem EntityType, this is used in radius commands
-"IronGolem": "IronGolem"
-
-# Name for the Vehicle EntityType, this is used in radius commands
-"Vehicle": "Vehicle"
-
 # Name for the Ambient EntityType, this is used in radius commands
 "Ambient": "Ambient"
 
-# Name for the Projectile EntityType, this is used in radius commands
-"Projectile": "Projectile"
+# Name for the Animals EntityType, this is used in radius commands
+"Animals": "Animals"
 
-# Name for the TippedArrow EntityType, this is used in radius commands
-"TippedArrow": "TippedArrow"
-
-# Name for the LightningStrike EntityType, this is used in radius commands
-"LightningStrike": "LightningStrike"
-
-# Name for the Creature EntityType, this is used in radius commands
-"Creature": "Creature"
-
-# Name for the Explosive EntityType, this is used in radius commands
-"Explosive": "Explosive"
-
-# Name for the HumanEntity EntityType, this is used in radius commands
-"HumanEntity": "HumanEntity"
+# Name for the AreaEffectCloud EntityType, this is used in radius commands
+"AreaEffectCloud": "AreaEffectCloud"
 
 # Name for the ArmorStand EntityType, this is used in radius commands
 "ArmorStand": "ArmorStand"
 
-# Name for the PigZombie EntityType, this is used in radius commands
-"PigZombie": "PigZombie"
+# Name for the Boss EntityType, this is used in radius commands
+"Boss": "Boss"
 
-# Name for the ThrownPotion EntityType, this is used in radius commands
-"ThrownPotion": "ThrownPotion"
-
-# Name for the EnderPearl EntityType, this is used in radius commands
-"EnderPearl": "EnderPearl"
-
-# Name for the Spellcaster EntityType, this is used in radius commands
-"Spellcaster": "Spellcaster"
-
-# Name for the ItemFrame EntityType, this is used in radius commands
-"ItemFrame": "ItemFrame"
-
-# Name for the ShulkerBullet EntityType, this is used in radius commands
-"ShulkerBullet": "ShulkerBullet"
+# Name for the CaveSpider EntityType, this is used in radius commands
+"CaveSpider": "CaveSpider"
 
 # Name for the ChestedHorse EntityType, this is used in radius commands
 "ChestedHorse": "ChestedHorse"
 
-# Name for the LeashHitch EntityType, this is used in radius commands
-"LeashHitch": "LeashHitch"
+# Name for the ComplexEntityPart EntityType, this is used in radius commands
+"ComplexEntityPart": "ComplexEntityPart"
 
-# Name for the LargeFireball EntityType, this is used in radius commands
-"LargeFireball": "LargeFireball"
+# Name for the ComplexLivingEntity EntityType, this is used in radius commands
+"ComplexLivingEntity": "ComplexLivingEntity"
+
+# Name for the Creature EntityType, this is used in radius commands
+"Creature": "Creature"
+
+# Name for the Damageable EntityType, this is used in radius commands
+"Damageable": "Damageable"
+
+# Name for the DragonFireball EntityType, this is used in radius commands
+"DragonFireball": "DragonFireball"
+
+# Name for the ElderGuardian EntityType, this is used in radius commands
+"ElderGuardian": "ElderGuardian"
+
+# Name for the EnderCrystal EntityType, this is used in radius commands
+"EnderCrystal": "EnderCrystal"
+
+# Name for the EnderDragon EntityType, this is used in radius commands
+"EnderDragon": "EnderDragon"
+
+# Name for the EnderDragonPart EntityType, this is used in radius commands
+"EnderDragonPart": "EnderDragonPart"
+
+# Name for the EnderPearl EntityType, this is used in radius commands
+"EnderPearl": "EnderPearl"
+
+# Name for the EnderSignal EntityType, this is used in radius commands
+"EnderSignal": "EnderSignal"
+
+# Name for the EvokerFangs EntityType, this is used in radius commands
+"EvokerFangs": "EvokerFangs"
+
+# Name for the ExperienceOrb EntityType, this is used in radius commands
+"ExperienceOrb": "ExperienceOrb"
+
+# Name for the Explosive EntityType, this is used in radius commands
+"Explosive": "Explosive"
+
+# Name for the FallingBlock EntityType, this is used in radius commands
+"FallingBlock": "FallingBlock"
 
 # Name for the Fish EntityType, this is used in radius commands
 "Fish": "Fish"
 
-# Name for the SplashPotion EntityType, this is used in radius commands
-"SplashPotion": "SplashPotion"
+# Name for the FishHook EntityType, this is used in radius commands
+"FishHook": "FishHook"
 
-# Name for the ElderGuardian EntityType, this is used in radius commands
-"ElderGuardian": "ElderGuardian"
+# Name for the Flying EntityType, this is used in radius commands
+"Flying": "Flying"
+
+# Name for the Golem EntityType, this is used in radius commands
+"Golem": "Golem"
+
+# Name for the Hanging EntityType, this is used in radius commands
+"Hanging": "Hanging"
+
+# Name for the HumanEntity EntityType, this is used in radius commands
+"HumanEntity": "HumanEntity"
+
+# Name for the Illager EntityType, this is used in radius commands
+"Illager": "Illager"
+
+# Name for the IronGolem EntityType, this is used in radius commands
+"IronGolem": "IronGolem"
+
+# Name for the Item EntityType, this is used in radius commands
+"Item": "Item"
+
+# Name for the ItemFrame EntityType, this is used in radius commands
+"ItemFrame": "ItemFrame"
+
+# Name for the LargeFireball EntityType, this is used in radius commands
+"LargeFireball": "LargeFireball"
+
+# Name for the LeashHitch EntityType, this is used in radius commands
+"LeashHitch": "LeashHitch"
+
+# Name for the LightningStrike EntityType, this is used in radius commands
+"LightningStrike": "LightningStrike"
+
+# Name for the LingeringPotion EntityType, this is used in radius commands
+"LingeringPotion": "LingeringPotion"
+
+# Name for the LivingEntity EntityType, this is used in radius commands
+"LivingEntity": "LivingEntity"
+
+# Name for the LlamaSpit EntityType, this is used in radius commands
+"LlamaSpit": "LlamaSpit"
+
+# Name for the MagmaCube EntityType, this is used in radius commands
+"MagmaCube": "MagmaCube"
 
 # Name for the CommandMinecart EntityType, this is used in radius commands
 "CommandMinecart": "CommandMinecart"
@@ -417,101 +441,101 @@
 # Name for the ExplosiveMinecart EntityType, this is used in radius commands
 "ExplosiveMinecart": "ExplosiveMinecart"
 
-# Name for the RideableMinecart EntityType, this is used in radius commands
-"RideableMinecart": "RideableMinecart"
-
 # Name for the HopperMinecart EntityType, this is used in radius commands
 "HopperMinecart": "HopperMinecart"
-
-# Name for the SpawnerMinecart EntityType, this is used in radius commands
-"SpawnerMinecart": "SpawnerMinecart"
 
 # Name for the PoweredMinecart EntityType, this is used in radius commands
 "PoweredMinecart": "PoweredMinecart"
 
+# Name for the RideableMinecart EntityType, this is used in radius commands
+"RideableMinecart": "RideableMinecart"
+
+# Name for the SpawnerMinecart EntityType, this is used in radius commands
+"SpawnerMinecart": "SpawnerMinecart"
+
 # Name for the StorageMinecart EntityType, this is used in radius commands
 "StorageMinecart": "StorageMinecart"
-
-# Name for the TNTPrimed EntityType, this is used in radius commands
-"TNTPrimed": "TNTPrimed"
-
-# Name for the Item EntityType, this is used in radius commands
-"Item": "Item"
-
-# Name for the NPC EntityType, this is used in radius commands
-"NPC": "NPC"
 
 # Name for the Mob EntityType, this is used in radius commands
 "Mob": "Mob"
 
-# Name for the WitherSkull EntityType, this is used in radius commands
-"WitherSkull": "WitherSkull"
-
-# Name for the EnderDragonPart EntityType, this is used in radius commands
-"EnderDragonPart": "EnderDragonPart"
-
-# Name for the FishHook EntityType, this is used in radius commands
-"FishHook": "FishHook"
+# Name for the Monster EntityType, this is used in radius commands
+"Monster": "Monster"
 
 # Name for the MushroomCow EntityType, this is used in radius commands
 "MushroomCow": "MushroomCow"
 
-# Name for the LingeringPotion EntityType, this is used in radius commands
-"LingeringPotion": "LingeringPotion"
+# Name for the NPC EntityType, this is used in radius commands
+"NPC": "NPC"
+
+# Name for the PigZombie EntityType, this is used in radius commands
+"PigZombie": "PigZombie"
+
+# Name for the PolarBear EntityType, this is used in radius commands
+"PolarBear": "PolarBear"
+
+# Name for the Projectile EntityType, this is used in radius commands
+"Projectile": "Projectile"
 
 # Name for the PufferFish EntityType, this is used in radius commands
 "PufferFish": "PufferFish"
 
-# Name for the SmallFireball EntityType, this is used in radius commands
-"SmallFireball": "SmallFireball"
-
-# Name for the FallingBlock EntityType, this is used in radius commands
-"FallingBlock": "FallingBlock"
-
-# Name for the EnderDragon EntityType, this is used in radius commands
-"EnderDragon": "EnderDragon"
-
-# Name for the AreaEffectCloud EntityType, this is used in radius commands
-"AreaEffectCloud": "AreaEffectCloud"
-
-# Name for the ComplexEntityPart EntityType, this is used in radius commands
-"ComplexEntityPart": "ComplexEntityPart"
-
-# Name for the Damageable EntityType, this is used in radius commands
-"Damageable": "Damageable"
-
-# Name for the Animals EntityType, this is used in radius commands
-"Animals": "Animals"
-
-# Name for the EvokerFangs EntityType, this is used in radius commands
-"EvokerFangs": "EvokerFangs"
-
-# Name for the LivingEntity EntityType, this is used in radius commands
-"LivingEntity": "LivingEntity"
-
-# Name for the ThrownExpBottle EntityType, this is used in radius commands
-"ThrownExpBottle": "ThrownExpBottle"
-
-# Name for the CaveSpider EntityType, this is used in radius commands
-"CaveSpider": "CaveSpider"
+# Name for the ShulkerBullet EntityType, this is used in radius commands
+"ShulkerBullet": "ShulkerBullet"
 
 # Name for the SkeletonHorse EntityType, this is used in radius commands
 "SkeletonHorse": "SkeletonHorse"
 
-# Name for the WitherSkeleton EntityType, this is used in radius commands
-"WitherSkeleton": "WitherSkeleton"
+# Name for the SmallFireball EntityType, this is used in radius commands
+"SmallFireball": "SmallFireball"
 
-# Name for the ZombieVillager EntityType, this is used in radius commands
-"ZombieVillager": "ZombieVillager"
+# Name for the SpectralArrow EntityType, this is used in radius commands
+"SpectralArrow": "SpectralArrow"
 
-# Name for the Hanging EntityType, this is used in radius commands
-"Hanging": "Hanging"
+# Name for the Spellcaster EntityType, this is used in radius commands
+"Spellcaster": "Spellcaster"
 
-# Name for the AbstractHorse EntityType, this is used in radius commands
-"AbstractHorse": "AbstractHorse"
+# Name for the SplashPotion EntityType, this is used in radius commands
+"SplashPotion": "SplashPotion"
 
 # Name for the Tameable EntityType, this is used in radius commands
 "Tameable": "Tameable"
+
+# Name for the ThrownExpBottle EntityType, this is used in radius commands
+"ThrownExpBottle": "ThrownExpBottle"
+
+# Name for the ThrownPotion EntityType, this is used in radius commands
+"ThrownPotion": "ThrownPotion"
+
+# Name for the TippedArrow EntityType, this is used in radius commands
+"TippedArrow": "TippedArrow"
+
+# Name for the TNTPrimed EntityType, this is used in radius commands
+"TNTPrimed": "TNTPrimed"
+
+# Name for the TropicalFish EntityType, this is used in radius commands
+"TropicalFish": "TropicalFish"
+
+# Name for the Vehicle EntityType, this is used in radius commands
+"Vehicle": "Vehicle"
+
+# Name for the WaterMob EntityType, this is used in radius commands
+"WaterMob": "WaterMob"
+
+# Name for the Weather EntityType, this is used in radius commands
+"Weather": "Weather"
+
+# Name for the WitherSkeleton EntityType, this is used in radius commands
+"WitherSkeleton": "WitherSkeleton"
+
+# Name for the WitherSkull EntityType, this is used in radius commands
+"WitherSkull": "WitherSkull"
+
+# Name for the ZombieHorse EntityType, this is used in radius commands
+"ZombieHorse": "ZombieHorse"
+
+# Name for the ZombieVillager EntityType, this is used in radius commands
+"ZombieVillager": "ZombieVillager"
 
 # Used for the disgiuse radius command to list all entitytypes
 "EntityType": "EntityType"

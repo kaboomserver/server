@@ -13,6 +13,12 @@
 # Reference: CANNOT_FIND_PLAYER
 "&cCannot find the player/uuid '%s'": "&cCannot find the player/uuid '%s'"
 
+# Reference: CANNOT_FIND_PLAYER_NAME
+"&cCannot find the player '%s'": "&cCannot find the player '%s'"
+
+# Reference: CANNOT_FIND_PLAYER_UUID
+"&cCannot find the uuid '%s'": "&cCannot find the uuid '%s'"
+
 # Reference: CLICK_TIMER
 "&cRight click a entity in the next %s seconds to grab the disguise reference!": "&cRight click a entity in the next %s seconds to grab the disguise reference!"
 
@@ -24,6 +30,9 @@
 
 # Reference: CLONE_HELP3
 "&2/disguiseclone IgnoreEquipment&2(&aOptional&2)": "&2/disguiseclone IgnoreEquipment&2(&aOptional&2)"
+
+# Reference: CUSTOM_DISGUISE_SAVED
+"&6Custom disguise has been saved as '%s'!": "&6Custom disguise has been saved as '%s'!"
 
 # Reference: D_HELP1
 "&2Disguise another player!": "&2Disguise another player!"
@@ -223,11 +232,17 @@
 # Reference: FAILED_DISGIUSE
 "&cFailed to disguise as a %s": "&cFailed to disguise as a %s"
 
+# Reference: GRABBED_SKIN
+"&6Grabbed skin and saved as %s!": "&6Grabbed skin and saved as %s!"
+
+# Reference: PLEASE_WAIT
+"&7Please wait...": "&7Please wait..."
+
 # Reference: INVALID_CLONE
 "&4Unknown option '%s' - Valid options are 'IgnoreEquipment' 'DoSneakSprint' 'DoSneak' 'DoSprint'": "&4Unknown option '%s' - Valid options are 'IgnoreEquipment' 'DoSneakSprint' 'DoSneak' 'DoSprint'"
 
-# Reference: LIBS_RELOAD_WRONG
-"&c[LibsDisguises] Did you mean 'reload'?": "&c[LibsDisguises] Did you mean 'reload'?"
+# Reference: LIBS_COMMAND_WRONG_ARG
+"&c[LibsDisguises] Did you mean 'reload', 'scoreboard', 'permtest', 'json' or 'metainfo'?": "&c[LibsDisguises] Did you mean 'reload', 'scoreboard', 'permtest', 'json' or 'metainfo'?"
 
 # Reference: LIMITED_RADIUS
 "&cLimited radius to %s! Don't want to make too much lag right?": "&cLimited radius to %s! Don't want to make too much lag right?"
@@ -286,8 +301,14 @@
 # Reference: NO_PERMS_USE_OPTIONS
 "&cIgnored %s options you do not have permission to use. Add 'show' to view unusable options.": "&cIgnored %s options you do not have permission to use. Add 'show' to view unusable options."
 
+# Reference: OWNED_BY
+"&6Plugin registered to '%%__USER__%%'!": "&6Plugin registered to '%%__USER__%%'!"
+
 # Reference: NOT_DISGUISED
 "&cYou are not disguised!": "&cYou are not disguised!"
+
+# Reference: TARGET_NOT_DISGUISED
+"&cThat entity is not disguised!": "&cThat entity is not disguised!"
 
 # Reference: NOT_NUMBER
 "&cError! %s is not a number": "&cError! %s is not a number"
@@ -332,7 +353,7 @@
 "&cCannot find a disguise under the reference %s": "&cCannot find a disguise under the reference %s"
 
 # Reference: PARSE_OPTION_NA
-"&cCannot find the option %s": "&cCannot find the option %s"
+"&cCannot find the option '%s'": "&cCannot find the option '%s'"
 
 # Reference: PARSE_SUPPLY_PLAYER
 "&cError! You need to give a player name!": "&cError! You need to give a player name!"
@@ -384,3 +405,207 @@
 
 # Reference: VIEW_SELF_OFF
 "&aToggled viewing own disguise off!": "&aToggled viewing own disguise off!"
+
+# Reference: CLICK_TO_COPY
+"&aClick to Copy:": "&aClick to Copy:"
+
+# Reference: SKIN_DATA
+"&aSkin Data: &e%s": "&aSkin Data: &e%s"
+
+# Reference: CLICK_TO_COPY_DATA
+"&eData": "&eData"
+
+# Reference: CLICK_TO_COPY_WITH_SKIN
+"&aVersion with skin data:": "&aVersion with skin data:"
+
+# Reference: CLICK_TO_COPY_WITH_SKIN_NO_COPY
+"&aVersion with skin data: &e%s": "&aVersion with skin data: &e%s"
+
+# Reference: COPY_DISGUISE_NO_COPY
+"&aData: &e%s": "&aData: &e%s"
+
+# Reference: CLICK_TO_COPY_HOVER
+"&6Click to Copy": "&6Click to Copy"
+
+# Reference: CLICK_COPY
+"&e&l%s": "&e&l%s"
+
+# Reference: SKIN_API_IN_USE
+"&cmineskin.org is currently in use, please try again": "&cmineskin.org is currently in use, please try again"
+
+# Reference: SKIN_API_TIMER
+"&cmineskin.org can be used again in %s seconds": "&cmineskin.org can be used again in %s seconds"
+
+# Reference: SKIN_API_FAIL
+"&cUnexpected error while accessing mineskin.org, please try again": "&cUnexpected error while accessing mineskin.org, please try again"
+
+# Reference: SKIN_API_BAD_URL
+"&cInvalid url provided! Please ensure it is a .png file download!": "&cInvalid url provided! Please ensure it is a .png file download!"
+
+# Reference: SKIN_API_FAILED_URL
+"&cInvalid url provided! mineskin.org failed to grab it!": "&cInvalid url provided! mineskin.org failed to grab it!"
+
+# Reference: SKIN_API_FAIL_CODE
+"&cError %s! %s": "&cError %s! %s"
+
+# Reference: SKIN_API_403
+"mineskin.org denied access to that url": "mineskin.org denied access to that url"
+
+# Reference: SKIN_API_404
+"mineskin.org unable to find an image at that url": "mineskin.org unable to find an image at that url"
+
+# Reference: SKIN_API_IMAGE_TIMEOUT
+"&cError! mineskin.org took too long to connect! Is your image valid?": "&cError! mineskin.org took too long to connect! Is your image valid?"
+
+# Reference: SKIN_API_TIMEOUT_ERROR
+"&cError! Took too long to connect to mineskin.org!": "&cError! Took too long to connect to mineskin.org!"
+
+# Reference: SKIN_API_TIMEOUT
+"&cTook too long to connect to mineskin.org!": "&cTook too long to connect to mineskin.org!"
+
+# Reference: SKIN_API_IMAGE_HAS_ERROR
+"Your image has the error: %s": "Your image has the error: %s"
+
+# Reference: SKIN_API_USING_URL
+"&7Url provided, now attempting to connect to mineskin.org": "&7Url provided, now attempting to connect to mineskin.org"
+
+# Reference: SKIN_API_BAD_FILE_NAME
+"&cInvalid file name provided! File not found!": "&cInvalid file name provided! File not found!"
+
+# Reference: SKIN_API_BAD_FILE
+"&cInvalid file provided! Please ensure it is a valid .png skin!": "&cInvalid file provided! Please ensure it is a valid .png skin!"
+
+# Reference: SKIN_API_USING_FILE
+"&7File provided and found, now attempting to upload to mineskin.org": "&7File provided and found, now attempting to upload to mineskin.org"
+
+# Reference: SKIN_API_INVALID_NAME
+"&cInvalid name/file/uuid provided!": "&cInvalid name/file/uuid provided!"
+
+# Reference: SKIN_API_USING_UUID
+"&7UUID successfully parsed, now attempting to connect to mineskin.org": "&7UUID successfully parsed, now attempting to connect to mineskin.org"
+
+# Reference: SKIN_API_USING_NAME
+"&7Determined to be player name, now attempting to validate and connect to mineskin.org": "&7Determined to be player name, now attempting to validate and connect to mineskin.org"
+
+# Reference: SAVE_DISG_HELP_1
+"&aThe <DisguiseName> is what the disguise will be called in Lib's Disguises": "&aThe <DisguiseName> is what the disguise will be called in Lib's Disguises"
+
+# Reference: SAVE_DISG_HELP_2
+"&a/savedisguise <DisguiseName> - If you don't provide arguments, it'll try make a disguise from your current disguise. This will not work if you are not disguised!": "&a/savedisguise <DisguiseName> - If you don't provide arguments, it'll try make a disguise from your current disguise. This will not work if you are not disguised!"
+
+# Reference: SAVE_DISG_HELP_3
+"&a/savedisguise <DisguiseName> <Arguments>": "&a/savedisguise <DisguiseName> <Arguments>"
+
+# Reference: SAVE_DISG_HELP_4
+"&aYour arguments need to be as if you're using /disguise. So '/disguise player Notch setsneaking' - Means '/savedisguise Notch player Notch setsneaking'": "&aYour arguments need to be as if you're using /disguise. So '/disguise player Notch setsneaking' - Means '/savedisguise Notch player Notch setsneaking'"
+
+# Reference: SAVE_DISG_HELP_5
+"&aRemember! You can upload your own skins, then reference those skins!": "&aRemember! You can upload your own skins, then reference those skins!"
+
+# Reference: GRAB_DISG_HELP_1
+"&aYou can choose a name to save the skins under, the names will be usable as if it was an actual player skin": "&aYou can choose a name to save the skins under, the names will be usable as if it was an actual player skin"
+
+# Reference: GRAB_DISG_HELP_2
+"&2/grabskin https://somesite.com/myskin.png <Optional Name>": "&2/grabskin https://somesite.com/myskin.png <Optional Name>"
+
+# Reference: GRAB_DISG_HELP_3
+"&2/grabskin myskin.png <Optional Name> - Skins must be in the folder!": "&2/grabskin myskin.png <Optional Name> - Skins must be in the folder!"
+
+# Reference: GRAB_DISG_HELP_4
+"&2/grabskin <Player name or UUID> <Optional Name>": "&2/grabskin <Player name or UUID> <Optional Name>"
+
+# Reference: GRAB_DISG_HELP_5
+"&aYou will be sent the skin data, but you can also use the saved names in disguises": "&aYou will be sent the skin data, but you can also use the saved names in disguises"
+
+# Reference: CUSTOM_DISGUISE_NAME_CONFLICT
+"&cCannot create the custom disguise '%s' as there is a name conflict!": "&cCannot create the custom disguise '%s' as there is a name conflict!"
+
+# Reference: ERROR_LOADING_CUSTOM_DISGUISE
+"&cError while loading custom disguise '%s'%s": "&cError while loading custom disguise '%s'%s"
+
+# Reference: SKIN_API_INTERNAL_ERROR
+"&cInternal error in the skin API, perhaps bad data?": "&cInternal error in the skin API, perhaps bad data?"
+
+# Reference: META_INFO
+"&aName: %s, Watcher: %s, Index: %s, Type: %s, Default: %s": "&aName: %s, Watcher: %s, Index: %s, Type: %s, Default: %s"
+
+# Reference: META_NOT_FOUND
+"&cNo meta exists under that name!": "&cNo meta exists under that name!"
+
+# Reference: META_VALUES
+"&9Metas: &3": "&9Metas: &3"
+
+# Reference: META_VALUES_NO_CLICK
+"&9Metas, use as param for more info: &3": "&9Metas, use as param for more info: &3"
+
+# Reference: META_VALUE_SEPERATOR
+"&b, &3": "&b, &3"
+
+# Reference: META_CLICK_SHOW
+"&6Click to show %s": "&6Click to show %s"
+
+# Reference: LIBS_PERM_CHECK_INFO_1
+"&bNow checking for the permission 'libsdisguises.disguise.pig'": "&bNow checking for the permission 'libsdisguises.disguise.pig'"
+
+# Reference: LIBS_PERM_CHECK_INFO_2
+"&bIf you did not give this permission, please set it. You can supply a player name to test another player.": "&bIf you did not give this permission, please set it. You can supply a player name to test another player."
+
+# Reference: NORMAL_PERM_CHECK_SUCCESS
+"&6Normal permission check, success.": "&6Normal permission check, success."
+
+# Reference: NORMAL_PERM_CHECK_FAIL
+"&cNormal permission check, fail.": "&cNormal permission check, fail."
+
+# Reference: LIBS_PERM_CHECK_SUCCESS
+"&6Lib's Disguises permission check, success. Pig disguise should be usable!": "&6Lib's Disguises permission check, success. Pig disguise should be usable!"
+
+# Reference: LIBS_PERM_CHECK_FAIL
+"&6Lib's Disguises permission check, fail. Your permission plugin isn't compliant!": "&6Lib's Disguises permission check, fail. Your permission plugin isn't compliant!"
+
+# Reference: CANT_ATTACK_DISGUISED
+"&cCannot fight while disguised!": "&cCannot fight while disguised!"
+
+# Reference: CANT_ATTACK_DISGUISED_RECENTLY
+"&cYou were disguised recently! Can't attack yet!": "&cYou were disguised recently! Can't attack yet!"
+
+# Reference: SWITCH_WORLD_DISGUISE_REMOVED
+"&cDisguise removed as you've switched worlds!": "&cDisguise removed as you've switched worlds!"
+
+# Reference: ACTION_BAR_MESSAGE
+"&6Currently disguised as %s": "&6Currently disguised as %s"
+
+# Reference: ITEM_SERIALIZED
+"&6Json Serialized, click to copy: ": "&6Json Serialized, click to copy: "
+
+# Reference: ITEM_SERIALIZED_MC
+"&6MC Serialized, click to copy: ": "&6MC Serialized, click to copy: "
+
+# Reference: ITEM_SERIALIZED_MC_LD
+"&6MC Serialized for LD, click to copy: ": "&6MC Serialized for LD, click to copy: "
+
+# Reference: ITEM_SIMPLE_STRING
+"&6Simple, click to copy: ": "&6Simple, click to copy: "
+
+# Reference: ITEM_SERIALIZED_NO_COPY
+"&6Json Serialized: &e%s": "&6Json Serialized: &e%s"
+
+# Reference: ITEM_SERIALIZED_MC_NO_COPY
+"&6MC Serialized: &e%s": "&6MC Serialized: &e%s"
+
+# Reference: ITEM_SERIALIZED_MC_LD_NO_COPY
+"&6MC Serialized for LD: &e%s": "&6MC Serialized for LD: &e%s"
+
+# Reference: ITEM_SIMPLE_STRING_NO_COPY
+"&6Simple: &e%s": "&6Simple: &e%s"
+
+# Reference: LIBS_SCOREBOARD_NO_TEAM
+"&cNot on a scoreboard team!": "&cNot on a scoreboard team!"
+
+# Reference: LIBS_SCOREBOARD_NO_TEAM_PUSH
+"&cScoreboard team has pushing enabled!": "&cScoreboard team has pushing enabled!"
+
+# Reference: LIBS_SCOREBOARD_SUCCESS
+"&6On a team and pushing is disabled! If you're still having issues and you are disguised right now, then you have a plugin modifying scoreboard through packets": "&6On a team and pushing is disabled! If you're still having issues and you are disguised right now, then you have a plugin modifying scoreboard through packets"
+
+# Reference: LIBS_SCOREBOARD_DISABLED
+"The scoreboard modification has been disabled in config, will continue the debug incase this is intended.": "The scoreboard modification has been disabled in config, will continue the debug incase this is intended."

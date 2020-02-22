@@ -54,11 +54,8 @@
 # Found in the disguise options for Entity and uses a boolean
 "setSprinting": "setSprinting"
 
-# Found in the disguise options for Object and uses a long
-"wait": "wait"
-
 # Found in the disguise options for Entity and uses a boolean
-"setViewSelfDisguise": "setViewSelfDisguise"
+"setSelfDisguiseVisible": "setSelfDisguiseVisible"
 
 # Found in the disguise options for Entity and uses a boolean
 "setHideHeldItemFromSelf": "setHideHeldItemFromSelf"
@@ -104,9 +101,6 @@
 
 # Found in the disguise options for ArmorStand and uses a boolean
 "setSmall": "setSmall"
-
-# Found in the disguise options for Living Entity and uses a PotionEffectType
-"addPotionEffect": "addPotionEffect"
 
 # Found in the disguise options for Living Entity and uses a int
 "setArrowsSticking": "setArrowsSticking"
@@ -165,29 +159,26 @@
 # Found in the disguise options for Creeper and uses a boolean
 "setPowered": "setPowered"
 
-# Found in the disguise options for Horse and uses a boolean
-"setCanBreed": "setCanBreed"
-
 # Found in the disguise options for ChestedHorse and uses a boolean
 "setCarryingChest": "setCarryingChest"
+
+# Found in the disguise options for Horse and uses a boolean
+"setEating": "setEating"
 
 # Found in the disguise options for Horse and uses a boolean
 "setGrazing": "setGrazing"
 
 # Found in the disguise options for Horse and uses a boolean
-"setMouthOpen": "setMouthOpen"
+"setRearing": "setRearing"
 
 # Found in the disguise options for Horse and uses a boolean
-"setRearing": "setRearing"
+"setReproduced": "setReproduced"
 
 # Found in the disguise options for Horse and uses a boolean
 "setSaddled": "setSaddled"
 
 # Found in the disguise options for Horse and uses a boolean
 "setTamed": "setTamed"
-
-# Found in the disguise options for Zombie and uses a boolean
-"setAggressive": "setAggressive"
 
 # Found in the disguise options for Zombie and uses a boolean
 "setConverting": "setConverting"
@@ -198,7 +189,7 @@
 # Found in the disguise options for Guardian and uses a boolean
 "setRetractingSpikes": "setRetractingSpikes"
 
-# Found in the disguise options for Guardian and uses a String
+# Found in the disguise options for Guardian and uses a int
 "setTarget": "setTarget"
 
 # Found in the disguise options for EnderCrystal and uses a BlockPosition
@@ -210,11 +201,17 @@
 # Found in the disguise options for EnderDragon and uses a int
 "setPhase": "setPhase"
 
-# Found in the disguise options for Illager and uses a int
-"setSpellTicks": "setSpellTicks"
+# Found in the disguise options for Enderman and uses a boolean
+"setAggressive": "setAggressive"
+
+# Found in the disguise options for Raider and uses a boolean
+"setCastingSpell": "setCastingSpell"
 
 # Found in the disguise options for FallingBlock and uses a ItemStack
 "setBlock": "setBlock"
+
+# Found in the disguise options for FallingBlock and uses a boolean
+"setGridLocked": "setGridLocked"
 
 # Found in the disguise options for Firework and uses a int
 "setAttachedEntity": "setAttachedEntity"
@@ -258,11 +255,8 @@
 # Found in the disguise options for MinecartFurnace and uses a boolean
 "setFueled": "setFueled"
 
-# Found in the disguise options for Tameable and uses a boolean
+# Found in the disguise options for Ocelot and uses a boolean
 "setSitting": "setSitting"
-
-# Found in the disguise options for Ocelot and uses a Type
-"setType": "setType"
 
 # Found in the disguise options for Painting and uses a Art
 "setArt": "setArt"
@@ -294,17 +288,23 @@
 # Found in the disguise options for Player and uses a boolean
 "setRightSleeveEnabled": "setRightSleeveEnabled"
 
-# Found in the disguise options for Player and uses a WrappedGameProfile
+# Found in the disguise options for Player and uses a String
 "setSkin": "setSkin"
 
-# Found in the disguise options for Player and uses a BlockFace
-"setSleeping": "setSleeping"
+# Found in the disguise options for PlayerDisguise and uses a boolean
+"setNameVisible": "setNameVisible"
+
+# Found in the disguise options for PlayerDisguise and uses a boolean
+"setDynamicName": "setDynamicName"
 
 # Found in the disguise options for PolarBear and uses a boolean
 "setStanding": "setStanding"
 
 # Found in the disguise options for PufferFish and uses a int
 "setPuffState": "setPuffState"
+
+# Found in the disguise options for Rabbit and uses a RabbitType
+"setType": "setType"
 
 # Found in the disguise options for Sheep and uses a boolean
 "setSheared": "setSheared"
@@ -317,9 +317,6 @@
 
 # Found in the disguise options for Shulker and uses a int
 "setShieldHeight": "setShieldHeight"
-
-# Found in the disguise options for Skeleton and uses a boolean
-"setSwingArms": "setSwingArms"
 
 # Found in the disguise options for Snowman and uses a boolean
 "setDerp": "setDerp"
@@ -348,9 +345,6 @@
 # Found in the disguise options for Villager and uses a Profession
 "setProfession": "setProfession"
 
-# Found in the disguise options for Vindicator and uses a boolean
-"setJohnny": "setJohnny"
-
 # Found in the disguise options for Wither and uses a int
 "setInvulnerability": "setInvulnerability"
 
@@ -360,11 +354,8 @@
 # Found in the disguise options for Wolf and uses a boolean
 "setBegging": "setBegging"
 
-# Found in the disguise options for Wolf and uses a AnimalColor
+# Found in the disguise options for Wolf and uses a DyeColor
 "setCollarColor": "setCollarColor"
-
-# Found in the disguise options for Wolf and uses a float
-"setDamageTaken": "setDamageTaken"
 
 # Found in the disguise options for ZombieVillager and uses a boolean
 "setShaking": "setShaking"

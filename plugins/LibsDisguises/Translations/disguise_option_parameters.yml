@@ -1,59 +1,5 @@
 # To use translations in Lib's Disguises, you must have the purchased plugin
 
-# A disguise option name, has description View all the colors you can use for an animal color
-"Animal Color": "Animal Color"
-
-# Description for the disguise option Animal Color
-"View all the colors you can use for an animal color": "View all the colors you can use for an animal color"
-
-# Used for the disguise option Animal Color
-"GRAY": "GRAY"
-
-# Used for the disguise option Animal Color
-"WHITE": "WHITE"
-
-# Used for the disguise option Animal Color
-"BLUE": "BLUE"
-
-# Used for the disguise option Animal Color
-"PURPLE": "PURPLE"
-
-# Used for the disguise option Animal Color
-"GREEN": "GREEN"
-
-# Used for the disguise option Animal Color
-"RED": "RED"
-
-# Used for the disguise option Animal Color
-"PINK": "PINK"
-
-# Used for the disguise option Animal Color
-"LIGHT_GRAY": "LIGHT_GRAY"
-
-# Used for the disguise option Animal Color
-"LIGHT_BLUE": "LIGHT_BLUE"
-
-# Used for the disguise option Animal Color
-"LIME": "LIME"
-
-# Used for the disguise option Animal Color
-"BLACK": "BLACK"
-
-# Used for the disguise option Animal Color
-"MAGENTA": "MAGENTA"
-
-# Used for the disguise option Animal Color
-"YELLOW": "YELLOW"
-
-# Used for the disguise option Animal Color
-"CYAN": "CYAN"
-
-# Used for the disguise option Animal Color
-"BROWN": "BROWN"
-
-# Used for the disguise option Animal Color
-"ORANGE": "ORANGE"
-
 # A disguise option name, has description View all the paintings you can use for a painting disguise
 "Art": "Art"
 
@@ -145,37 +91,31 @@
 "View all the colors you can use for a horses color": "View all the colors you can use for a horses color"
 
 # Used for the disguise option Horse Color
+"WHITE": "WHITE"
+
+# Used for the disguise option Horse Color
+"GRAY": "GRAY"
+
+# Used for the disguise option Horse Color
 "DARK_BROWN": "DARK_BROWN"
 
 # Used for the disguise option Horse Color
 "CHESTNUT": "CHESTNUT"
 
 # Used for the disguise option Horse Color
+"BLACK": "BLACK"
+
+# Used for the disguise option Horse Color
+"BROWN": "BROWN"
+
+# Used for the disguise option Horse Color
 "CREAMY": "CREAMY"
 
-# A disguise option name, has description View all the ocelot types you can use for ocelots
-"Ocelot Type": "Ocelot Type"
-
-# Description for the disguise option Ocelot Type
-"View all the ocelot types you can use for ocelots": "View all the ocelot types you can use for ocelots"
-
-# Used for the disguise option Ocelot Type
-"BLACK_CAT": "BLACK_CAT"
-
-# Used for the disguise option Ocelot Type
-"SIAMESE_CAT": "SIAMESE_CAT"
-
-# Used for the disguise option Ocelot Type
-"WILD_OCELOT": "WILD_OCELOT"
-
-# Used for the disguise option Ocelot Type
-"RED_CAT": "RED_CAT"
-
-# A disguise option name, has description View all the professions you can set on a Zombie and Normal Villager
+# A disguise option name, has description View all the professions you can set on a Villager and Zombie Villager
 "Villager Profession": "Villager Profession"
 
 # Description for the disguise option Villager Profession
-"View all the professions you can set on a Zombie and Normal Villager": "View all the professions you can set on a Zombie and Normal Villager"
+"View all the professions you can set on a Villager and Zombie Villager": "View all the professions you can set on a Villager and Zombie Villager"
 
 # Used for the disguise option Villager Profession
 "LIBRARIAN": "LIBRARIAN"
@@ -293,6 +233,18 @@
 
 # Description for the disguise option Parrot Variant
 "View the different colors a parrot can be": "View the different colors a parrot can be"
+
+# Used for the disguise option Parrot Variant
+"RED": "RED"
+
+# Used for the disguise option Parrot Variant
+"BLUE": "BLUE"
+
+# Used for the disguise option Parrot Variant
+"CYAN": "CYAN"
+
+# Used for the disguise option Parrot Variant
+"GREEN": "GREEN"
 
 # A disguise option name, has description The different particles of Minecraft
 "Particle": "Particle"
@@ -515,6 +467,30 @@
 
 # Description for the disguise option DyeColor
 "Dye colors of many different colors": "Dye colors of many different colors"
+
+# Used for the disguise option DyeColor
+"PURPLE": "PURPLE"
+
+# Used for the disguise option DyeColor
+"PINK": "PINK"
+
+# Used for the disguise option DyeColor
+"LIGHT_GRAY": "LIGHT_GRAY"
+
+# Used for the disguise option DyeColor
+"LIGHT_BLUE": "LIGHT_BLUE"
+
+# Used for the disguise option DyeColor
+"LIME": "LIME"
+
+# Used for the disguise option DyeColor
+"MAGENTA": "MAGENTA"
+
+# Used for the disguise option DyeColor
+"YELLOW": "YELLOW"
+
+# Used for the disguise option DyeColor
+"ORANGE": "ORANGE"
 
 # A disguise option name, has description Horse style which is the patterns on the horse
 "Horse Style": "Horse Style"

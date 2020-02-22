@@ -1,50 +1,44 @@
-# __________ __                           __________                __   __        __                            ________
-# \______   \  | _____  ___ __  __________\______   \_____ ________/  |_|__| ____ |  |   ____   ______   ___  __/  _____/
-#  |     ___/  | \__  \<   |  |/ __ \_  __ \     ___/\__  \\_  __ \   __\  |/ ___\|  | _/ __ \ /  ___/   \  \/ /   __  \ 
-#  |    |   |  |__/ __ \\___  \  ___/|  | \/    |     / __ \|  | \/|  | |  \  \___|  |_\  ___/ \___ \     \   /\  |__\  \
-#  |____|   |____(____  / ____|\___  >__|  |____|    (____  /__|   |__| |__|\___  >____/\___  >____  >     \_/  \_____  /
-#                     \/\/         \/                     \/                    \/          \/     \/                 \/ 
-
-# ==================================================== #
-#                PlayerParticles Config                #
-#               Welcome to the beginning               #
-# ==================================================== #
-
-# This value is the version of the plugin that last modified the config file
-# Changing this value manually will likely result in data loss and errors!
-# Do not change this manually unless specifically told to by the plugin author
-version: 6.6
+#      _________ __                           __________                __   __        __                    _________
+#      \______  \  | _____  ___ __  __________\______   \_____ ________/  |_|__| ____ |  |   ____   ______   \______  \
+#      |     ___/  | \__  \<   |  |/ __ \_  __ \     ___/\__  \\_  __ \   __\  |/ ___\|  | _/ __ \ /  ___/       /    /
+#      |    |   |  |__/ __ \\___  \  ___/|  | \/    |     / __ \|  | \/|  | |  \  \___|  |_\  ___/ \___ \       /    /
+#      |____|   |____(____  / ____|\___  >__|  |____|    (____  /__|   |__| |__|\___  >____/\___  >____  >     /____/
+#                         \/\/         \/                     \/                    \/          \/     \/
 
 # Check for new versions of the plugin
 # Default: true
 check-updates: false
 
 # If metrics should be sent to bStats
-# I would appreciate it if you left this enabled, it helps me get statistics on who uses this plugin
+# I would appreciate it if you left this enabled, it helps me get statistics on how the plugin is used
 # Default: true
 send-metrics: false
 
-# The .lang file to use in the ./lang/ folder
-# Default: 'en_US.lang'
-lang-file: 'en_US.lang'
+# The locale to use in the /locale folder
+# Default: en_US
+locale: en_US
 
 # If you're using other plugins to execute commands you may wish to turn off messages
 # Default: true
-messages-enabled: true
+message-enabled: true
 
 # Whether or not to use the message-prefix field when displaying messages
 # Default: true
 use-message-prefix: true
 
-# The prefix to use for all PlayerParticles messages
-# This is useless if use-message-prefix is set to false
-# Default: '&7[&3PlayerParticles&7]'
-message-prefix: '&7[&3PlayerParticles&7]'
-
 # If the command /pp gui is enabled
 # Disable this if you have your own custom GUI through another plugin
 # Default: true
 gui-enabled: true
+
+# If the GUI should require the permission playerparticles.gui to open
+# Default: false
+gui-require-permission: false
+
+# If the GUI should require the player to have permission for at least
+# one effect and one style to be able to open the GUI
+# Default: true
+gui-require-effects-and-styles: true
 
 # If true, only the preset groups will be available in the GUI
 # Permissions to open the GUI will change to only open if the user has any preset groups available
@@ -71,12 +65,19 @@ toggle-on-move: false
 # Default: 9
 toggle-on-move-delay: 9
 
-# The worlds which this plugin is disabled in
-# Remove the [] before you enter world names
-# Default: []
-disabled-worlds: []
-#  - your_world_name_here
-#  - add_more_under_these
+# If true, particles will be completely disabled while the player is in combat
+# Default: false
+toggle-on-combat: false
+
+# The time (in seconds) a player has to not be damaged/attacked to be considered out of combat
+# This setting has no effect if toggle-on-combat is set to false
+# The value must be a positive whole number
+# Default: 15
+toggle-on-combat-delay: 15
+
+# A list of worlds that the plugin is disabled in
+disabled-worlds:
+  - disabled_world_name
 
 # The maximum number of particles a player can apply at once
 # The GUI will only display up to 21, don't set this any higher than that
@@ -116,67 +117,58 @@ particle-render-range-fixed-effect: 192
 
 # How many out of 360 hue ticks to move per game tick
 # Higher values make the rainbow cycle faster
-# Note: Must be positive whole numbers
+# Note: Must be a positive whole number
 # Default: 2
 rainbow-cycle-speed: 2
 
-# ================================================================ #
-#                     DATABASE CONFIGURATION                       #
-# Information:                                                     #
-# * This is meant for people who have multiple servers connected   #
-#   together through BungeeCord. Unless you have multiple servers, #
-#   it is recommended to keep the database storage disabled for    #
-#   the best performance!                                          #
-# ================================================================ #
+# How large should dust particles appear?
+# Note: Can include decimals
+# Only works in 1.13+
+# Default: 1.0
+dust-size: 1.0
 
-# Enable Database
-# Default: false
-database-enable: false
+# Settings for if you want to use MySQL for data management
+mysql-settings:
 
-# ------------------------------------------------------------------- #
-# The following are only required if database-enable is set to 'true' #
-# ------------------------------------------------------------------- #
+  # Enable MySQL
+  # If false, SQLite will be used instead
+  # Default: false
+  enabled: false
 
-# Database Hostname
-# Default: ''
-database-hostname: ''
+  # MySQL Database Hostname
+  # Default: 
+  hostname: ''
 
-# Database Port
-# Default: 3306
-database-port: 3306
+  # MySQL Database Port
+  # Default: 3306
+  port: 3306
 
-# Database Name
-# Default: ''
-database-name: ''
+  # MySQL Database Name
+  # Default: 
+  database-name: ''
 
-# Database User Name
-# Default: ''
-database-user-name: ''
+  # MySQL Database User Name
+  # Default: 
+  user-name: ''
 
-# Database User Password
-# Default: ''
-database-user-password: ''
+  # MySQL Database User Password
+  # Default: 
+  user-password: ''
 
-# If the database connection should use SSL
-# You should enable this if your database supports SSL
-# Default: false
-database-use-ssl: false
+  # If the database connection should use SSL
+  # You should enable this if your database supports SSL
+  # Default: false
+  use-ssl: false
 
-# =================================================================== #
-#                        GUI ICON SETTINGS                            #
-# This configuration option allows you to change any of the GUI       #
-# icons to whatever block/item you want.                              #
-#                                                                     #
-# Important Notes:                                                    #
-# * If any of the block/item names are invalid the icon in the GUI    #
-#   will be the barrier icon to show that it failed to load.          #
-# * Do NOT change the particle/style name                             #
-# * You MUST use the Spigot-given name for it to work. You can see    #
-#   all the Spigot-given names at the link below:                     #
-#   https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html #
-# * If two icons are listed, the second one is used for below MC 1.13 #
-# =================================================================== #
-
+# This configuration option allows you to change any of the GUI
+# icons to whatever block/item you want.
+# Notes: If any of the block/item names are invalid the icon in the GUI
+# will be the barrier icon to show that it failed to load.
+# Do NOT change the particle/style name
+# You MUST use the Spigot-given name for it to work. You can see
+# all the Spigot-given names at the link below:
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# If multiple icons are listed, they are used for older MC versions
 gui-icon:
   misc:
     particles:
@@ -247,6 +239,9 @@ gui-icon:
       - WATER_BUCKET
     dust:
       - REDSTONE
+    elder_guardian:
+      - ELDER_GUARDIAN_SPAWN_EGG
+      - PRISMARINE_CRYSTALS
     enchant:
       - ENCHANTING_TABLE
       - ENCHANTMENT_TABLE
@@ -278,11 +273,13 @@ gui-icon:
       - FISHING_ROD
     flame:
       - BLAZE_POWDER
+    flash:
+      - GOLD_INGOT
     footstep:
       - GRASS
     happy_villager:
+      - DARK_OAK_DOOR_ITEM
       - DARK_OAK_DOOR
-      - WOOD_DOOR
     heart:
       - POPPY
       - RED_ROSE
@@ -295,6 +292,7 @@ gui-icon:
       - SLIME_BALL
     item_snowball:
       - SNOWBALL
+      - SNOW_BALL
     large_smoke:
       - COBWEB
       - WEB
@@ -332,15 +330,18 @@ gui-icon:
     splash:
       - SALMON
       - FISH
+      - RAW_FISH
     squid_ink:
       - INK_SAC
     sweep_attack:
       - GOLDEN_SWORD
       - GOLD_SWORD
     totem_of_undying:
+      - TOTEM_OF_UNDYING
       - TOTEM
     underwater:
       - TURTLE_HELMET
+      - SPONGE
     witch:
       - CAULDRON
   style:
@@ -398,9 +399,11 @@ gui-icon:
       - ACTIVATOR_RAIL
     rings:
       - LEAD
+      - LEASH
     sphere:
       - HEART_OF_THE_SEA
       - SNOWBALL
+      - SNOW_BALL
     spin:
       - BEACON
     spiral:
@@ -417,7 +420,7 @@ gui-icon:
       - GLOWSTONE_DUST
     whirl:
       - FEATHER
-    whirlwind: 
+    whirlwind:
       - STRING
     wings:
       - ELYTRA
