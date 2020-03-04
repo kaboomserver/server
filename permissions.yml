@@ -25,7 +25,6 @@ op:
       # Due to WorldEdit permission shenanigans, we have to grant
       # permissions manually to enforce block edit limits
 
-      fawe.limit.op: true
       fawe.worldeditregion: true
       fawe.cancel: true
       fawe.setupdispatcher: true

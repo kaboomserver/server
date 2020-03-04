@@ -11,14 +11,20 @@
 # Bug tracker: https://www.spigotmc.org/go/bugs
 
 command-block-overrides: []
-ignore-vanilla-permissions: false
+ignore-vanilla-permissions: true
 aliases:
+  icanhasbukkit:
+  - version $1-
   ban:
   - minecraft:ban $1-
   clear:
   - minecraft:clear $1-
   enchant:
   - minecraft:enchant $1-
+  minecraft:execute:
+  - ping Down for maintenance
+  execute:
+  - ping Down for maintenance
   gamemode:
   - minecraft:gamemode $1-
   give:
@@ -39,8 +45,36 @@ aliases:
   - minecraft:pardon $1-
   recipe:
   - minecraft:recipe $1-
+  minecraft:reload:
+  - bcv Reloading!
   reload:
-  - minecraft:reload $1-
+  - bcv Reloading!
+  spigot:restart:
+  - bcv Restarting the server
+  restart:
+  - bcv Restarting the server
+  bukkit:reload:
+  - bcv &cPlease note that this command is not supported and may cause issues when
+    using some plugins.
+  - bcv &cIf you encounter any issues please use the /stop command to restart your
+    server.
+  - bcv &aReload complete.
+  bukkit:rl:
+  - bcv &cPlease note that this command is not supported and may cause issues when
+    using some plugins.
+  - bcv &cIf you encounter any issues please use the /stop command to restart your
+    server.
+  - bcv &aReload complete.
+  rl:
+  - bcv &cPlease note that this command is not supported and may cause issues when
+    using some plugins.
+  - bcv &cIf you encounter any issues please use the /stop command to restart your
+    server.
+  - bcv &aReload complete.
+  minecraft:stop:
+  - bcv Stopping the server
+  stop:
+  - bcv Stopping the server
   tag:
   - minecraft:tag $1-
   teleport:

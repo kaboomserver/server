@@ -19,7 +19,7 @@ prevent-crashes: true
 # FAWE will cancel non admin edits when memory consumption exceeds this %
 #  - Bypass with `/wea` or `//fast` or `fawe.bypass`
 #  - Disable with 100 or -1.
-max-memory-percent: -1
+max-memory-percent: 95
 
 clipboard:
   # Store the clipboard on disk instead of memory
@@ -72,11 +72,11 @@ web:
   #  - All schematics are anonymous and private
   #  - Downloads can be deleted by the user
   #  - Supports clipboard uploads, downloads and saves
-  url: "https://empcraft.com/fawe/"
+  url: "http://empcraft.com/fawe/"
   # The web interface for assets
   #  - All schematics are organized and public
   #  - Assets can be searched, selected and downloaded
-  assets: "https://empcraft.com/assetpack/"
+  assets: "http://empcraft.com/assetpack/"
 
 extent:
   # Don't bug console when these plugins slow down WorldEdit operations
@@ -117,7 +117,7 @@ experimental:
 queue:
   # This should equal the number of processors you have
   #  - Set this to 1 if you need reliable `/timings`
-  parallel-threads: 32
+  parallel-threads: 8
   progress:
     # Display constant titles about the progress of a user's edit
     #  - false = disabled
@@ -148,7 +148,7 @@ queue:
   # Loading the right amount of chunks beforehand can speed up operations
   #  - Low values may result in FAWE waiting on requests to the main thread
   #  - Higher values use more memory and isn't noticeably faster
-  preload-chunks: 32
+  preload-chunks: 1
   # Discard edits which have been idle for a certain amount of time (ms)
   #  - E.g. A plugin creates an EditSession but never does anything with it
   #  - This only applies to plugins improperly using WorldEdit's legacy API
@@ -200,7 +200,7 @@ history:
   #  and displaying an error message.  In this case, either copy a smaller section,
   #  or increase chunk-wait-ms.
   # A value of 0 is faster simply because it doesn't bother loading the chunks or waiting.
-  chunk-wait-ms: 100
+  chunk-wait-ms: 0
   # Delete history on disk after a number of days
   delete-after-days: 1
   # Delete history in memory on logout (does not effect disk)
@@ -282,6 +282,6 @@ limits:
     # 2 = Inventory for placing (survival)
     inventory-mode: 0
     # Should large edits require confirmation (>16384 chunks)
-    confirm-large: true
+    confirm-large: false
     # List of blocks to strip nbt from
     strip-nbt: []

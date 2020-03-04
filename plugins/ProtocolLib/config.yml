@@ -25,6 +25,6 @@ global:
   detailed error: false
   
   # The engine used by the filter command
-  script engine: JavaScript
+  script engine: rhino
   
   suppressed reports:

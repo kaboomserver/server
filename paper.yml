@@ -84,7 +84,7 @@ world-settings:
     duplicate-uuid-saferegen-delete-range: 32
     remove-corrupt-tile-entities: true
     optimize-explosions: true
-    portal-search-radius: 128
+    portal-search-radius: 16
     disable-teleportation-suffocation-check: true
     fixed-chunk-inhabited-time: -1
     use-vanilla-world-scoreboard-name-coloring: false
