@@ -21,10 +21,6 @@ aliases:
   - minecraft:clear $1-
   enchant:
   - minecraft:enchant $1-
-  minecraft:execute:
-  - ping Down for maintenance
-  execute:
-  - ping Down for maintenance
   gamemode:
   - minecraft:gamemode $1-
   give:
