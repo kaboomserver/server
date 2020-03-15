@@ -72,11 +72,11 @@ web:
   #  - All schematics are anonymous and private
   #  - Downloads can be deleted by the user
   #  - Supports clipboard uploads, downloads and saves
-  url: "http://empcraft.com/fawe/"
+  url: "https://athion.net/fawe/"
   # The web interface for assets
   #  - All schematics are organized and public
   #  - Assets can be searched, selected and downloaded
-  assets: "http://empcraft.com/assetpack/"
+  assets: "https://athion.net/assetpack/"
 
 extent:
   # Don't bug console when these plugins slow down WorldEdit operations
