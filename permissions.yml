@@ -5,6 +5,7 @@ op:
 
       essentials.ban.exempt: false
       essentials.commandcooldowns.bypass: false
+      essentials.fly.safelogin: false
       essentials.invsee.preventmodify: false
       essentials.jail.exempt: false
       essentials.joinfullserver: false

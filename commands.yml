@@ -33,6 +33,10 @@ aliases:
   - minecraft:kill $1-
   list:
   - minecraft:list $1-
+  minecraft:locate:
+  - []
+  locate:
+  - []
   me:
   - minecraft:me $1-
   msg:
@@ -77,16 +81,12 @@ aliases:
   - bcv Stopping the server
   tag:
   - minecraft:tag $1-
-  teleport:
-  - minecraft:teleport $1-
   tell:
   - minecraft:tell $1-
   tellraw:
   - minecraft:tellraw $1-
   time:
   - minecraft:time $1-
-  tp:
-  - minecraft:tp $1-
   weather:
   - minecraft:weather $1-
   xp:

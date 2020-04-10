@@ -14,6 +14,27 @@ Permissions:
   # negate with your permissions plugin
   ExplicitDisguises: false
 
+  # What should the default permissions be for seeing commands?
+  # This is a config option because I can't verify if they should be able to see commands normally due to my
+  # permissions system. My system is complex, but its a ton of control.
+  # This isn't an issue normally, but I recently received complaints from someone who doesn't believe in permissions...
+  # Some of you may also wish to hide these commands!
+  # The permissions for commands are a simple 'libsdisguises.seecmd.command' where 'command' can be
+  # 'disguise', 'undisguise' etc. A simple 'libsdisguises.seecmd' permission may also work for children
+  # If you change this while the server is running, players may need to rejoin for it to take effect
+  # Remember that command blocks need 'TRUE' or 'OP' to use the commands.
+  # TRUE = Everyone can see this, the default. Can be negated with permissions
+  # FALSE = No one can see this without permissions to allow it
+  # OP = Only operators can see this
+  # NOT_OP = Only non operators can see this
+  SeeCommands: TRUE
+
+# You can also get this information through /libsdisguises config
+# Should the plugin output missing config options instead of just counting them
+VerboseConfig: false
+# Should the plugin output changed config options? Will also list unknown extra options
+ChangedConfig: false
+
 # Disables commands with the exception of /libsdisguises. Useful if you don't want the plugin to be used by anything
 #  but a plugin
 # Useful if you didn't purchase the plugin.
@@ -43,7 +64,12 @@ SaveDisguises:
   Entities: false
 
 # Do names go beyond the 16 char limit for player disguises?
-ExtendedNames: true
+ExtendedNames: false
+# Do names resolve into scoreboard teams so changing the player name is flawless?
+# This will only work properly for names 28 chars or less in length.
+# Notch [DragonSlayer lvl: 28]
+# It's recommended to leave this on unless you need it off
+ScoreboardNames: true
 
 # Does the player keep their disguise after they die?
 KeepDisguises:
@@ -100,9 +126,16 @@ DisguiseSounds: true
 # I disable this as it can be a little confusing when not used with self disguises
 HearSelfDisguise: true
 
-# When disguised, should a message be displayed to the player in action bar?
+# When disguised, should a message be displayed to the player? If so, where?
 # The message can be customized in translations
-NotifyPlayerDisguised: true
+# BOSS_BAR is not supported in 1.12!
+# NONE, BOSS_BAR, ACTION_BAR
+NotifyBar: ACTION_BAR
+# If using boss bar, these two options come into play
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/boss/BarColor.html
+BossBarColor: GREEN
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/boss/BarStyle.html
+BossBarStyle: SOLID
 
 # Shall I send the velocity packets? I REALLY recommend you don't disable.
 # This is the only thing allowing the mobs to fly without glitching out.
@@ -221,11 +254,9 @@ HideDisguisedPlayersFromTab: false
 ShowPlayerDisguisesInTab: false
 
 # On player disguise, a fake player is added to tablist so the skin can load properly.
-# If the viewer sees the player disguise but there's no tablist name, they won't see a skin.
-# 2 seconds is normally long enough to load the skin properly, but sometimes the server needs longer
-# This is in ticks, there are 20 ticks in every second. 40 ticks = 2 seconds. 200 ticks = 10 seconds.
 # This option is ignored if 'ShowPlayerDisguisesInTab' is enabled.
-PlayerDisguisesTablistExpires: 40
+# 2 ticks should easily be enough.
+PlayerDisguisesTablistExpires: 2
 
 # Don't like players able to set themselves invisible when using the disguise commands? Toggle this to true and no one can use setInvisible! Plugins can still use this however.
 DisableInvisibility: false
