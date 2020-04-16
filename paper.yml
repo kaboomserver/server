@@ -65,7 +65,7 @@ timings:
   server-name: Unknown Server
 world-settings:
   default:
-    queue-light-updates: true
+    queue-light-updates: false
     count-all-mobs-for-spawning: false
     fire-physics-event-for-redstone: false
     delay-chunk-unloads-by: 10s
@@ -94,8 +94,8 @@ world-settings:
     disable-thunder: false
     skeleton-horse-thunder-spawn-chance: 0.01
     disable-ice-and-snow: false
-    keep-spawn-loaded-range: 10
-    keep-spawn-loaded: false
+    keep-spawn-loaded-range: 5
+    keep-spawn-loaded: true
     auto-save-interval: 100
     armor-stands-do-collision-entity-lookups: true
     nether-ceiling-void-damage-height: 0

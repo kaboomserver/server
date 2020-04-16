@@ -76,7 +76,7 @@ world-settings:
     seed-ocean: 14357621
     seed-outpost: 165745296
     seed-slime: 987234911
-    max-tnt-per-tick: 100
+    max-tnt-per-tick: 10
     enable-zombie-pigmen-portal-spawns: true
     item-despawn-rate: 6000
     arrow-despawn-rate: 1200
