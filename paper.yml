@@ -82,7 +82,7 @@ world-settings:
     disable-creeper-lingering-effect: false
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
-    remove-corrupt-tile-entities: true
+    remove-corrupt-tile-entities: false
     optimize-explosions: true
     portal-search-radius: 16
     disable-teleportation-suffocation-check: true
