@@ -10,36 +10,11 @@
 # IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
 # Forums: http://www.spigotmc.org/
 
-config-version: 11
-settings:
-  save-user-cache-on-stop-only: false
-  sample-count: 12
-  bungeecord: false
-  late-bind: true
-  player-shuffle: 0
-  user-cache-size: 1000
-  moved-wrongly-threshold: 0.0625
-  moved-too-quickly-multiplier: 100.0
-  timeout-time: 60
-  restart-on-crash: true
-  restart-script: script/stop.sh
-  netty-threads: 4
-  debug: false
-  attribute:
-    maxHealth:
-      max: 2048.0
-    movementSpeed:
-      max: 2048.0
-    attackDamage:
-      max: 2048.0
-messages:
-  whitelist: The server is temporarily down for maintenance. Please try again later!
-  unknown-command: Unknown command. Type "/help" for help.
-  server-full: The server is temporarily down for maintenance. Please try again later!
-  outdated-client: Your client is outdated. Please join with Minecraft version 1.15.2!
-  outdated-server: The server is outdated. Please join with Minecraft version 1.15.2!
-  restart: The server is restarting. Please wait...
+config-version: 12
 commands:
+  log: true
+  tab-complete: 0
+  send-namespaced: true
   spam-exclusions:
   - /skill
   silent-commandblock-console: true
@@ -48,24 +23,55 @@ commands:
   - summon
   - testforblock
   - tellraw
-  log: true
-  tab-complete: 0
-  send-namespaced: true
+messages:
+  whitelist: The server is temporarily down for maintenance. Please try again later!
+  unknown-command: Unknown command. Type "/help" for help.
+  server-full: The server is temporarily down for maintenance. Please try again later!
+  outdated-client: Your client is outdated. Please join with Minecraft version 1.15.2!
+  outdated-server: The server is outdated. Please join with Minecraft version 1.15.2!
+  restart: The server is restarting. Please wait...
+settings:
+  timeout-time: 60
+  restart-on-crash: true
+  restart-script: script/stop.sh
+  bungeecord: false
+  netty-threads: 4
+  sample-count: 12
+  player-shuffle: 0
+  user-cache-size: 1000
+  save-user-cache-on-stop-only: true
+  moved-wrongly-threshold: 0.0625
+  moved-too-quickly-multiplier: 100.0
+  debug: false
+  log-villager-deaths: false
+  attribute:
+    maxHealth:
+      max: 2048.0
+    movementSpeed:
+      max: 2048.0
+    attackDamage:
+      max: 2048.0
+stats:
+  disable-saving: true
+  forced-stats: {}
 advancements:
   disable-saving: true
   disabled:
   - '*'
-stats:
-  disable-saving: true
-  forced-stats: {}
 world-settings:
   default:
-    random-light-updates: false
-    view-distance: 5
     verbose: false
+    view-distance: default
     mob-spawn-range: 3
+    item-despawn-rate: 6000
     hopper-amount: 1
+    arrow-despawn-rate: 1200
+    trident-despawn-rate: 1200
+    zombie-aggressive-towards-villager: true
+    nerf-spawner-mobs: false
+    enable-zombie-pigmen-portal-spawns: true
     dragon-death-sound-radius: 0
+    wither-spawn-sound-radius: 0
     seed-village: 10387312
     seed-desert: 14357617
     seed-igloo: 14357618
@@ -75,15 +81,10 @@ world-settings:
     seed-shipwreck: 165745295
     seed-ocean: 14357621
     seed-outpost: 165745296
+    seed-endcity: 10387313
     seed-slime: 987234911
     max-tnt-per-tick: 10
-    enable-zombie-pigmen-portal-spawns: true
-    item-despawn-rate: 6000
-    arrow-despawn-rate: 1200
-    wither-spawn-sound-radius: 0
     hanging-tick-frequency: 100
-    zombie-aggressive-towards-villager: false
-    nerf-spawner-mobs: false
     max-entity-collisions: 1
     growth:
       cactus-modifier: 100
@@ -102,16 +103,16 @@ world-settings:
       bamboo-modifier: 100
       sweetberry-modifier: 100
       kelp-modifier: 100
+    merge-radius:
+      item: 2.5
+      exp: 3.0
     entity-activation-range:
-      water: 16
       animals: 16
       monsters: 24
       raiders: 32
       misc: 4
+      water: 16
       tick-inactive-villagers: false
-    merge-radius:
-      exp: 3.0
-      item: 2.5
     entity-tracking-range:
       players: 48
       animals: 48

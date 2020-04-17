@@ -33,10 +33,6 @@ aliases:
   - minecraft:kill $1-
   list:
   - minecraft:list $1-
-  minecraft:locate:
-  - []
-  locate:
-  - []
   me:
   - minecraft:me $1-
   msg:
