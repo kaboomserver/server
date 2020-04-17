@@ -84,7 +84,7 @@ world-settings:
     grass-spread-tick-rate: 400
     use-vanilla-world-scoreboard-name-coloring: false
     prevent-tnt-from-moving-in-water: false
-    remove-corrupt-tile-entities: false
+    remove-corrupt-tile-entities: true
     filter-nbt-data-from-spawn-eggs-and-related: true
     enable-treasure-maps: true
     treasure-maps-return-already-discovered: false
