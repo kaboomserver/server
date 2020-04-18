@@ -113,7 +113,7 @@ prevent-collision: false
 # If the above is true, should we automatically team players until you do?
 auto-team: false
 # When enabled if certain metadata can't be read we won't tell you about it
-suppress-metadata-errors: false
+suppress-metadata-errors: true
 # When enabled 1.9+ will be able to block by using shields
 shield-blocking: false
 # Enable player tick simulation, this fixes eating, drinking, nether portals.
