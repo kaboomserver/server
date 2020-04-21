@@ -66,6 +66,7 @@ toggle-on-move: false
 toggle-on-move-delay: 9
 
 # If true, particles will be completely disabled while the player is in combat
+# Note: You can change what styles follow this setting in their individual setting files
 # Default: false
 toggle-on-combat: false
 
@@ -155,16 +156,26 @@ mysql-settings:
   # Default: 
   user-password: ''
 
+  # The prefix of the tables in the database
+  # Do not change this after tables have already been created or you will have data loss
+  # Default: playerparticles_
+  table-prefix: playerparticles_
+
   # If the database connection should use SSL
   # You should enable this if your database supports SSL
   # Default: false
   use-ssl: false
 
-# This configuration option allows you to change any of the GUI
-# icons to whatever block/item you want.
+  # The size of the connection pool to the database
+  # Not recommended to go below 2 or above 5
+  # Default: 5
+  connection-pool-size: 5
+
+# This configuration option allows you to change the GUI
+# icons to whatever block/item you want. If you want to change an effect
+# or style icon, use their respective config files.
 # Notes: If any of the block/item names are invalid the icon in the GUI
 # will be the barrier icon to show that it failed to load.
-# Do NOT change the particle/style name
 # You MUST use the Spigot-given name for it to work. You can see
 # all the Spigot-given names at the link below:
 # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
@@ -195,235 +206,6 @@ gui-icon:
       - BOOK
     reset:
       - BARRIER
-  effect:
-    ambient_entity_effect:
-      - BEACON
-    angry_villager:
-      - IRON_DOOR
-    barrier:
-      - BARRIER
-    block:
-      - STONE
-    bubble:
-      - BUBBLE_CORAL
-      - GLASS
-    bubble_column_up:
-      - MAGMA_BLOCK
-    bubble_pop:
-      - BUBBLE_CORAL_FAN
-    campfire_cosy_smoke:
-      - CAMPFIRE
-    campfire_signal_smoke:
-      - REDSTONE_TORCH
-    cloud:
-      - WHITE_WOOL
-      - WOOL
-    composter:
-      - COMPOSTER
-    crit:
-      - IRON_SWORD
-    current_down:
-      - SOUL_SAND
-    damage_indicator:
-      - BOW
-    dolphin:
-      - DOLPHIN_SPAWN_EGG
-    dragon_breath:
-      - DRAGON_BREATH
-      - DRAGONS_BREATH
-    dripping_honey:
-      - BEE_NEST
-    dripping_lava:
-      - LAVA_BUCKET
-    dripping_water:
-      - WATER_BUCKET
-    dust:
-      - REDSTONE
-    elder_guardian:
-      - ELDER_GUARDIAN_SPAWN_EGG
-      - PRISMARINE_CRYSTALS
-    enchant:
-      - ENCHANTING_TABLE
-      - ENCHANTMENT_TABLE
-    enchanted_hit:
-      - DIAMOND_SWORD
-    end_rod:
-      - END_ROD
-    entity_effect:
-      - GLOWSTONE_DUST
-    explosion:
-      - FIRE_CHARGE
-      - FIREBALL
-    explosion_emitter:
-      - TNT
-    falling_dust:
-      - SAND
-    falling_honey:
-      - HONEY_BOTTLE
-    falling_lava:
-      - RED_DYE
-    falling_nectar:
-      - HONEYCOMB
-    falling_water:
-      - BLUE_DYE
-    firework:
-      - FIREWORK_ROCKET
-      - FIREWORK
-    fishing:
-      - FISHING_ROD
-    flame:
-      - BLAZE_POWDER
-    flash:
-      - GOLD_INGOT
-    footstep:
-      - GRASS
-    happy_villager:
-      - DARK_OAK_DOOR_ITEM
-      - DARK_OAK_DOOR
-    heart:
-      - POPPY
-      - RED_ROSE
-    instant_effect:
-      - SPLASH_POTION
-      - POTION
-    item:
-      - ITEM_FRAME
-    item_slime:
-      - SLIME_BALL
-    item_snowball:
-      - SNOWBALL
-      - SNOW_BALL
-    large_smoke:
-      - COBWEB
-      - WEB
-    landing_honey:
-      - HONEY_BLOCK
-    landing_lava:
-      - ORANGE_DYE
-    lava:
-      - MAGMA_CREAM
-    mycelium:
-      - MYCELIUM
-      - MYCEL
-    nautilus:
-      - HEART_OF_THE_SEA
-    note:
-      - NOTE_BLOCK
-    poof:
-      - FIREWORK_STAR
-      - FIREWORK_CHARGE
-    portal:
-      - OBSIDIAN
-    rain:
-      - PUFFERFISH_BUCKET
-      - LAPIS_BLOCK
-    smoke:
-      - TORCH
-    sneeze:
-      - BAMBOO
-    spell:
-      - POTION
-      - GLASS_BOTTLE
-    spit:
-      - LLAMA_SPAWN_EGG
-      - PUMPKIN_SEEDS
-    splash:
-      - SALMON
-      - FISH
-      - RAW_FISH
-    squid_ink:
-      - INK_SAC
-    sweep_attack:
-      - GOLDEN_SWORD
-      - GOLD_SWORD
-    totem_of_undying:
-      - TOTEM_OF_UNDYING
-      - TOTEM
-    underwater:
-      - TURTLE_HELMET
-      - SPONGE
-    witch:
-      - CAULDRON
-  style:
-    arrows:
-      - BOW
-    batman:
-      - BAT_SPAWN_EGG
-      - COAL
-    beam:
-      - POWERED_RAIL
-    blockbreak:
-      - IRON_PICKAXE
-    blockplace:
-      - OAK_PLANKS
-      - WOOD
-    celebration:
-      - FIREWORK_ROCKET
-      - FIREWORK
-    chains:
-      - TRIPWIRE_HOOK
-    companion:
-      - NAME_TAG
-    cube:
-      - STONE
-    feet:
-      - GRASS
-    halo:
-      - END_PORTAL_FRAME
-      - ENDER_PORTAL_FRAME
-    hurt:
-      - CACTUS
-    invocation:
-      - ENDER_EYE
-      - EYE_OF_ENDER
-    move:
-      - PISTON
-      - PISTON_BASE
-    normal:
-      - DIRT
-    orbit:
-      - ENCHANTING_TABLE
-      - ENCHANTMENT_TABLE
-    overhead:
-      - GLOWSTONE
-    point:
-      - STONE_BUTTON
-    popper:
-      - POPPED_CHORUS_FRUIT
-      - CHORUS_FRUIT_POPPED
-    pulse:
-      - REDSTONE_TORCH
-      - REDSTONE_TORCH_ON
-    quadhelix:
-      - NAUTILUS_SHELL
-      - ACTIVATOR_RAIL
-    rings:
-      - LEAD
-      - LEASH
-    sphere:
-      - HEART_OF_THE_SEA
-      - SNOWBALL
-      - SNOW_BALL
-    spin:
-      - BEACON
-    spiral:
-      - HOPPER
-    swords:
-      - IRON_SWORD
-    thick:
-      - COBWEB
-      - WEB
-    twins:
-      - OAK_FENCE
-      - FENCE
-    vortex:
-      - GLOWSTONE_DUST
-    whirl:
-      - FEATHER
-    whirlwind:
-      - STRING
-    wings:
-      - ELYTRA
 
 # That's everything! You reached the end of the configuration.
 # Enjoy the plugin!
