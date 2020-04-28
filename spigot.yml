@@ -33,7 +33,7 @@ messages:
 settings:
   timeout-time: 60
   restart-on-crash: true
-  restart-script: script/stop.sh
+  restart-script: ../framework/script/stop.sh
   bungeecord: false
   netty-threads: 4
   sample-count: 12
