@@ -24,6 +24,7 @@ timings:
   history-length: 3600
   server-name: Unknown Server
 settings:
+  chunk-tasks-per-tick: 1000
   load-permissions-yml-before-plugins: true
   region-file-cache-size: 256
   enable-player-collisions: true
@@ -48,7 +49,7 @@ settings:
     total-multiplier: 0.98
   async-chunks:
     enable: true
-    load-threads: -1
+    threads: -1
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.'
@@ -59,6 +60,8 @@ messages:
     connection-throttle: Connection throttled! Please wait before reconnecting.
 world-settings:
   default:
+    phantoms-do-not-spawn-on-creative-players: true
+    phantoms-only-attack-insomniacs: true
     baby-zombie-movement-modifier: 0.5
     spawner-nerfed-mobs-should-jump: false
     keep-spawn-loaded: false
@@ -189,3 +192,5 @@ world-settings:
     hopper:
       cooldown-when-full: true
       disable-move-event: true
+    viewdistances:
+      no-tick-view-distance: 10
