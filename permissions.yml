@@ -78,7 +78,6 @@ op:
       worldedit.navigation.jumpto.command: true
       worldedit.navigation.up: true
       worldedit.nbtinfo: true
-      worldedit.regen: true
       worldedit.region.hollow: true
       worldedit.region.line: true
       worldedit.region.curve: true
