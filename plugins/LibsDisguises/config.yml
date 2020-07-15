@@ -27,13 +27,20 @@ Permissions:
   # FALSE = No one can see this without permissions to allow it
   # OP = Only operators can see this
   # NOT_OP = Only non operators can see this
-  SeeCommands: TRUE
+  SeeCommands: true
+
+# Some disguises have randomized options on disguise, such as a fox type or a villager breed.
+# This may be problematic for some server owners, so you can disable it below
+RandomDisguiseOptions: true
 
 # You can also get this information through /libsdisguises config
 # Should the plugin output missing config options instead of just counting them
 VerboseConfig: false
 # Should the plugin output changed config options? Will also list unknown extra options
 ChangedConfig: false
+# Should the config automatically update itself each time there's a config entry missing?
+# The old config will have any custom comments or invalid config entries wiped.
+UpdateConfig: false
 
 # Disables commands with the exception of /libsdisguises. Useful if you don't want the plugin to be used by anything
 #  but a plugin
@@ -63,13 +70,21 @@ SaveDisguises:
   Players: false
   Entities: false
 
-# Do names go beyond the 16 char limit for player disguises?
-ExtendedNames: false
-# Do names resolve into scoreboard teams so changing the player name is flawless?
-# This will only work properly for names 28 chars or less in length.
-# Notch [DragonSlayer lvl: 28]
-# It's recommended to leave this on unless you need it off
-ScoreboardNames: true
+# There are four options you can use
+# VANILLA - Names are limited to 16 chars but can't be changed without resending disguise
+# TEAMS - Names are limited to 32 chars but can be changed willy nilly
+# EXTENDED - Names are limited to 48 chars but can't be changed without resending disguise
+# ARMORSTANDS - Names are limited to 256 chars, uses a mix of armorstands and teams to do this. Slightly hacky.
+# Downside of armorstand names is that there's a chance of it becoming desynced from the player disguise
+# And names will always display even if the entity is invisible using potion effects
+PlayerNames: TEAMS
+
+# If doing ARMORSTANDS in the above option, should CustomNames be overridden to use armorstands too?
+# This allows multiline names
+OverrideCustomNames: true
+
+# How many ticks before tab packet is sent to remove from tablist. This shouldn't need to be touched
+TablistRemoveDelay: 3
 
 # Does the player keep their disguise after they die?
 KeepDisguises:
@@ -98,9 +113,8 @@ Scoreboard:
 
 # Shall I notify those with the correct permission when there's a LibsDisguises update?
 NotifyUpdate: false
-
-# Whats the permission to get the notification?
-Permission: 'libsdisguises.update'
+# Should the plugin automatically update?
+AutoUpdate: false
 
 # Where should the plugin check for updates?
 # SAME_BUILDS - Will check snapshots if you're not using a release build
@@ -117,6 +131,11 @@ UndisguiseRadiusMax: 50
 # Shall the players view their disguises?
 # Best used when viewing yourself in 3rd person
 ViewSelfDisguises: true
+
+# Some disguises are rather big and tall and block your vision
+# By default those disguises are enabled despite misgivings, such as zombies, players, etc.
+# The baby versions however, should be short enough that it's a non-issue
+TallSelfDisguises: true
 
 # Shall I disguise the sounds?
 # This turns your damage sound into a MOOOO
@@ -136,6 +155,10 @@ NotifyBar: ACTION_BAR
 BossBarColor: GREEN
 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/boss/BarStyle.html
 BossBarStyle: SOLID
+
+# By the default the plugin saves the users of the /viewdisguisebar and /viewselfdisguises to a file
+# So that it persists after restart
+SaveUserPreferences: true
 
 # Shall I send the velocity packets? I REALLY recommend you don't disable.
 # This is the only thing allowing the mobs to fly without glitching out.
@@ -300,6 +323,9 @@ PacketsEnabled:
   Riding: true
   # When disguised as a wither skull, it sends a look packet every tick so that the wither skull is facing the right way.
   WitherSkull: true
+  # This is only used when using a modded disguises thingy, check disguises.yml for more info
+  # This is used as a hack to bypass bungeecord issues
+  LoginPayload: true
 
 # Added to support a Chinese Minecraft Server which uses their own skin server unless the UUID is not version 4.
 # Changing this from 4 to say, 3. Means their server will fetch skins from Mojang instead.
