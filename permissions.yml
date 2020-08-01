@@ -22,6 +22,8 @@ op:
       essentials.vanish.effect: false
       essentials.vanish.interact: false
       essentials.vanish.see: false
+      geyser.command.reload: false
+      geyser.command.stop: false
 
       # Due to WorldEdit permission shenanigans, we have to grant
       # permissions manually to enforce block edit limits
