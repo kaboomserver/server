@@ -18,7 +18,7 @@ settings:
   permissions-file: permissions.yml
   update-folder: update
   plugin-profiling: true
-  connection-throttle: 0
+  connection-throttle: -1
   query-plugins: true
   deprecated-verbose: false
   shutdown-message: The server is restarting. Please wait...
