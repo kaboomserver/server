@@ -57,7 +57,7 @@ messages:
     flying-player: Flying is not enabled on this server
     flying-vehicle: Flying is not enabled on this server
     authentication-servers-down: ''
-    connection-throttle: Connection throttled! Please wait before reconnecting.
+    connection-throttle: Wait 5 seconds before connecting, thanks! :)
 world-settings:
   default:
     phantoms-do-not-spawn-on-creative-players: true
