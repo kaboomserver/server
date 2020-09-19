@@ -77,12 +77,18 @@ aliases:
   - bcv Stopping the server
   tag:
   - minecraft:tag $1-
+  minecraft:teleport:
+  - tp $1-
+  teleport:
+  - tp $1-
   tell:
   - minecraft:tell $1-
   tellraw:
   - minecraft:tellraw $1-
   time:
   - minecraft:time $1-
+  minecraft:tp:
+  - tp $1-
   weather:
   - minecraft:weather $1-
   xp:
