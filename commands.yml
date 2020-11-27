@@ -89,6 +89,14 @@ aliases:
   - minecraft:time $1-
   minecraft:tp:
   - tp $1-
+  essentials:etpall:
+  - tp $1-
+  essentials:tpall:
+  - tp $1-
+  etpall:
+  - tp $1-
+  tpall:
+  - tp $1-
   weather:
   - minecraft:weather $1-
   xp:
