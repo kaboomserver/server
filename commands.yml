@@ -13,12 +13,48 @@
 command-block-overrides: []
 ignore-vanilla-permissions: true
 aliases:
+  # Temporary:
+  ess:
+  - []
+  essentials:
+  - []
+  eessentials:
+  - []
+  eess:
+  - []
+  essentials:ess:
+  - []
+  essentials:essentials:
+  - []
+  essentials:eessentials:
+  - []
+  essentials:eess:
+  - []
+  essentials:essversion:
+  - []
+  ld:
+  - []
+  libsdisg:
+  - []
+  libsdisguises:
+  - []
+  libsdisguises:ld:
+  - []
+  libsdisguises:libsdisg:
+  - []
+  libsdisguises:libsdisguises:
+  - []
+
   icanhasbukkit:
   - version $1-
   ban:
   - minecraft:ban $1-
   clear:
   - minecraft:clear $1-
+  minecraft:datapack:
+  - []
+  datapack:
+  - []
   enchant:
   - minecraft:enchant $1-
   gamemode:

@@ -24,6 +24,8 @@ op:
       essentials.vanish.see: false
       geyser.command.reload: false
       geyser.command.stop: false
+      libsdisguises.reload: false
+      playerparticles.reload: false
 
       # Due to WorldEdit permission shenanigans, we have to grant
       # permissions manually to enforce block edit limits
@@ -201,7 +203,6 @@ op:
       worldedit.fast: true
       worldedit.masks: true
       worldedit.patterns: true
-      worldedit.reload: true
       worldedit.remove: true
       worldedit.threads: true
       worldedit.transforms: true
