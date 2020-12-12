@@ -44,7 +44,23 @@ aliases:
   - []
   libsdisguises:libsdisguises:
   - []
-
+  tpr:
+  - []
+  etpr:
+  - []
+  tprandom:
+  - []
+  etprandom:
+  - []
+  essentials:tpr:
+  - []
+  essentials:etpr:
+  - []
+  essentials:tprandom:
+  - []
+  essentials:etprandom:
+  - []
+  
   icanhasbukkit:
   - version $1-
   ban:
