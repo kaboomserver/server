@@ -44,7 +44,10 @@ aliases:
   - []
   libsdisguises:libsdisguises:
   - []
-
+  data:
+  - []
+  minecraft:data:
+  - []
   icanhasbukkit:
   - version $1-
   ban:
