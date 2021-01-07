@@ -32,18 +32,6 @@ aliases:
   - []
   essentials:essversion:
   - []
-  ld:
-  - []
-  libsdisg:
-  - []
-  libsdisguises:
-  - []
-  libsdisguises:ld:
-  - []
-  libsdisguises:libsdisg:
-  - []
-  libsdisguises:libsdisguises:
-  - []
 
   icanhasbukkit:
   - version $1-
@@ -51,10 +39,6 @@ aliases:
   - minecraft:ban $1-
   clear:
   - minecraft:clear $1-
-  minecraft:datapack:
-  - []
-  datapack:
-  - []
   enchant:
   - minecraft:enchant $1-
   gamemode:

@@ -24,7 +24,6 @@ op:
       essentials.vanish.see: false
       geyser.command.reload: false
       geyser.command.stop: false
-      libsdisguises.reload: false
       playerparticles.reload: false
 
       # Due to WorldEdit permission shenanigans, we have to grant
