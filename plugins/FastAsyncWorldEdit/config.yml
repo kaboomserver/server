@@ -1,20 +1,25 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit/issues"
-wiki: "https://github.com/IntellectualSites/FastAsyncWorldEdit/wiki"
-date: "14 May 2020 22:00:00 GMT"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit-1.15/167"
-commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit-1.13/commit/f7c96d89"
+wiki: "https://wiki.intellectualsites.com/FastAsyncWorldEdit/index"
+date: "Fri Feb 19 00:00:00 EET 2021"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit-1.16/569"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f5337587"
 platform: "Bukkit"
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
 # fawe.<plugin>  permission. See the Permissions page for supported region plugins.
 region-restrictions: false
-# FAWE will skip chunks when there's not enough memory available
-prevent-crashes: true
 # FAWE will cancel non admin edits when memory consumption exceeds this %
 #  - Bypass with `/wea` or `//fast` or `fawe.bypass`
 #  - Disable with 100 or -1.
 max-memory-percent: 60
+
+# Enable or disable core components
+enabled-components:
+  commands: true
+  # Disable the FAWE-PlotSquared hook to take over most intense P2 queueing
+  # Specific aspects can be turned on and off further below
+  plotsquared-hook: false
 
 clipboard:
   # Store the clipboard on disk instead of memory
@@ -32,7 +37,7 @@ clipboard:
 
 lighting:
   # If packet sending should be delayed until relight is finished
-  delay-packet-sending: true
+  delay-packet-sending: false
   async: true
   # The relighting mode to use:
   #  - 0 = None (Do no relighting)
@@ -41,6 +46,8 @@ lighting:
   mode: 1
   # If existing lighting should be removed before relighting
   remove-first: false
+  # Calculate and set heightmaps when relighting
+  do-heightmaps: false
 
 # Generic tick limiter (not necessarily WorldEdit related, but useful to stop abuse)
 tick-limiter:
@@ -68,6 +75,12 @@ web:
   #  - Downloads can be deleted by the user
   #  - Supports clipboard uploads, downloads and saves
   url: "https://athion.net/fawe/"
+
+plotsquared-integration:
+  clear: true
+  cuboids: true
+  copy-and-swap: true
+  set-biome: true
 
 extent:
   # Don't bug console when these plugins slow down WorldEdit operations
@@ -100,6 +113,24 @@ experimental:
   #  - PERM: fawe.freebuild
   #  - PERM: fawe.freebuild.<plugin>
   freebuild: false
+  # Other experimental features
+  other: false
+  # Allow blocks placed by WorldEdit to tick. This could cause the big lags.
+  # This has no effect on existing blocks one way or the other.
+  allow-tick-placed: false
+  # Force re-ticking of existing blocks not edited by FAWE.
+  # This will increase time taken slightly.
+  allow-tick-existing: false
+  # [SAFE] Do not wait for a chunk's history to save before sending it
+  #  - Undo/redo commands will wait until the history has been written to disk before executing
+  #  - Requires combine_stages = true
+  send-before-history: true
+  # Sets a maximum limit (in kb) for the size of a player's schematics directory (per-player mode only)
+  # Set to -1 to disable
+  per-player-file-size-limit: -1
+  # Sets a maximum limit for the amount of schematics in a player's schematics directory (per-player mode only)
+  # Set to -1 to disable
+  per-player-file-num-limit: -1
 
 # This relates to how FAWE places chunks
 queue:
@@ -143,6 +174,8 @@ queue:
   #  - E.g. A plugin creates an EditSession but never does anything with it
   #  - This only applies to plugins improperly using WorldEdit's legacy API
   discard-after-ms: 60000
+  # When using fastmode also do not bother to fix existing ticking blocks
+  no-tick-fastmode: true
 
 history:
   # Should history be saved on disk:
@@ -227,10 +260,6 @@ region-restrictions-options:
   #  - MEMBER = Players added to a region
   #  - OWNER = Players who own the region
   mode: "MEMBER"
-
-# Enable or disable core components
-enabled-components:
-  commands: true
 # The "default" limit group affects those without a specific limit permission.
 # To grant someone different limits, copy the default limits group
 # and give it a different name (e.g. newbie). Then give the user the limit 

@@ -27,8 +27,8 @@ messages:
   whitelist: The server is temporarily down for maintenance. Please try again later!
   unknown-command: Unknown command. Type "/help" for help.
   server-full: The server is temporarily down for maintenance. Please try again later!
-  outdated-client: Your client is outdated. Please join with Minecraft version 1.16.3!
-  outdated-server: The server is outdated. Please join with Minecraft version 1.16.3!
+  outdated-client: Your client is outdated. Please join with Minecraft version 1.16.5!
+  outdated-server: The server is outdated. Please join with Minecraft version 1.16.5!
   restart: The server is restarting. Please wait...
 settings:
   timeout-time: 60
@@ -51,6 +51,8 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
+players:
+  disable-saving: true
 stats:
   disable-saving: true
   forced-stats: {}
@@ -60,6 +62,12 @@ advancements:
   - '*'
 world-settings:
   default:
+    seed-bastion: 30084232
+    seed-fortress: 30084232
+    seed-mansion: 10387319
+    seed-fossil: 14357921
+    seed-portal: 34222645
+    end-portal-sound-radius: 0
     verbose: false
     view-distance: default
     mob-spawn-range: 3
@@ -111,8 +119,26 @@ world-settings:
       monsters: 24
       raiders: 32
       misc: 4
+      villagers: 32
+      flying-monsters: 32
+      villagers-work-immunity-after: 100
+      villagers-work-immunity-for: 20
+      villagers-active-for-panic: true
       water: 16
       tick-inactive-villagers: false
+      wake-up-inactive:
+        animals-max-per-tick: 4
+        animals-every: 1200
+        animals-for: 100
+        monsters-max-per-tick: 8
+        monsters-every: 400
+        monsters-for: 100
+        villagers-max-per-tick: 4
+        villagers-every: 600
+        villagers-for: 100
+        flying-monsters-max-per-tick: 8
+        flying-monsters-every: 200
+        flying-monsters-for: 100
     entity-tracking-range:
       players: 48
       animals: 48
