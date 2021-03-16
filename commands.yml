@@ -32,6 +32,11 @@ aliases:
   - []
   essentials:essversion:
   - []
+  
+  paper:
+  - []
+  paper:paper:
+  - []
 
   icanhasbukkit:
   - version $1-
