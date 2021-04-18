@@ -23,6 +23,8 @@
 # +------------------------------------------------------+ #
 ############################################################
 
+update-check: false
+
 # A color code between 0-9 or a-f. Set to 'none' to disable.
 ops-name-color: 'c'
 
