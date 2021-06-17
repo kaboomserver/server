@@ -4,6 +4,7 @@ op:
       # Every permission is granted for ops by default, disable a few
 
       essentials.ban.exempt: false
+      essentials.chat.spy.exempt: false
       essentials.commandcooldowns.bypass: false
       essentials.fly.safelogin: false
       essentials.invsee.preventmodify: false
