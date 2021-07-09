@@ -170,6 +170,7 @@ op:
       worldedit.brush.options.transform: true
       worldedit.brush.options.scroll: true
       worldedit.brush.options.visualize: true
+      worldedit.brush.options.tracemask: true
       worldedit.tool.deltree: true
       worldedit.tool.farwand: true
       worldedit.tool.lrbuild: true
@@ -209,6 +210,9 @@ op:
       worldedit.remove: true
       worldedit.threads: true
       worldedit.transforms: true
+      worldedit.toggleplace: true
+      worldedit.regen: true
+      worldedit.setwand: true
 
 deop:
   default: not-op
