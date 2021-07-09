@@ -179,6 +179,7 @@ op:
       worldedit.tool.data-cycler: true
       worldedit.tool.flood-fill: true
       worldedit.tool.inspect: true
+      worldedit.tool.none: true
       worldedit.light.fix: true
       worldedit.light.remove: true
       worldedit.light.set: true
