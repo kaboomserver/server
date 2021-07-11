@@ -211,7 +211,6 @@ op:
       worldedit.threads: true
       worldedit.transforms: true
       worldedit.toggleplace: true
-      worldedit.regen: true
       worldedit.setwand: true
 
 deop:
