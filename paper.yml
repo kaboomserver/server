@@ -5,14 +5,15 @@
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or IRC channel.
 # 
-# Discord: https://paperdiscord.emc.gs
-# IRC: #paper @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=paper )
+# Discord: https://discord.gg/papermc
+# IRC: #paper @ irc.esper.net ( https://webchat.esper.net/?channels=paper ) 
 # Website: https://papermc.io/ 
 # Docs: https://paper.readthedocs.org/ 
 
 verbose: false
-config-version: 20
+config-version: 21
 timings:
+  url: https://timings.aikar.co/
   enabled: false
   verbose: true
   server-name-privacy: false
@@ -70,6 +71,20 @@ settings:
     allow-piston-duplication-readme: This setting controls if player should be able
       to use TNT duplication, but this also allows duplicating carpet, rails and potentially
       other items
+  use-display-name-in-quit-message: true
+  console:
+    enable-brigadier-highlighting: true
+    enable-brigadier-completions: true
+  loggers:
+    deobfuscate-stacktraces: true
+  item-validation:
+    display-name: 8192
+    loc-name: 8192
+    lore-line: 8192
+    book:
+      title: 8192
+      author: 8192
+      page: 16384
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.'
@@ -80,6 +95,25 @@ messages:
     connection-throttle: Wait 5 seconds before connecting, thanks! :)
 world-settings:
   default:
+    delay-chunk-unloads-by: 10s
+    piglins-guard-chests: true
+    should-remove-dragon: false
+    ender-dragons-death-always-places-dragon-egg: false
+    allow-using-signs-inside-spawn-protection: false
+    update-pathfinding-on-block-update: true
+    fix-wither-targeting-bug: false
+    map-item-frame-cursor-update-interval: 10
+    allow-player-cramming-damage: false
+    seed-based-feature-search-loads-chunks: true
+    only-players-collide: false
+    allow-vehicle-collisions: true
+    portal-search-vanilla-dimension-scaling: true
+    fix-items-merging-through-walls: false
+    fix-climbing-bypassing-cramming-rule: false
+    show-sign-click-command-failure-msgs-to-player: true
+    max-leash-distance: 10.0
+    zombies-target-turtle-eggs: true
+    map-item-frame-cursor-limit: 128
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: true
     baby-zombie-movement-modifier: 0.5
@@ -138,6 +172,9 @@ world-settings:
     max-growth-height:
       cactus: 3
       reeds: 3
+      bamboo:
+        max: 16
+        min: 11
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 600
@@ -145,6 +182,8 @@ world-settings:
       soft: 32
       hard: 128
     game-mechanics:
+      fix-curing-zombie-villager-discount-exploit: true
+      disable-mob-spawner-spawn-egg-transformation: false
       disable-end-credits: false
       disable-chest-cat-detection: false
       disable-player-crits: false
@@ -182,6 +221,9 @@ world-settings:
     squid-spawn-height:
       maximum: 0.0
     anti-xray:
+      max-block-height: 64
+      lava-obscures: false
+      use-permission: false
       enabled: false
       engine-mode: 1
       chunk-edge-mode: 2

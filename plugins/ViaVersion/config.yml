@@ -91,7 +91,7 @@ fix-1_14-health-nan: true
 # Should 1.15+ clients respawn instantly / without showing a death screen?
 use-1_15-instant-respawn: true
 # 
-# Enable serverside block-connections for 1.13+ clients
+# Enable serverside block-connections for 1.13+ clients - all of the options in this section are built around this option
 serverside-blockconnections: false
 # Sets the method for the block connections (world for highly experimental (USE AT OWN RISK) world-level or packet for packet-level)
 blockconnection-method: packet
@@ -107,6 +107,11 @@ vine-climb-fix: false
 # CraftBukkit had this limit hardcoded until 1.16, so we have to assume any server/proxy might have this arbitrary check present.
 ignore-long-1_16-channel-names: true
 # 
+# Force 1.17+ client to accept the server resource pack; they will automatically disconnect if they decline.
+forced-use-1_17-resource-pack: false
+# The message to be displayed at the prompt when the 1.17+ client receives the server resource pack.
+resource-pack-1_17-prompt: ''
+# 
 # ----------------------------------------------------------#
 #             1.9+ CLIENTS ON 1.8 SERVERS OPTIONS          #
 # ----------------------------------------------------------#
@@ -120,6 +125,14 @@ auto-team: false
 suppress-metadata-errors: true
 # When enabled 1.9+ will be able to block by using shields
 shield-blocking: false
+# If this setting is active, the main hand is used instead of the off hand to trigger the blocking of the player.
+# With the main hand the blocking starts way faster.
+# (Requires "show-shield-when-sword-in-hand" to be disabled)
+no-delay-shield-blocking: false
+# If this setting is active, the shield will appear immediately for 1.9+ when you hold a sword in your main hand.
+# The shield disappears when you switch to another item.
+# (Requires "shield-blocking" to be enabled)
+show-shield-when-sword-in-hand: false
 # Enable player tick simulation, this fixes eating, drinking, nether portals.
 simulate-pt: false
 # Should we use nms player to simulate packets, (may fix anti-cheat issues)
@@ -144,5 +157,5 @@ replacement-piston-id: 0
 force-json-transform: false
 # Minimize the cooldown animation in 1.8 servers
 minimize-cooldown: false
-# Left handed handling on 1.8 servers
+# Allows 1.9+ left-handedness (main hand) on 1.8 servers
 left-handed-handling: false
