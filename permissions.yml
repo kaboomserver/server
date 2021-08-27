@@ -212,6 +212,13 @@ op:
       worldedit.transforms: true
       worldedit.toggleplace: true
       worldedit.setwand: true
+      worldedit.clipboard.save: true
+      worldedit.schematic.delete: true
+      worldedit.schematic.move: true
+      worldedit.schematic.move.other: true
+      worldedit.clipboard.load: true
+      worldedit.schematic.load.other: true
+      worldedit.schematic.save.other: true
 
 deop:
   default: not-op
