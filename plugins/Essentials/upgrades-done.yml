@@ -11,3 +11,7 @@ userMapRepaired: true
 kitsyml: true
 deleteOldItemsCsv: true
 uuidFileChange: true
+updateUsersIgnoreListUUID: true
+updateUsersStupidLegacyPathNames: true
+updateUsersMailList: true
+updatePurgeBrokenNpcAccounts: true
