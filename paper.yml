@@ -11,7 +11,7 @@
 # Docs: https://paper.readthedocs.org/ 
 
 verbose: false
-config-version: 21
+config-version: 22
 timings:
   url: https://timings.aikar.co/
   enabled: false
@@ -25,6 +25,8 @@ timings:
   history-length: 3600
   server-name: Unknown Server
 settings:
+  send-full-pos-for-hard-colliding-entities: true
+  lag-compensate-block-breaking: true
   console-has-all-permissions: false
   max-joins-per-tick: 3
   track-plugin-scoreboards: false
@@ -85,6 +87,25 @@ settings:
       title: 8192
       author: 8192
       page: 16384
+  packet-limiter:
+    kick-message: ''
+    limits:
+      all:
+        interval: 0.0
+        max-packet-rate: 0.0
+      PacketPlayInAutoRecipe:
+        interval: 0.0
+        max-packet-rate: 0.0
+  chunk-loading:
+    min-load-radius: 2
+    max-concurrent-sends: 2
+    autoconfig-send-distance: true
+    target-player-chunk-send-rate: 100.0
+    global-max-chunk-send-rate: -1.0
+    enable-frustum-priority: false
+    global-max-chunk-load-rate: 300.0
+    player-max-concurrent-loads: 4.0
+    global-max-concurrent-loads: 500.0
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.'
@@ -164,7 +185,7 @@ world-settings:
     max-auto-save-chunks-per-tick: 6
     count-all-mobs-for-spawning: false
     fix-zero-tick-instant-grow-farms: true
-    per-player-mob-spawns: false
+    per-player-mob-spawns: true
     entities-target-with-follow-range: false
     zombie-villager-infection-chance: -1.0
     tracker-update-distance: 1.0
@@ -256,3 +277,48 @@ world-settings:
       disable-move-event: true
     viewdistances:
       no-tick-view-distance: 10
+    entity-per-chunk-save-limit:
+      experience_orb: -1
+      snowball: -1
+      ender_pearl: -1
+      arrow: -1
+      fireball: -1
+      small_fireball: -1
+    wandering-trader:
+      spawn-minute-length: 1200
+      spawn-day-length: 24000
+      spawn-chance-failure-increment: 25
+      spawn-chance-min: 25
+      spawn-chance-max: 75
+    door-breaking-difficulty:
+      zombie:
+      - HARD
+      vindicator:
+      - NORMAL
+      - HARD
+    mobs-can-always-pick-up-loot:
+      zombies: false
+      skeletons: false
+    spawn-limits:
+      monsters: -1
+      animals: -1
+      water-animals: -1
+      water-ambient: -1
+      ambient: -1
+    mob-effects:
+      undead-immune-to-certain-effects: true
+      spiders-immune-to-poison-effect: true
+      immune-to-wither-effect:
+        wither: true
+        wither-skeleton: true
+    tick-rates:
+      sensor:
+        villager:
+          secondarypoisensor: 40
+      behavior:
+        villager:
+          validatenearbypoi: -1
+    unsupported-settings:
+      fix-invulnerable-end-crystal-exploit: true
+    feature-seeds:
+      generate-random-seeds-for-all: false
