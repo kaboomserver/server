@@ -17,6 +17,7 @@ max-memory-percent: 60
 # Enable or disable core components
 enabled-components:
   commands: true
+  update-notifications: false
   # Disable the FAWE-PlotSquared hook to take over most intense P2 queueing
   # Specific aspects can be turned on and off further below
   # Only disables/enables the hook with v4. For v6, see PlotSquared settings.yml
