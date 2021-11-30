@@ -27,8 +27,8 @@ messages:
   whitelist: The server is temporarily down for maintenance. Please try again later!
   unknown-command: Unknown command. Type "/help" for help.
   server-full: The server is temporarily down for maintenance. Please try again later!
-  outdated-client: Your client is outdated. Please join with Minecraft version 1.16.5!
-  outdated-server: The server is outdated. Please join with Minecraft version 1.16.5!
+  outdated-client: Your client is outdated. Please join with Minecraft version 1.18!
+  outdated-server: The server is outdated. Please join with Minecraft version 1.18!
   restart: The server is restarting. Please wait...
 settings:
   log-named-deaths: true
