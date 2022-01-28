@@ -6,7 +6,7 @@ mkdir -p fetched_plugins
 
 # Fetch plugins
 for download_url in https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/*zip*/archive.zip \
-                    https://ci.athion.net/job/FastAsyncWorldEdit-1.17/lastSuccessfulBuild/artifact/*zip*/archive.zip \
+                    https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/artifact/*zip*/archive.zip \
                     https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/*zip*/archive.zip \
                     https://ci.viaversion.com/job/ViaVersion/lastSuccessfulBuild/artifact/*zip*/archive.zip \
                     https://ci.viaversion.com/job/ViaBackwards/lastSuccessfulBuild/artifact/*zip*/archive.zip \
