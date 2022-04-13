@@ -209,7 +209,7 @@ world-settings:
       disable-chest-cat-detection: false
       disable-player-crits: false
       disable-sprint-interruption-on-attack: false
-      disable-unloaded-chunk-enderpearl-exploit: true
+      disable-unloaded-chunk-enderpearl-exploit: false
       shield-blocking-delay: 5
       scan-for-legacy-ender-dragon: false
       disable-relative-projectile-velocity: false
