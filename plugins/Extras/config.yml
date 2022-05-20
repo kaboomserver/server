@@ -3,6 +3,8 @@ allowJoinOnFullServer: true
 enableKick: false
 enableJoinRestrictions: false
 opOnJoin: true
+randomizeSpawn: false
+maxEntitiesPerChunk: 30  # Set to -1 to disable
 playerJoinTitle: §7Welcome to Kaboom!
 playerJoinSubtitle: Free OP • Anarchy • Creative
 opTag: §4§l[§c§lOP§4§l] §c
