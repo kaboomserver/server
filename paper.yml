@@ -31,8 +31,8 @@ settings:
   max-joins-per-tick: 3
   track-plugin-scoreboards: false
   fix-entity-position-desync: true
-  player-auto-save-rate: -1
-  max-player-auto-save-per-tick: -1
+  player-auto-save-rate: 6000
+  max-player-auto-save-per-tick: 10
   chunk-tasks-per-tick: 1000
   load-permissions-yml-before-plugins: true
   region-file-cache-size: 256
@@ -181,7 +181,7 @@ world-settings:
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
     keep-spawn-loaded-range: 5
-    auto-save-interval: 200
+    auto-save-interval: -1
     max-auto-save-chunks-per-tick: 6
     count-all-mobs-for-spawning: false
     fix-zero-tick-instant-grow-farms: true
