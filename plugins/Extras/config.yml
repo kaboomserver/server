@@ -4,7 +4,9 @@ enableKick: false
 enableJoinRestrictions: false
 opOnJoin: true
 randomizeSpawn: false
-maxEntitiesPerChunk: 30  # Set to -1 to disable
+maxEntitiesPerChunk: 50
+maxEntitiesPerWorld: 5120
+maxTntsPerWorld: 1024
 playerJoinTitle: §7Welcome to Kaboom!
 playerJoinSubtitle: Free OP • Anarchy • Creative
 opTag: §4§l[§c§lOP§4§l] §c
