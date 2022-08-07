@@ -1,5 +1,11 @@
 #!/bin/sh
-# Script used to fetch the latest version of Paper
+# Script used to fetch the latest version of the server jar
 
 mkdir -p fetched_server
-curl -L https://api.purpurmc.org/v2/purpur/1.18.2/latest/download > fetched_server/server.jar
+
+curl -L https://ci.scissors.gg/job/Scissors/job/1.19.2/lastSuccessfulBuild/artifact/*zip*/archive.zip > archive.zip
+unzip -o archive.zip
+mv archive/build/libs/Scissors-*.jar fetched_server/server.jar
+
+rm -rf archive/
+rm archive.zip

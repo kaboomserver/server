@@ -20,15 +20,18 @@ settings:
   plugin-profiling: true
   connection-throttle: 5000
   query-plugins: true
-  deprecated-verbose: false
+  deprecated-verbose: default
   shutdown-message: The server is restarting. Please wait...
   minimum-api: none
+  use-map-color-cache: true
   world-container: worlds
 spawn-limits:
-  water-ambient: 20
   monsters: 70
   animals: 10
   water-animals: 15
+  water-ambient: 20
+  water-underground-creature: 5
+  axolotls: 5
   ambient: 15
 chunk-gc:
   load-threshold: 200
