@@ -22,6 +22,16 @@ aliases:
   - []
   eess:
   - []
+  email:
+  - []
+  eemail:
+  - []
+  ememo:
+  - []
+  mail:
+  - []
+  memo:
+  - []
   essentials:ess:
   - []
   essentials:essentials:
@@ -31,6 +41,16 @@ aliases:
   essentials:eess:
   - []
   essentials:essversion:
+  - []
+  essentials:email:
+  - []
+  essentials:eemail:
+  - []
+  essentials:ememo:
+  - []
+  essentials:mail:
+  - []
+  essentials:memo:
   - []
 
   paper:
