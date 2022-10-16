@@ -20,7 +20,7 @@ done
 # Move plugins
 mv archive/jars/EssentialsX-*.jar fetched_plugins/Essentials.jar
 mv archive/artifacts/FastAsyncWorldEdit-Bukkit-*.jar fetched_plugins/FastAsyncWorldEdit.jar
-mv archive/bootstrap/spigot/target/Geyser-Spigot.jar fetched_plugins/Geyser.jar
+mv archive/bootstrap/spigot/build/libs/Geyser-Spigot.jar fetched_plugins/Geyser.jar
 mv archive/build/libs/ViaVersion-*.jar fetched_plugins/ViaVersion.jar
 mv archive/build/libs/ViaBackwards-*.jar fetched_plugins/ViaBackwards.jar
 mv archive/all/target/ViaRewind-*.jar fetched_plugins/ViaRewind.jar
