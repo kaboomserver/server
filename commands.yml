@@ -72,6 +72,8 @@ aliases:
   - minecraft:give $1-
   help:
   - bukkit:help $1-
+  item:
+  - minecraft:item $1-
   kick:
   - minecraft:kick $1-
   kill:
