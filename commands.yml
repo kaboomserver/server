@@ -144,6 +144,8 @@ aliases:
   - tp $1-
   tpall:
   - tp $1-
+  w:
+  - minecraft:w $1-
   weather:
   - minecraft:weather $1-
   xp:
