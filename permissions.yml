@@ -21,9 +21,9 @@ op:
       essentials.sudo.exempt: false
       essentials.tempban.exempt: false
       essentials.updatecheck: false
-      essentials.vanish.effect: false
+      # essentials.vanish.effect: false
       essentials.vanish.interact: false
-      essentials.vanish.see: false
+      # essentials.vanish.see: false
       geyser.command.reload: false
       geyser.command.stop: false
 
