@@ -3,9 +3,9 @@
 
 mkdir -p fetched_server
 
-curl -L https://ci.scissors.gg/job/Scissors/job/1.19.4/lastSuccessfulBuild/artifact/*zip*/archive.zip > archive.zip
+curl -L https://ci.plex.us.org/job/Scissors/job/1.20/lastSuccessfulBuild/artifact/*zip*/archive.zip > archive.zip
 unzip -o archive.zip
-mv archive/build/libs/Scissors-*.jar fetched_server/server.jar
+mv archive/build/libs/scissors-*.jar fetched_server/server.jar
 
 rm -rf archive/
 rm archive.zip
