@@ -1,0 +1,36 @@
+name: Server Updater
+on:
+  schedule:
+  - cron: "0 12 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.repository == 'kaboomserver/server'
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Fetch server jar
+      run: scripts/fetch_server.sh
+
+    - name: Fetch internal plugins
+      run: scripts/fetch_internal_plugins.sh
+
+    - name: Fetch external plugins
+      run: scripts/fetch_external_plugins.sh
+
+    - name: Update server and plugins
+      run: |
+        cp fetched_server/server.jar .
+        cp fetched_plugins/*.jar plugins/
+
+    - name: Push changes
+      run: |
+        git config --global user.name 'kaboombot'
+        git config --global user.email '58372747+kaboombot@users.noreply.github.com'
+        git commit -am "Update server and plugins"
+        git push
