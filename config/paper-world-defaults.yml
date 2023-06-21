@@ -76,7 +76,7 @@ entities:
     tick: true
   behavior:
     baby-zombie-movement-modifier: 0.5
-    disable-chest-cat-detection: false
+    disable-chest-cat-detection: true
     disable-creeper-lingering-effect: false
     disable-player-crits: false
     door-breaking-difficulty:
