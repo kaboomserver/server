@@ -7,9 +7,11 @@
 #
 # Discord: https://discord.com/invite/mtVQcHn58h
 # Website: https://scissors.gg/ 
-# Docs: https://scissors.gg/javadoc/1.19/ 
+# Docs: https://javadoc.scissors.gg/1.20.1/ 
 
+excludePlayersFromNbtComponents: false
+componentDepthLimit: 128
 chatSignaturesEnabled: false
 commandSignsBypassPermissions: false
 runCommandsInBooks: true
-config-version: 3
+config-version: 5
