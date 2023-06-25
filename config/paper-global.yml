@@ -96,19 +96,19 @@ packet-limiter:
     ServerboundSetCommandBlockPacket:
       action: DROP
       interval: 1.0
-      max-packet-rate: 51.0
+      max-packet-rate: 101.0
     ServerboundSetCommandMinecartPacket:
       action: DROP
       interval: 1.0
-      max-packet-rate: 51.0
+      max-packet-rate: 101.0
     ServerboundSetJigsawBlockPacket:
       action: DROP
       interval: 1.0
-      max-packet-rate: 51.0
+      max-packet-rate: 101.0
     ServerboundSetStructureBlockPacket:
       action: DROP
       interval: 1.0
-      max-packet-rate: 51.0
+      max-packet-rate: 101.0
 player-auto-save:
   max-per-tick: -1
   rate: -1
