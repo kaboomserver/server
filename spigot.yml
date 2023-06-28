@@ -3,11 +3,11 @@
 # with caution, and make sure you know what each option does before configuring.
 # For a reference for any variable inside this file, check out the Spigot wiki at
 # http://www.spigotmc.org/wiki/spigot-configuration/
-# 
+#
 # If you need help with the configuration or have any questions related to Spigot,
-# join us at the IRC or drop by our forums and leave a post.
-# 
-# IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
+# join us at the Discord or drop by our forums and leave a post.
+#
+# Discord: https://www.spigotmc.org/go/discord
 # Forums: http://www.spigotmc.org/
 
 config-version: 12
@@ -63,6 +63,16 @@ advancements:
   - '*'
 world-settings:
   default:
+    below-zero-generation-in-existing-chunks: true
+    simulation-distance: default
+    thunder-chance: 100000
+    hopper-can-load-chunks: false
+    seed-nether: 30084232
+    seed-ancientcity: 20083232
+    seed-trailruins: 83469867
+    seed-buriedtreasure: 10387320
+    seed-mineshaft: default
+    seed-stronghold: default
     seed-bastion: 30084232
     seed-fortress: 30084232
     seed-mansion: 10387319
@@ -96,6 +106,12 @@ world-settings:
     hanging-tick-frequency: 100
     max-entity-collisions: 1
     growth:
+      torchflower-modifier: 100
+      twistingvines-modifier: 100
+      weepingvines-modifier: 100
+      cavevines-modifier: 100
+      glowberry-modifier: 100
+      pitcherplant-modifier: 100
       cactus-modifier: 100
       cane-modifier: 100
       melon-modifier: 100
@@ -116,6 +132,7 @@ world-settings:
       item: 2.5
       exp: 3.0
     entity-activation-range:
+      ignore-spectators: false
       animals: 16
       monsters: 24
       raiders: 32
@@ -141,6 +158,7 @@ world-settings:
         flying-monsters-every: 200
         flying-monsters-for: 100
     entity-tracking-range:
+      display: 128
       players: 48
       animals: 48
       monsters: 48
@@ -162,3 +180,5 @@ world-settings:
       entity: 20
     squid-spawn-range:
       min: 45.0
+  faweregentempworld:
+    verbose: false
