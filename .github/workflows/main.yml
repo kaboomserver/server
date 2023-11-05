@@ -1,7 +1,7 @@
 name: Server Updater
 on:
   schedule:
-  - cron: "0 12 * * *"
+  - cron: "0 18 * * *"
 
 permissions:
   contents: write
