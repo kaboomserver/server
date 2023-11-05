@@ -23,7 +23,7 @@ mv archive/artifacts/FastAsyncWorldEdit-Bukkit-*.jar fetched_plugins/FastAsyncWo
 mv archive/bootstrap/spigot/build/libs/Geyser-Spigot.jar fetched_plugins/Geyser.jar
 mv archive/build/libs/ViaVersion-*.jar fetched_plugins/ViaVersion.jar
 mv archive/build/libs/ViaBackwards-*.jar fetched_plugins/ViaBackwards.jar
-mv archive/all/target/ViaRewind-*.jar fetched_plugins/ViaRewind.jar
+mv archive/universal/build/libs/ViaRewind-*.jar fetched_plugins/ViaRewind.jar
 
 # Clean up
 rm -rf archive/
