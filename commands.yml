@@ -52,7 +52,11 @@ aliases:
   - []
   essentials:memo:
   - []
-  
+
+  forceload:
+  - []
+  minecraft:forceload:
+  - []
   paper:
   - []
   paper:paper:
