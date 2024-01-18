@@ -154,4 +154,8 @@ aliases:
   - minecraft:weather $1-
   xp:
   - minecraft:xp $1-
+  tick:
+  - []
+  minecraft:tick:
+  - []
 unrestricted-advancements: false
