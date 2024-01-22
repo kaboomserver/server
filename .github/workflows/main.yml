@@ -1,5 +1,8 @@
 name: Server Updater
 on:
+  push:
+    branches:
+      - master
   schedule:
   - cron: "0 18 * * *"
 
