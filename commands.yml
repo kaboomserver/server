@@ -158,4 +158,8 @@ aliases:
   - []
   minecraft:tick:
   - []
+  return:
+  - []
+  minecraft:return:
+  - []
 unrestricted-advancements: false
