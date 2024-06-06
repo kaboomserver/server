@@ -93,14 +93,6 @@ packet-limiter:
       action: DROP
       interval: 4.0
       max-packet-rate: 5.0
-    ServerboundSetCommandBlockPacket:
-      action: DROP
-      interval: 1.0
-      max-packet-rate: 101.0
-    ServerboundSetCommandMinecartPacket:
-      action: DROP
-      interval: 1.0
-      max-packet-rate: 101.0
     ServerboundSetJigsawBlockPacket:
       action: DROP
       interval: 1.0
