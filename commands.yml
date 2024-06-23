@@ -13,7 +13,6 @@
 command-block-overrides: []
 ignore-vanilla-permissions: true
 aliases:
-  # Temporary:
   ess:
   - []
   essentials:
