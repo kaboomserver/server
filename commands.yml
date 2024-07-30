@@ -162,4 +162,8 @@ aliases:
   - []
   minecraft:return:
   - []
+  save-all:
+  - []
+  minecraft:save-all:
+  - []
 unrestricted-advancements: false
