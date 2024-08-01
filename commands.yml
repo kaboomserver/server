@@ -13,7 +13,6 @@
 command-block-overrides: []
 ignore-vanilla-permissions: true
 aliases:
-  # Temporary:
   ess:
   - []
   essentials:
@@ -52,7 +51,7 @@ aliases:
   - []
   essentials:memo:
   - []
-
+  
   forceload:
   - []
   minecraft:forceload:
