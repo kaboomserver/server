@@ -161,4 +161,8 @@ aliases:
   - []
   minecraft:return:
   - []
+  place:
+  - []
+  minecraft:place:
+  - []
 unrestricted-advancements: false
