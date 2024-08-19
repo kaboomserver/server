@@ -161,4 +161,8 @@ aliases:
   - []
   minecraft:return:
   - []
+  datapack:
+  - []
+  minecraft:datapack:
+  - []
 unrestricted-advancements: false
