@@ -16,3 +16,4 @@ updateUsersStupidLegacyPathNames: true
 updateUsersMailList: true
 updatePurgeBrokenNpcAccounts: true
 newUidCacheBuilt: true
+updateLegacyToAdventure: true
