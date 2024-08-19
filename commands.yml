@@ -157,6 +157,10 @@ aliases:
   - []
   minecraft:return:
   - []
+  place:
+  - []
+  minecraft:place:
+  - []
   datapack:
   - []
   minecraft:datapack:
