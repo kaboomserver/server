@@ -127,8 +127,6 @@ aliases:
   - bcv Stopping the server
   tag:
   - minecraft:tag $1-
-  minecraft:teleport:
-  - tp $1-
   teleport:
   - tp $1-
   tell:
@@ -137,8 +135,6 @@ aliases:
   - minecraft:tellraw $1-
   time:
   - minecraft:time $1-
-  minecraft:tp:
-  - tp $1-
   essentials:etpall:
   - tp $1-
   essentials:tpall:
