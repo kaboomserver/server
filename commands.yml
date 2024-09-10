@@ -128,13 +128,15 @@ aliases:
   tag:
   - minecraft:tag $1-
   teleport:
-  - tp $1-
+  - minecraft:teleport $1-
   tell:
   - minecraft:tell $1-
   tellraw:
   - minecraft:tellraw $1-
   time:
   - minecraft:time $1-
+  tp:
+  - minecraft:tp $1-
   essentials:etpall:
   - tp $1-
   essentials:tpall:
