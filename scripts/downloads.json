@@ -40,26 +40,31 @@
         "internal": {
             "plugins/CommandSpy.jar": {
                 "type": "zip",
+                "skip_404": true,
                 "url": "https://nightly.link/kaboomserver/commandspy/workflows/main/master/CommandSpy.zip",
                 "extract": "CommandSpy.jar"
             },
             "plugins/Extras.jar": {
                 "type": "zip",
+                "skip_404": true,
                 "url": "https://nightly.link/kaboomserver/extras/workflows/main/master/Extras.zip",
                 "extract": "Extras.jar"
             },
             "plugins/iControlU.jar": {
                 "type": "zip",
+                "skip_404": true,
                 "url": "https://nightly.link/kaboomserver/icontrolu/workflows/main/master/iControlU.zip",
                 "extract": "iControlU.jar"
             },
             "plugins/ParticleTrails.jar": {
                 "type": "zip",
+                "skip_404": true,
                 "url": "https://nightly.link/kaboomserver/particletrails/workflows/main/master/ParticleTrails.zip",
                 "extract": "ParticleTrails.jar"
             },
             "plugins/Weapons.jar": {
                 "type": "zip",
+                "skip_404": true,
                 "url": "https://nightly.link/kaboomserver/weapons/workflows/main/master/Weapons.zip",
                 "extract": "Weapons.jar"
             }

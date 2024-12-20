@@ -55,19 +55,26 @@ check_path() {
 
 download() {
     debug "downloading $1 to $2"
-
     exitcode=0
-    # TTY present: enable curl's progress bar, clear curl output on exit
+    statuscode=0
+
+    curl_params="-fL $1 -o $2 --write-out %{http_code}"
+
+    # shellcheck disable=SC2086 # Intentional
     if [ $_HAS_TTY = 1 ]; then
-        tput sc 2>/dev/null || true # save cursor pos
+        # TTY present: Enable curl's progress bar, clear it if operation successful
+        tput sc 2>/dev/null || true # Save cursor pos
 
-        curl -#fL "$1" -o "$2" </dev/tty 3>&1 || exitcode=$?
-
+        statuscode=$(curl -# $curl_params </dev/tty 3>&1) || exitcode=$?
         if [ $exitcode = 0 ]; then
-            (tput rc; tput ed) 2>/dev/null || true # reset cursor pos; clear to end
+            (tput rc; tput ed) 2>/dev/null || true # Reset cursor pos; Clear to end
         fi
     else
-        curl -fL "$1" -o "$2" || exitcode=$?
+        statuscode=$(curl $curl_params) || exitcode=$?
+    fi
+
+    if [ "$statuscode" = "404" ]; then
+        return 100
     fi
 
     return $exitcode

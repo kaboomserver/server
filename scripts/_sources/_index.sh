@@ -46,6 +46,8 @@ require_args() {
 download_with_args() {
     require_args url
 
+    # Unfortunately we cannot handle skip_404 here as "zip" can't
+    # continue if we 404
     download "${arg_url:?}" "$1"
 }
  
