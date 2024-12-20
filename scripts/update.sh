@@ -52,8 +52,5 @@ _parse_downloads | while read -r path; read -r type; read -r args; do
     fi
 
     debug "download_type: type=$type; args=$args"
-
-    # Since the args are part of the function's stdin, they will be
-    # be propagated up.
     echo "$args" | download_type "$type" "$path"
 done

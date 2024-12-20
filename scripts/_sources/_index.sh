@@ -42,12 +42,20 @@ require_args() {
         tmp=""
     done
 }
+
+download_with_args() {
+    require_args url
+
+    download "${arg_url:?}" "$1"
+}
  
 download_type() {
     # Calling the function with _download_type_"$1" opens up the
     # possibility for users to run arbitrary commands, so we must
     # manually handle the type.
-
+    #
+    # Since the args are part of the function's stdin, they will be
+    # be propagated into the _download_type_... functions.
     case "$1" in
         "url")  _download_type_url "$2";;
         "zip")  _download_type_zip "$2";;

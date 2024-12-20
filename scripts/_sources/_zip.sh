@@ -6,7 +6,7 @@ _download_type_zip() {
     zip_path="$(mktemp --suffix=.zip)"
 
     exitcode=0
-    download "${arg_url:?}" "$zip_path" || exitcode=$?
+    download_with_args "$zip_path" || exitcode=$?
     if [ $exitcode != 0 ]; then
         rm -f "$zip_path" 2>/dev/null
         return $exitcode

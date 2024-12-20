@@ -41,12 +41,11 @@ check_path() {
     case "$1" in
         "/"*)   echo "Attempted path traversal: $1 is absolute"
                 return 1;;
-
         *);; # Safe
     esac
+
     case "$rpath" in
         "$_EXEC_PATH/"*);; # Safe
-
         *)  echo "Attempted path traversal: $1 is outside current directory"
             return 1;;
     esac

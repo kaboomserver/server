@@ -2,7 +2,5 @@
 
 _download_type_url() {
     read_args url
-    require_args url
-
-    download "${arg_url:?}" "$1"
+    download_with_args "$@"
 }
