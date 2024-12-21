@@ -17,7 +17,7 @@ send-supported-versions: false
 # You can use both this and the block-protocols option at the same time as well.
 block-versions: []
 # Block specific Minecraft protocol version numbers.
-# List of all Minecraft protocol versions: https://wiki.vg/Protocol_version_numbers, or use a generator: https://via.krusic22.com
+# List of all Minecraft protocol versions: https://minecraft.wiki/w/Protocol_version, or use a generator: https://via.krusic22.com
 block-protocols: []
 # Change the blocked disconnect message
 block-disconnect-msg: You are using an unsupported Minecraft version!
@@ -25,7 +25,7 @@ block-disconnect-msg: You are using an unsupported Minecraft version!
 # (We don't suggest using reload either, use a plugin manager)
 # You can customize the message we kick people with if you use ProtocolLib here.
 reload-disconnect-msg: Server reload, please rejoin!
-# We warn when there's an error converting item and block data over versions, should we suppress these? (Only suggested if spamming)
+# We warn when there's an error converting item/block or component/nbt data over versions, should we suppress these? (Only suggested if spamming)
 suppress-conversion-warnings: true
 #
 #----------------------------------------------------------#
@@ -142,6 +142,12 @@ enforce-secure-chat: false
 # Handles items with invalid count values (higher than max stack size) on 1.20.3 servers.
 handle-invalid-item-count: false
 #
+# Hides scoreboard numbers for 1.20.3+ clients on older server versions.
+hide-scoreboard-numbers: false
+#
+# Fixes 1.21+ clients on 1.20.5 servers placing water/lava buckets at the wrong location when moving fast, NOTE: This may cause issues with anti-cheat plugins.
+fix-1_21-placement-rotation: true
+#
 #----------------------------------------------------------#
 #             1.9+ CLIENTS ON 1.8 SERVERS OPTIONS          #
 #----------------------------------------------------------#
@@ -151,7 +157,7 @@ handle-invalid-item-count: false
 prevent-collision: false
 # If the above is true, should we automatically team players until you do?
 auto-team: false
-# When enabled if certain metadata can't be read, we won't tell you about it
+# When enabled if certain entity data can't be read, we won't tell you about it
 suppress-metadata-errors: true
 # When enabled, 1.9+ will be able to block by using shields
 shield-blocking: false
@@ -183,7 +189,7 @@ replace-pistons: false
 replacement-piston-id: 0
 # Fix 1.9+ clients not rendering the far away chunks and improve chunk rendering when moving fast (Increases network usage and decreases client fps slightly)
 chunk-border-fix: false
-# Minimize the cooldown animation in 1.8 servers
-minimize-cooldown: false
 # Allows 1.9+ left-handedness (main hand) on 1.8 servers
 left-handed-handling: false
+# Tries to cancel block break/place sounds sent by 1.8 servers to 1.9+ clients to prevent them from playing twice
+cancel-block-sounds: true

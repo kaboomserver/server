@@ -3,7 +3,8 @@
 # Specifies how 1.8.x clients should see the cooldown indicator
 # You can choose between TITLE, ACTION_BAR, BOSS_BAR and DISABLED
 # ONLY DISABLE IF YOU HAVE 1.9 COOLDOWN DISABLED ON YOUR SERVER
-# 1.8 PLAYERS MAY ASK WHY PVP IS NOT WORKING OTHERWISE
+# 1.8 PLAYERS MAY ASK WHY PVP IS NOT WORKING OTHERWISE.
+# REQUIRES A SERVER RESTART TO TAKE EFFECT
 cooldown-indicator: TITLE
 #
 # Replaces Adventure mode with Survival mode for 1.7.x clients
@@ -11,14 +12,14 @@ cooldown-indicator: TITLE
 # or 'CanPlaceOn' flags on items
 replace-adventure: false
 #
-# Whether 1.9 particles should be replaced by similar ones in
+# Whether similar ones should replace 1.9 particles in
 # 1.8 and lower
 replace-particles: false
 #
-# Max amount of pages for written books before a client gets kicked
+# Max number of pages for written books before a client gets kicked
 max-book-pages: 100
 #
-# Max amount of characters in the json (!) string of a book page before a client gets kicked
+# Max number of characters in the json (!) string of a book page before a client gets kicked
 max-book-page-length: 5000
 #
 # Whether to emulate the 1.8+ world border for 1.7.x clients
@@ -28,11 +29,16 @@ emulate-world-border: true
 always-show-original-mob-name: true
 #
 # The particle to show the world border for the 1.8+ world border for 1.7.x clients
-# see https://wiki.vg/index.php?title=Protocol&oldid=7368#Particle_2
 world-border-particle: fireworksSpark
 #
 # If enabled, 1.8 players on 1.9+ servers can use /offhand to switch items between their main hand and offhand.
 enable-offhand: true
 #
-# Allows to define the offhand command
+# Allows defining the offhand command
 offhand-command: /offhand
+#
+# If enabled, 1.8 players on 1.9+ servers will also experience the levitation effect by sending velocity packets.
+emulate-levitation-effect: true
+#
+# If enabled, 1.8 players will handle the player combat packet added in 1.9 by showing the custom death message above the hotbar.
+handle-player-combat-packet: true
