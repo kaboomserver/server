@@ -1,9 +1,9 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit/issues"
 wiki: "https://intellectualsites.github.io/fastasyncworldedit-documentation/"
-date: "Sat Jul 20 00:00:00 UTC 2024"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit/812"
-commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f2962369"
+date: "Fri Jan 17 00:00:00 GMT-03:00 2025"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit/997"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f8b4491d"
 platform: "Bukkit"
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
@@ -111,6 +111,11 @@ extent:
 #  - UNSAFE = Can cause permanent damage to the server
 #  - SAFE = Can be buggy but unlikely to cause any damage
 experimental:
+  # Undo operation batch size
+  #  - The size defines the number of changes read at once.
+  #  - Larger numbers might reduce overhead but increase latency for edits with only few changes.
+  #  - 0 means undo operations are not batched.
+  undo-batch-size: 128
   # [UNSAFE] Directly modify the region files. (OBSOLETE - USE ANVIL COMMANDS)
   #  - IMPROPER USE CAN CAUSE WORLD CORRUPTION!
   anvil-queue-mode: false
@@ -138,6 +143,8 @@ experimental:
   # This has no effect on existing blocks one way or the other.
   # Changes due to fluid flow will not be tracked by history, thus may have unintended consequences
   allow-tick-fluids: false
+  # Whether FAWE should use the incubator Vector API to accelerate some operations
+  use-vector-api: false
 
 # This relates to how FAWE places chunks
 queue:
@@ -220,6 +227,8 @@ history:
   delete-after-days: 1
   # Delete history in memory on logout (does not effect disk)
   delete-on-logout: true
+  # Delete history on disk on logout
+  delete-disk-on-logout: true
   # If history should be enabled by default for plugins using WorldEdit:
   #  - It is faster to have disabled
   #  - It is faster to have disabled
@@ -346,6 +355,8 @@ limits:
     #  - Can prevent blocks being pasted from clipboards, etc.
     #  - If fast-placement is disabled, this may cause edits to be slower.
     universal-disallowed-blocks: true
+    # If legacy, mumerical, blocks IDs should be able to be used (i.e. 12:2),
+    allow-legacy: true
     # List of blocks to deny use of. Can be either an entire block type or a block with a specific property value.
     # Where block properties are specified, any blockstate with the property will be disallowed (e.g. all directions
     # of a waterlogged fence). For blocking/remapping of all occurrences of a property like waterlogged, see

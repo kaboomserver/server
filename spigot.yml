@@ -63,6 +63,7 @@ advancements:
   - '*'
 world-settings:
   default:
+    seed-trialchambers: 94251327
     below-zero-generation-in-existing-chunks: true
     simulation-distance: default
     thunder-chance: 100000
