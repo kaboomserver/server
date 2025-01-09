@@ -53,24 +53,30 @@ check_path() {
     return 0
 }
 
+fetch() {
+    curl -fL \
+        --proto =http,https \
+        "$@"
+}
+
 download() {
     debug "downloading $1 to $2"
     exitcode=0
     statuscode=0
 
-    curl_params="-fL $1 -o $2 --write-out %{http_code}"
+    curl_params="$1 -o $2 --write-out %{http_code}"
 
     # shellcheck disable=SC2086 # Intentional
     if [ $_HAS_TTY = 1 ]; then
         # TTY present: Enable curl's progress bar, clear it if operation successful
         tput sc 2>/dev/null || true # Save cursor pos
 
-        statuscode=$(curl -# $curl_params </dev/tty 3>&1) || exitcode=$?
+        statuscode=$(fetch -# $curl_params </dev/tty 3>&1) || exitcode=$?
         if [ $exitcode = 0 ]; then
             (tput rc; tput ed) 2>/dev/null || true # Reset cursor pos; Clear to end
         fi
     else
-        statuscode=$(curl $curl_params) || exitcode=$?
+        statuscode=$(fetch $curl_params) || exitcode=$?
     fi
 
     if [ "$statuscode" = "404" ]; then
