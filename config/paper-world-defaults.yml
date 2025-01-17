@@ -307,7 +307,7 @@ tick-rates:
   container-update: 1
   dry-farmland: 1
   grass-spread: 1
-  mob-spawner: 1
+  mob-spawner: -1
   sensor:
     villager:
       secondarypoisensor: 40
