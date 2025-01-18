@@ -19,8 +19,8 @@ bedrock:
   clone-remote-port: false
   # The MOTD that will be broadcasted to Minecraft: Bedrock Edition clients. Irrelevant if "passthrough-motd" is set to true
   # If either of these are empty, the respective string will default to "Geyser"
-  motd1: "§7§lKaboom > §rFree OP - Anarchy"
-  motd2: "§7§lKaboom > §rFree OP - Anarchy"
+  motd1: "§fFree OP - Anarchy"
+  motd2: "§8§lWelcome to Kaboom!"
   # The Server Name that will be sent to Minecraft: Bedrock Edition clients. This is visible in both the pause menu and the settings menu.
   server-name: "Kaboom"
   # Whether to enable PROXY protocol or not for clients. You DO NOT WANT this feature unless you run UDP reverse proxy
@@ -43,7 +43,7 @@ remote:
   auth-type: offline
   # Allow for password-based authentication methods through Geyser. Only useful in online mode.
   # If this is false, users must authenticate to Microsoft using a code provided by Geyser on their desktop.
-  allow-password-authentication: true
+  allow-password-authentication: false
   # Whether to enable PROXY protocol or not while connecting to the server.
   # This is useful only when:
   # 1) Your server supports PROXY protocol (it probably doesn't)
@@ -105,11 +105,11 @@ general-thread-pool: 32
 
 # Allow third party capes to be visible. Currently allowing:
 # OptiFine capes, LabyMod capes, 5Zig capes and MinecraftCapes
-allow-third-party-capes: true
+allow-third-party-capes: false
 
 # Allow third party deadmau5 ears to be visible. Currently allowing:
 # MinecraftCapes
-allow-third-party-ears: true
+allow-third-party-ears: false
 
 # Allow a fake cooldown indicator to be sent. Bedrock players do not see a cooldown as they still use 1.8 combat
 show-cooldown: true
