@@ -2,6 +2,7 @@
 
 _download_type_zip() {
     read_args url skip_404 extract
+    require_args extract
 
     zip_path="$(mktemp --suffix=.zip)"
 
