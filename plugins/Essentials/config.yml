@@ -215,7 +215,7 @@ socialspy-messages: true
 
 # Whether social spy should use formatted display names which may include color.
 # If false, social spy will use only the actual player names.
-socialspy-uses-displaynames: true
+socialspy-uses-displaynames: false
 
 # The following settings listen for when a player changes worlds.
 # If you use another plugin to control speed and flight, you should change these to false.
@@ -236,10 +236,14 @@ world-change-speed-reset: true
 # It only cares about the root command, not args after that (it sees /f chat the same as /f)
 mute-commands:
   # - '*'
-  - broadcast
-  - mail
   - me
-  - say
+  - minecraft:me
+  - msg
+  - minecraft:msg
+  - tell
+  - minecraft:tell
+  - w
+  - minecraft:w
 
 # Use this option to force superperms-based permissions handler regardless of detected installed perms plugin.
 # This is useful if you want superperms-based permissions (with wildcards) for custom permissions plugins.
@@ -275,7 +279,7 @@ use-nbt-serialization-in-createkit: false
 # Essentials colored sign support will be enabled when any sign types are enabled.
 # Color is not an actual sign, it's for enabling using color codes on signs, when the correct permissions are given.
 
-enabledSigns:
+enabledSigns: # Everything in default except "mail"
   - color
   - balance
   - buy
@@ -284,7 +288,6 @@ enabledSigns:
   - free
   - warp
   - kit
-  - mail
   - enchant
   - gamemode
   - heal
@@ -491,7 +494,7 @@ custom-new-username-message: "none"
 
 # Should Essentials override the vanilla "Server Full" message with its own from the language file?
 # Set to false to keep the vanilla message.
-use-custom-server-full-message: true
+use-custom-server-full-message: false # Unused, also set through paper config
 
 # You can disable join and quit messages when the player count reaches a certain limit.
 # When the player count is below this number, join/quit messages will always be shown.
@@ -544,7 +547,7 @@ max-fly-speed: 0.8
 max-walk-speed: 0.8
 
 #Set the maximum amount of mail that can be sent within a minute.
-mails-per-minute: 1000
+mails-per-minute: 0
 
 # Set the maximum time /mute can be used for in seconds.
 # Set to -1 to disable, and essentials.mute.unlimited can be used to override.
@@ -774,7 +777,7 @@ show-zero-baltop: true
 # Requirements which must be met by the player to get their name shown in the balance top list.
 # Playtime is in seconds.
 baltop-requirements:
-  minimum-balance: 0
+  minimum-balance: 100 # Prevent bots from filling baltop list
   minimum-playtime: 0
 
 # The format of currency, excluding symbols. See currency-symbol-format-locale for symbol configuration.
