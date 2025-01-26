@@ -24,6 +24,7 @@ op:
       essentials.vanish.effect: false
       essentials.vanish.interact: false
       essentials.vanish.see: false
+      essentials.mail: false
       geyser.command.reload: false
       geyser.command.stop: false
 

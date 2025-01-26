@@ -64,7 +64,7 @@ navigation-wand:
     max-distance: 100
 
 scripting:
-    timeout: 3000
+    timeout: 50 # We have scripting disabled, but just in case...
     dir: craftscripts
 
 saving:
@@ -78,7 +78,7 @@ history:
     expiration: 10
 
 calculation:
-    timeout: 100
+    timeout: 20
 
 debugging:
     trace-unflushed-sessions: false

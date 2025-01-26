@@ -1,9 +1,9 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit/issues"
 wiki: "https://intellectualsites.github.io/fastasyncworldedit-documentation/"
-date: "Fri Jan 17 00:00:00 GMT-03:00 2025"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit/997"
-commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f8b4491d"
+date: "Sun Feb 23 00:00:00 GMT-03:00 2025"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit/1026"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f3add7a0"
 platform: "Bukkit"
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
@@ -38,7 +38,7 @@ clipboard:
   # Number of days to keep history on disk before deleting it
   delete-after-days: 1
   # If a player's clipboard should be deleted upon logout
-  delete-on-logout: false
+  delete-on-logout: true
   # Allows NBT stored in a clipboard to be written to disk
   #  - Requires clipboard.use-disk to be enabled
   save-clipboard-nbt-to-disk: false
@@ -137,6 +137,10 @@ experimental:
   #  - If the entity is in an unloaded or partially loaded chunk, this will fail
   #  - If an entity cannot be removed, it is possible duplicate entities may be created when using undo and/or redo
   remove-entity-from-world-on-chunk-fail: true
+  # [SAFE] Perform operations involving entities on chunk load
+  #  - Allows entities that might not otherwise be captured due to unloaded chunks to be captured
+  #  - Main use-case is copying larger areas with entities
+  improved-entity-edits: true
   # Increased debug logging for brush actions and processor setup
   other: false
   # Allow fluids placed by FAWE to tick (flow). This could cause the big lags.
@@ -196,7 +200,7 @@ history:
   # Use a database to store disk storage summaries:
   #  - Enables inspection and rollback
   #  - Does not impact performance
-  use-database: true
+  use-database: false
   # Record history with dispatching:
   #  - Much faster as it avoids duplicate block checks
   #  - Slightly worse compression since dispatch order is different
@@ -269,8 +273,7 @@ region-restrictions-options:
   # managers are not checked if an exclusive manager allows an edit.
   #  - May be useful to add PlotSquared if using both P2 and WorldGuard on a server
   #  - Some custom-implementations in other plugins may override this setting
-  exclusive-managers: 
-  - "ExamplePlugin"
+  exclusive-managers: []
   # If a worldguard-protected world should be considered as a region blacklist.
   #  - This will create a blacklist of regions where an edit cannot operate.
   #  - Useful for a "freebuild" worlds with few protected areas.
@@ -321,7 +324,7 @@ limits:
     max-blockstates: 1337
     # Maximum size of the player's history in Megabytes:
     #  - History on disk or memory will be deleted
-    max-history-mb: 100
+    max-history-mb: 50
     # Sets a maximum limit (in kb) for the size of a player's schematics directory (per-player mode only)
     # Set to -1 to disable
     schem-file-size-limit: -1
@@ -329,7 +332,7 @@ limits:
     # Set to -1 to disable
     schem-file-num-limit: -1
     # Maximum time in milliseconds //calc can execute
-    max-expression-ms: 50
+    max-expression-ms: 20
     # Cinematic block placement:
     #  - Adds a delay to block placement (nanoseconds/block)
     #  - Having an artificial delay will use more CPU/Memory
@@ -347,14 +350,14 @@ limits:
     confirm-large: false
     # If undo and redo commands should be restricted to allowed regions
     #  - Prevents scenarios where players can delete/reset a region, and then continue to undo/redo on it
-    restrict-history-to-regions: true
+    restrict-history-to-regions: false
     # List of nbt tags to strip from blocks, e.g. Items
     strip-nbt: []
     # If the disallowed blocks listed in worldedit-config.yml should be disallowed in all edits,
     # not just where blocks patterns are used.
     #  - Can prevent blocks being pasted from clipboards, etc.
     #  - If fast-placement is disabled, this may cause edits to be slower.
-    universal-disallowed-blocks: true
+    universal-disallowed-blocks: false
     # If legacy, mumerical, blocks IDs should be able to be used (i.e. 12:2),
     allow-legacy: true
     # List of blocks to deny use of. Can be either an entire block type or a block with a specific property value.
