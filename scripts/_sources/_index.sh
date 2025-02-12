@@ -2,6 +2,7 @@
 # shellcheck disable=SC1091
 
 . "$_SCRIPT_PATH"/_sources/_bibliothek.sh
+. "$_SCRIPT_PATH"/_sources/_github.sh
 . "$_SCRIPT_PATH"/_sources/_url.sh
 . "$_SCRIPT_PATH"/_sources/_zip.sh
 
@@ -61,6 +62,7 @@ download_type() {
     # be propagated into the _download_type_... functions.
     case "$1" in
         "bibliothek")   _download_type_bibliothek "$2";;
+        "github")       _download_type_github "$2";;
         "url")          _download_type_url "$2";;
         "zip")          _download_type_zip "$2";;
         *) echo Invalid download type "$1"
