@@ -1,5 +1,10 @@
 {
     "server.jar": {
+        "type": "github",
+        "repo": "vectrix-space/ignite",
+        "asset": "ignite\\.jar"
+    },
+    "paper.jar": {
         "type": "bibliothek",
         "endpoint": "https://api.papermc.io",
         "project": "paper",
