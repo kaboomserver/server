@@ -44,6 +44,12 @@
             }
         },
         "internal": {
+            "mods/PaperMixins.jar": {
+                "type": "zip",
+                "skip_404": true,
+                "url":  "https://nightly.link/kaboomserver/papermixins/workflows/build/master/Artifacts.zip",
+                "extract": "paper-mixins-master.jar"
+            },
             "plugins/CommandSpy.jar": {
                 "type": "zip",
                 "skip_404": true,
