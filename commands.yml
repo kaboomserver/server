@@ -31,6 +31,14 @@ aliases:
   - []
   memo:
   - []
+  eco:
+  - []
+  eeco:
+  - []
+  economy:
+  - []
+  eeconomy:
+  - []
   essentials:ess:
   - []
   essentials:essentials:
@@ -50,6 +58,14 @@ aliases:
   essentials:mail:
   - []
   essentials:memo:
+  - []
+  essentials:eco:
+  - []
+  essentials:eeco:
+  - []
+  essentials:economy:
+  - []
+  essentials:eeconomy:
   - []
   
   forceload:
