@@ -153,6 +153,10 @@ aliases:
   - minecraft:time $1-
   tp:
   - minecraft:tp $1-
+  transfer:
+  - []
+  minecraft:transfer:
+  - []
   w:
   - minecraft:w $1-
   weather:
