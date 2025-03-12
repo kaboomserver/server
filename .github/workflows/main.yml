@@ -26,6 +26,5 @@ jobs:
       run: |
         git config --global user.name 'kaboombot'
         git config --global user.email '58372747+kaboombot@users.noreply.github.com'
-        git add .
-        git commit -m "Update server and plugins"
+        git commit -am "Update server and plugins"
         git push
