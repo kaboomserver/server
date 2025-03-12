@@ -2,7 +2,7 @@
     "server.jar": {
         "type": "github",
         "repo": "vectrix-space/ignite",
-        "asset": "ignite\\.jar"
+        "asset": "ignite[.]jar"
     },
     "paper.jar": {
         "type": "bibliothek",
