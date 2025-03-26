@@ -5,7 +5,7 @@
 ############################################################
 
 # This is the config file for EssentialsX.
-# This config was generated for version 2.21.0-dev+151-f2af952.
+# This config was generated for version 2.21.1-dev+4-50b696b.
 
 # If you want to use special characters in this document, such as accented letters, you MUST save the file as UTF-8, not ANSI.
 # If you receive an error when Essentials loads, ensure that:
@@ -32,6 +32,11 @@ nickname-prefix: ''
 
 # The maximum length allowed in nicknames. The nickname prefix is not included in this.
 max-nick-length: 99999
+
+# The regex pattern used to determine if a requested nickname should be allowed for use.
+# If the a requested nickname does not matched this pattern, the nickname will be rejected.
+# Users with essentials.nick.allowunsafe will be able to bypass this check.
+allowed-nicks-regex: '^[a-zA-Z_0-9§]+$'
 
 # A list of phrases that cannot be used in nicknames. You can include regular expressions here.
 # Users with essentials.nick.blacklist.bypass will be able to bypass this filter.
@@ -223,6 +228,11 @@ socialspy-uses-displaynames: false
 # When a player changes world, should EssentialsX reset their flight?
 # This will disable flight if the player does not have essentials.fly.
 world-change-fly-reset: true
+
+# Starting in 1.17, Minecraft no longer preserves the abilities of a player when they change worlds.
+# Setting this to true will make EssentialsX preserve if users flying when they change worlds.
+# This will only work if the player has the essentials.fly permission.
+world-change-preserve-flying: true
 
 # When a player changes world, should we reset their speed according to their permissions?
 # This resets the player's speed to the default if they don't have essentials.speed.

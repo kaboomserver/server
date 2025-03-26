@@ -82,6 +82,7 @@ entities:
   behavior:
     allow-spider-world-border-climbing: true
     baby-zombie-movement-modifier: 0.5
+    cooldown-failed-beehive-releases: true
     disable-chest-cat-detection: true
     disable-creeper-lingering-effect: false
     disable-player-crits: false
@@ -294,7 +295,6 @@ misc:
   disable-relative-projectile-velocity: false
   disable-sprint-interruption-on-attack: false
   legacy-ender-pearl-behavior: false
-  light-queue-size: 20
   max-leash-distance: 10.0
   redstone-implementation: ALTERNATE_CURRENT
   shield-blocking-delay: 5
