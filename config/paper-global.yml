@@ -49,7 +49,7 @@ collisions:
   enable-player-collisions: true
   send-full-pos-for-hard-colliding-entities: true
 commands:
-  ride-command-allow-player-as-vehicle: false
+  ride-command-allow-player-as-vehicle: true
   suggest-player-names-when-null-tab-completions: true
   time-command-affects-all-worlds: false
 console:
