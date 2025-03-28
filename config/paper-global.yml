@@ -49,6 +49,7 @@ collisions:
   enable-player-collisions: true
   send-full-pos-for-hard-colliding-entities: true
 commands:
+  ride-command-allow-player-as-vehicle: true
   suggest-player-names-when-null-tab-completions: true
   time-command-affects-all-worlds: false
 console:
@@ -86,7 +87,7 @@ misc:
   fix-entity-position-desync: true
   lag-compensate-block-breaking: true
   load-permissions-yml-before-plugins: true
-  max-joins-per-tick: 3
+  max-joins-per-tick: 5
   region-file-cache-size: 256
   strict-advancement-dimension-check: false
   use-alternative-luck-formula: false
@@ -140,7 +141,10 @@ unsupported-settings:
   allow-unsafe-end-portal-teleportation: false
   compression-format: ZLIB
   perform-username-validation: false
+  simplify-remote-item-matching: false
+  skip-tripwire-hook-placement-validation: false
   skip-vanilla-damage-tick-when-shield-blocked: false
+  update-equipment-on-player-actions: true
 watchdog:
   early-warning-delay: 10000
   early-warning-every: 5000

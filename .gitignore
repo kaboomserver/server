@@ -2,6 +2,7 @@ cache/
 /libraries/
 /logs/
 /plugins/.paper-remapped/
+/plugins/CommandSpy/state.bin
 /plugins/Essentials/userdata
 /plugins/Essentials/warps/*
 /plugins/Essentials/custom_items.yml
