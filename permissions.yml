@@ -28,6 +28,11 @@ op:
       geyser.command.reload: false
       geyser.command.stop: false
 
+      # Essentials requires this permission to be explicitly granted
+      # to players
+
+      essentials.nick.allowunsafe: true
+
       # Due to WorldEdit permission shenanigans, we have to grant
       # permissions manually to enforce block edit limits
 
