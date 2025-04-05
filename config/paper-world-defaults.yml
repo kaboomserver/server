@@ -301,7 +301,7 @@ misc:
   show-sign-click-command-failure-msgs-to-player: true
   update-pathfinding-on-block-update: false
 scoreboards:
-  allow-non-player-entities-on-scoreboards: false
+  allow-non-player-entities-on-scoreboards: true
   use-vanilla-world-scoreboard-name-coloring: false
 spawn:
   allow-using-signs-inside-spawn-protection: false
