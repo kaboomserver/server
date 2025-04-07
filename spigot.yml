@@ -15,14 +15,10 @@ commands:
   log: true
   tab-complete: 0
   send-namespaced: true
-  spam-exclusions:
-  - /skill
+  spam-exclusions: []
   silent-commandblock-console: true
-  replace-commands:
-  - setblock
-  - summon
-  - testforblock
-  - tellraw
+  replace-commands: []
+  enable-spam-exclusions: false
 messages:
   whitelist: The server is temporarily down for maintenance. Please try again later!
   unknown-command: Unknown command. Type "/help" for help.
