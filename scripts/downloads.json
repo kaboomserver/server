@@ -8,7 +8,7 @@
         "type": "bibliothek",
         "endpoint": "https://api.papermc.io",
         "project": "paper",
-        "version": "1.21.4"
+        "version": "1.21.6"
     },
     "plugins": {
         "external": {
