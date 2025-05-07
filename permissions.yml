@@ -36,6 +36,11 @@ op:
       # Due to WorldEdit permission shenanigans, we have to grant
       # permissions manually to enforce block edit limits
 
+      # //hmi (broken); update alerts (disabled) and //wea (bypasses limits)
+      fawe.admin: false
+      fawe.bypass: false
+      fawe.bypass.regions: false
+
       fawe.worldeditregion: true
       fawe.cancel: true
       fawe.setupdispatcher: true
