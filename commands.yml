@@ -179,4 +179,8 @@ aliases:
   - []
   minecraft:datapack:
   - []
+  test:
+  - []
+  minecraft:test:
+  - []
 unrestricted-advancements: false
