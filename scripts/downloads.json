@@ -19,7 +19,7 @@
             },
             "plugins/FastAsyncWorldEdit.jar": {
                 "type": "zip",
-                "url": "https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/artifact/*zip*/archive.zip",
+                "url": "https://ci.athion.net/view/%20%20FastAsyncWorldEdit/job/FastAsyncWorldEdit-Pull-Requests/view/change-requests/job/PR-3211/lastSuccessfulBuild/artifact/*zip*/archive.zip",
                 "extract": "archive/artifacts/FastAsyncWorldEdit-Paper-*.jar"
             },
             "plugins/Geyser.jar": {
