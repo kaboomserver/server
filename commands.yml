@@ -179,4 +179,8 @@ aliases:
   - []
   minecraft:datapack:
   - []
+  save-all:
+  - []
+  minecraft:save-all:
+  - []
 unrestricted-advancements: false
