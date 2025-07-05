@@ -179,4 +179,12 @@ aliases:
   - []
   minecraft:datapack:
   - []
+  test:
+  - []
+  minecraft:test:
+  - []
+  dialog:
+  - []
+  minecraft:dialog:
+  - []
 unrestricted-advancements: false
