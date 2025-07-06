@@ -80,9 +80,9 @@ download() {
         statuscode=$(fetch $curl_params) || exitcode=$?
     fi
 
-    if [ "$statuscode" = "404" ]; then
-        return 100
-    fi
+    case "$statuscode" in
+        "404") exitcode=200;;
+    esac
 
     return $exitcode
 }

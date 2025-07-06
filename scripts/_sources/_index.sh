@@ -50,7 +50,7 @@ download_with_args() {
 
     # Unfortunately we cannot handle skip_404 here as "zip" can't
     # continue if we 404
-    download "${arg_url:?}" "$1"
+    download "${arg_url:?}" "$@"
 }
  
 download_type() {

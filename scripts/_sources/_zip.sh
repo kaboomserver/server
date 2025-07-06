@@ -11,11 +11,11 @@ _download_type_zip() {
     if [ $exitcode != 0 ]; then
         rm -f "$zip_path" 2>/dev/null
 
-        if [ $exitcode = 100 ] && [ "${arg_skip_404:-false}" = "true" ]; then
-            return 0
-        else
-            return $exitcode
+        if [ $exitcode = 200 ] && [ "${arg_skip_404:-false}" = "true" ]; then
+            exitcode=0
         fi
+
+        return $exitcode
     fi
 
     debug "extracting ${arg_extract:?} to $1"
