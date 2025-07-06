@@ -56,6 +56,7 @@ check_path() {
 fetch() {
     curl -fL \
         --proto =http,https \
+        -H 'User-Agent: kaboomserver/updater/1.0.0 (https://github.com/kaboomserver/server)' \
         "$@"
 }
 
