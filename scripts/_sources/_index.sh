@@ -1,7 +1,7 @@
 #!/bin/sh
 # shellcheck disable=SC1091
 
-. "$_SCRIPT_PATH"/_sources/_bibliothek.sh
+. "$_SCRIPT_PATH"/_sources/_fill.sh
 . "$_SCRIPT_PATH"/_sources/_github.sh
 . "$_SCRIPT_PATH"/_sources/_url.sh
 . "$_SCRIPT_PATH"/_sources/_zip.sh
@@ -50,7 +50,7 @@ download_with_args() {
 
     # Unfortunately we cannot handle skip_404 here as "zip" can't
     # continue if we 404
-    download "${arg_url:?}" "$1"
+    download "${arg_url:?}" "$@"
 }
  
 download_type() {
@@ -61,10 +61,10 @@ download_type() {
     # Since the args are part of the function's stdin, they will be
     # be propagated into the _download_type_... functions.
     case "$1" in
-        "bibliothek")   _download_type_bibliothek "$2";;
-        "github")       _download_type_github "$2";;
-        "url")          _download_type_url "$2";;
-        "zip")          _download_type_zip "$2";;
+        "fill")     _download_type_fill "$2";;
+        "github")   _download_type_github "$2";;
+        "url")      _download_type_url "$2";;
+        "zip")      _download_type_zip "$2";;
         *) echo Invalid download type "$1"
            return 1;;
     esac

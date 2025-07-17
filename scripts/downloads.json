@@ -5,10 +5,10 @@
         "asset": "ignite[.]jar"
     },
     "paper.jar": {
-        "type": "bibliothek",
-        "endpoint": "https://api.papermc.io",
+        "type": "fill",
+        "endpoint": "https://fill.papermc.io",
         "project": "paper",
-        "version": "1.21.7"
+        "version": "1.21.8"
     },
     "plugins": {
         "external": {
