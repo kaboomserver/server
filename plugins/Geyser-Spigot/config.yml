@@ -23,8 +23,8 @@ bedrock:
   clone-remote-port: false
   # The MOTD that will be broadcasted to Minecraft: Bedrock Edition clients. This is irrelevant if "passthrough-motd" is set to true
   # If either of these are empty, the respective string will default to "Geyser"
-  motd1: "§fFree OP - Anarchy"
-  motd2: "§8§lWelcome to Kaboom!"
+  motd1: ""
+  motd2: ""
   # The Server Name that will be sent to Minecraft: Bedrock Edition clients. This is visible in both the pause menu and the settings menu.
   server-name: "Kaboom"
   # How much to compress network traffic to the Bedrock client. The higher the number, the more CPU usage used, but
@@ -90,9 +90,9 @@ command-suggestions: false
 
 # The following three options enable "ping passthrough" - the MOTD, player count and/or protocol name gets retrieved from the Java server.
 # Relay the MOTD from the remote server to Bedrock players.
-passthrough-motd: false
+passthrough-motd: true
 # Relay the player count and max players from the remote server to Bedrock players.
-passthrough-player-counts: false
+passthrough-player-counts: true
 # Enable LEGACY ping passthrough. There is no need to enable this unless your MOTD or player count does not appear properly.
 # This option does nothing on standalone.
 legacy-ping-passthrough: false
