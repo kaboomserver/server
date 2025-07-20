@@ -51,7 +51,7 @@ settings:
     attackDamage:
       max: 2048.0
 players:
-  disable-saving: true
+  disable-saving: false
 stats:
   disable-saving: true
   forced-stats: {}
