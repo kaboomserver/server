@@ -56,6 +56,7 @@ check_path() {
 fetch() {
     curl -fL \
         --proto =http,https \
+        -H 'User-Agent: kaboomserver/updater/1.0.0 (https://github.com/kaboomserver/server)' \
         "$@"
 }
 
@@ -79,9 +80,9 @@ download() {
         statuscode=$(fetch $curl_params) || exitcode=$?
     fi
 
-    if [ "$statuscode" = "404" ]; then
-        return 100
-    fi
+    case "$statuscode" in
+        "404") exitcode=200;;
+    esac
 
     return $exitcode
 }

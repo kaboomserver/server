@@ -6,7 +6,9 @@ _download_type_url() {
     exitcode=0
     download_with_args "$@" || exitcode=$?
 
-    if [ $exitcode = 100 ] && [ "${arg_skip_404:-false}" = "true" ]; then
-        return 0
+    if [ $exitcode = 200 ] && [ "${arg_skip_404:-false}" = "true" ]; then
+        exitcode=0
     fi
+
+    return $exitcode
 }
