@@ -1,9 +1,9 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit/issues"
 wiki: "https://intellectualsites.github.io/fastasyncworldedit-documentation/"
-date: "Thu Feb 27 00:00:00 GMT-03:00 2025"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit/1030"
-commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f55e76a9"
+date: "Tue Aug 26 00:00:00 BRT 2025"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit/1137"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/fa133cb2"
 platform: "Bukkit"
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
