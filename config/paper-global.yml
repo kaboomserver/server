@@ -8,11 +8,12 @@
 # The world configuration options have been moved inside
 # their respective world folder. The files are named paper-world.yml
 # 
+# File Reference: https://docs.papermc.io/paper/reference/global-configuration/
 # Docs: https://docs.papermc.io/
 # Discord: https://discord.gg/papermc
 # Website: https://papermc.io/
 
-_version: 29
+_version: 30
 anticheat:
   obfuscation:
     items:
@@ -84,14 +85,16 @@ misc:
     chat-executor-max-size: -1
   client-interaction-leniency-distance: default
   compression-level: default
-  fix-entity-position-desync: true
   lag-compensate-block-breaking: true
   load-permissions-yml-before-plugins: false
   max-joins-per-tick: 5
+  prevent-negative-villager-demand: false
   region-file-cache-size: 256
+  send-full-pos-for-item-entities: false
   strict-advancement-dimension-check: false
   use-alternative-luck-formula: false
   use-dimension-type-for-custom-spawners: false
+  xp-orb-groups-per-area: default
 packet-limiter:
   all-packets:
     action: DROP
@@ -99,15 +102,15 @@ packet-limiter:
     max-packet-rate: 0.0
   kick-message: <red><lang:disconnect.exceeded_packet_rate>
   overrides:
-    ServerboundPlaceRecipePacket:
+    minecraft:place_recipe:
       action: DROP
       interval: 4.0
       max-packet-rate: 5.0
-    ServerboundSetJigsawBlockPacket:
+    minecraft:set_jigsaw_block:
       action: DROP
       interval: 1.0
       max-packet-rate: 101.0
-    ServerboundSetStructureBlockPacket:
+    minecraft:set_structure_block:
       action: DROP
       interval: 1.0
       max-packet-rate: 101.0
