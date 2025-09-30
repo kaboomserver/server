@@ -124,6 +124,7 @@ entities:
     player-insomnia-start-ticks: 72000
     should-remove-dragon: false
     spawner-nerfed-mobs-should-jump: false
+    stuck-entity-poi-retry-delay: 200
     zombie-villager-infection-chance: default
     zombies-target-turtle-eggs: false
   markers:
@@ -291,6 +292,7 @@ max-growth-height:
   cactus: 3
   reeds: 3
 misc:
+  allow-remote-ender-dragon-respawning: false
   alternate-current-update-order: HORIZONTAL_FIRST_OUTWARD
   disable-end-credits: true
   disable-relative-projectile-velocity: false
@@ -298,7 +300,6 @@ misc:
   legacy-ender-pearl-behavior: false
   max-leash-distance: 10.0
   redstone-implementation: ALTERNATE_CURRENT
-  shield-blocking-delay: 5
   show-sign-click-command-failure-msgs-to-player: true
   update-pathfinding-on-block-update: false
 scoreboards:
@@ -306,8 +307,6 @@ scoreboards:
   use-vanilla-world-scoreboard-name-coloring: false
 spawn:
   allow-using-signs-inside-spawn-protection: false
-  keep-spawn-loaded: false
-  keep-spawn-loaded-range: 10
 tick-rates:
   behavior:
     villager:
