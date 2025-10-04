@@ -8,7 +8,7 @@
         "type": "fill",
         "endpoint": "https://fill.papermc.io",
         "project": "paper",
-        "version": "1.21.8"
+        "version": "1.21.9"
     },
     "plugins": {
         "external": {
@@ -24,7 +24,7 @@
             },
             "plugins/Geyser.jar": {
                 "type": "zip",
-                "url": "https://nightly.link/GeyserMC/Geyser/workflows/build/master/Geyser-Spigot.zip",
+                "url": "https://nightly.link/GeyserMC/Geyser/workflows/build/feature%2F1.21.9/Geyser-Spigot.zip",
                 "extract": "Geyser-Spigot.jar"
             },
             "plugins/ViaVersion.jar": {
@@ -47,7 +47,7 @@
             "mods/PaperMixins.jar": {
                 "type": "zip",
                 "skip_404": true,
-                "url": "https://nightly.link/kaboomserver/papermixins/workflows/build/1.21.7/Artifacts.zip",
+                "url": "https://nightly.link/kaboomserver/papermixins/workflows/build/1.21.9/Artifacts.zip",
                 "extract": "paper-mixins-master.jar"
             },
             "plugins/CommandSpy.jar": {
@@ -59,7 +59,7 @@
             "plugins/Extras.jar": {
                 "type": "zip",
                 "skip_404": true,
-                "url": "https://nightly.link/kaboomserver/extras/workflows/main/master/Extras.zip",
+                "url": "https://nightly.link/kaboomserver/extras/actions/runs/18145392580/Extras.zip",
                 "extract": "Extras.jar"
             },
             "plugins/iControlU.jar": {
