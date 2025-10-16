@@ -1,5 +1,5 @@
 {
-  "name": "arch container",
+  "name": "mysticboom-server",
   "build": {
     "dockerfile": "Dockerfile"
   },
