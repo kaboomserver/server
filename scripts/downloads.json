@@ -8,7 +8,7 @@
         "type": "fill",
         "endpoint": "https://fill.papermc.io",
         "project": "paper",
-        "version": "1.21.8"
+        "version": "1.21.10"
     },
     "plugins": {
         "external": {
@@ -47,7 +47,7 @@
             "mods/PaperMixins.jar": {
                 "type": "zip",
                 "skip_404": true,
-                "url": "https://nightly.link/kaboomserver/papermixins/workflows/build/1.21.7/Artifacts.zip",
+                "url": "https://nightly.link/kaboomserver/papermixins/workflows/build/1.21.10/Artifacts.zip",
                 "extract": "paper-mixins-master.jar"
             },
             "plugins/CommandSpy.jar": {
