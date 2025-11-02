@@ -185,4 +185,9 @@ aliases:
   - []
   minecraft:dialog:
   - []
+  fawe debugpaste:
+  - []
+  fastasyncworldedit:fawe debugpaste:
+  - []
+  
 unrestricted-advancements: false
