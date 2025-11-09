@@ -1,0 +1,28 @@
+# Set to true to run the plugin in multi-proxy mode with a supervisor server
+# (EaglerXSupervisor)
+enable_supervisor = false
+# The ip:port combo of the supervisor server, unix sockets are also supported via
+# unix://
+supervisor_address = "0.0.0.0:36900"
+# Login secret, can be left blank, used as a last resort to protect the supervisor
+# without a proper firewall if you're a dumbass
+supervisor_secret = ""
+# Connection timeout in milliseconds of the supervisor server connection (default:
+# 30000)
+supervisor_connect_timeout = 30000
+# Read timeout in milliseconds of the supervisor server connection (default:
+# 30000)
+supervisor_read_timeout = 30000
+# Kick message displayed when a player attempts to login while the supervisor is
+# down
+supervisor_unavailable_message = "Supervisor server is down"
+# How many fake skin/cape lookup requests to nonexistant players or URLs the proxy
+# should tolerate in a minute before rate limiting a malicious player for
+# attempting a denial-of-service (default: 20)
+supervisor_skin_antagonists_ratelimit = 20
+# Same as skin antagonist ratelimit, except for client brand lookup requests
+# (default: 40)
+supervisor_brand_antagonists_ratelimit = 40
+# Workaround for NPCs, ignores v2 UUIDs in eagler skin, cape, and brand uuid
+# lookups to avoid antagonist ratelimits (default: true)
+supervisor_lookup_ignore_v2_uuid = true

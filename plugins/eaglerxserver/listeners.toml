@@ -1,0 +1,206 @@
+# Defines the list of listeners to enable Eaglercraft support on, each listener's
+# address must be the address of a listener you've also configured in the base
+# Velocity server, unless the listener's cloning option is also enabled.
+[[listener_list]]
+	# The unique name to use when identifying this listener
+	listener_name = "listener0"
+	# The address of the listener to inject into. If this is not the same as the
+	# underlying Velocity proxy's bind address, you need to enable the
+	# velocity_clone_listener option to make the server bind the additional ports in
+	# ProxyInitializeEvent.
+	inject_address = "0.0.0.0:25567"
+	# Default value is false, can be used to make Velocity bind an additional port
+	# besides the primary bind address specified in velocity.toml. This may cause
+	# problems due to the additional ports being bound early during
+	# ProxyInitializeEvent instead of waiting until after the proxy has been fully
+	# initialized.
+	velocity_clone_listener = false
+	# Default value is true, sets if this listener should accept both Eaglercraft
+	# WebSockets and regular Minecraft Java Edition TCP connections. The connection
+	# type is determined from the first packet, where an HTTP/1.1 request will be
+	# treated as an Eaglercraft connection, and anything else will be assumed to be an
+	# ordinary vanilla TCP connection.
+	dual_stack = true
+	# Default value is false, sets if connections to this listener will use an HTTP
+	# header to forward the player's real IP address from a reverse proxy (or
+	# CloudFlare) to the BungeeCord server. This is required for EaglerXBungee's rate
+	# limiting and a lot of plugins to work correctly if they are used behind a
+	# reverse HTTP proxy or CloudFlare.
+	forward_ip = false
+	# Default value is 'X-Real-IP', sets the name of the request header that contains
+	# the player's real IP address if the forward_ip option is enabled. This option is
+	# commonly set to X-Forwarded-For or CF-Connecting-IP for a lot of server setups.
+	forward_ip_header = "X-Real-IP"
+	# Default value is false, sets if HTTP and WebSocket connections to this listener
+	# require a header with a secret to be accepted, can be used to prevent someone
+	# from bypassing CloudFlare or nginx or whatever and connecting directly to the
+	# EaglerXServer listener with a fake forward IP header.
+	forward_secret = false
+	# Default value is 'X-Eagler-Secret', sets the name of the request header that
+	# contains the sectet if the forward_secret option is enabled.
+	forward_secret_header = "X-Eagler-Secret"
+	# Default value is 'eagler_forwarding.secret', sets the name of the file that
+	# contains the secret if the forward_secret option is enabled, relative to the
+	# server's working directory.
+	forward_secret_file = "eagler_forwarding.secret"
+	# Default value is true, if the effective remote addresses of Eaglercraft
+	# connections in the underlying server should be spoofed to the address received
+	# via the forward_ip header. Has no effect if forward_ip is not true, if false
+	# then plugins will need to use the EaglerXServer API to determine the forwarded
+	# IP address of an Eaglercraft player.
+	spoof_player_address_forwarded = true
+	# Default value is false, if HAProxy auto-detection should be enabled on this
+	# listener, if true then the first packet will be checked for a HAProxy PROXY
+	# protocol header, and will automatically disable HAProxy for the channel if it is
+	# not present. You must enable HAProxy on the underlying BungeeCord/Velocity
+	# listener for this to work properly.
+	dual_stack_haproxy_detection = false
+	# Default value is false, if HAProxy should be forcefully disabled when its
+	# detected on a channel from this listener. Can be useful if the underlying server
+	# does not allow disabling HAProxy on a per-listener basis (like Velocity).
+	force_disable_haproxy = false
+	# Default value is '', sets the WebSocket address to redirect legacy Eaglercraft
+	# 1.5 clients to if they mistakenly try to join the server through this listener.
+	redirect_legacy_clients_to = ""
+	# Default value is 'server-icon.png', sets the name of the 64x64 PNG file to
+	# display as this listener's server icon, relative to the working directory.
+	server_icon = "server-icon.png"
+	# List of up to 2 strings, default value is '&6An EaglercraftX server', sets the
+	# contents of the listener's MOTD, which is the text displayed along with the
+	# server_icon when players add this server's listener address to their client's
+	# Multiplayer menu server list.
+	server_motd = ["&6An Eaglercraft server made using wadwdwd's and ATypicalPotatos tutorial on youtube!"]
+	# Default value is true, is this listener should respond to MOTD queries or not
+	allow_motd = true
+	# Default value is true, is this listener should respond to other query types or
+	# not
+	allow_query = true
+	# Default value is true, if this listener's MOTD should list the names of online
+	# players or not
+	show_motd_player_list = true
+	# Default value is true, If this listener should accept queries from post-u37
+	# clients to revoke session tokens, you need to create your own BungeeCord plugin
+	# to go with EaglerXBungee that handles the EaglercraftRevokeSessionQueryEvent
+	# event it fires in order for this feature to work correctly.
+	allow_cookie_revoke_query = true
+
+	# Settings for HTTPS (WSS) connections, HTTPS is normally handled by nginx or
+	# caddy, but if you are trying to run EaglerXServer without any reverse HTTP
+	# proxies then this can be useful.
+	[listener_list.tls_config]
+		# Default value is false, sets if this listener should accept HTTPS (WSS)
+		# connections.
+		enable_tls = false
+		# Default value is true, sets if this listener should always assume connections to
+		# be HTTPS (WSS), requires enable_tls to be true.
+		require_tls = true
+		# Default value is false, if the TLS certificates for this listener are managed by
+		# another plugin.
+		tls_managed_by_external_plugin = false
+		# The X.509 certificate chain file in PEM format, relative to the working
+		# directory.
+		tls_public_chain_file = "fullchain.pem"
+		# The PKCS#8 private key file in PEM format, relative to the working directory.
+		tls_private_key_file = "privatekey.pem"
+		# The password to the private key (if applicable), leave blank for none
+		tls_private_key_password = ""
+		# Default value is true, if the certificate and private key should be reloaded
+		# when changes are detected.
+		tls_auto_refresh_cert = true
+	# Section that defines caching hints for server lists that cache the MOTD via the
+	# 'MOTD.cache' query. As far as we know, not even the official Eaglercraft Server
+	# List on eaglercraft.com currently pays attention to these hints or attempts to
+	# cache MOTDs, so they can be ignored for now.
+	[listener_list.request_motd_cache]
+		# Default value is 7200, sets how many seconds for the server list to store the
+		# MOTD in cache.
+		cache_ttl = 7200
+		# Default is false, if the MOTD should be cached in an "animated format" that is
+		# yet to be standardized.
+		online_server_list_animation = false
+		# Default is true, if the MOTD should be cached when shown in search results.
+		online_server_list_results = true
+		# Default is true, if the MOTD should be cached if the server makes it to the top
+		# of the homepage.
+		online_server_list_trending = true
+		# Default is true, if the MOTD should be cached when viewing more details about
+		# the specific server.
+		online_server_list_portfolios = true
+	[listener_list.ratelimit]
+		# List of IPv4 and IPv6 addresses to disable ratelimiting for, use CIDR notation
+		# to specify entire subnets, default value includes localhost to ensure
+		# ratelimiting is disabled by default when EaglerXServer is used with nginx and
+		# caddy. If forward_ip is true, the ratelimits will be applied based on the
+		# forwarded address instead of the raw socket address.
+		disable_ratelimit = ["127.0.0.0/8", "::1/128"]
+
+		# Global ratelimit imposed on all connection types.
+		[listener_list.ratelimit.ip]
+			# If the rate limit should be enabled.
+			enable = true
+			# Sets the period in the number of seconds.
+			period = 90
+			# Sets the number of requests a single IP address can send in period seconds
+			# before being limited.
+			limit = 60
+			# Sets the number of requests a single IP address can send in period seconds
+			# before being locked out.
+			limit_lockout = 80
+			# Sets the total number of seconds a "lock out" should last on this limiter.
+			lockout_duration = 1200
+		# Sets ratelimit on login (server join) attempts.
+		[listener_list.ratelimit.login]
+			# If the rate limit should be enabled.
+			enable = true
+			# Sets the period in the number of seconds.
+			period = 50
+			# Sets the number of requests a single IP address can send in period seconds
+			# before being limited.
+			limit = 5
+			# Sets the number of requests a single IP address can send in period seconds
+			# before being locked out.
+			limit_lockout = 10
+			# Sets the total number of seconds a "lock out" should last on this limiter.
+			lockout_duration = 300
+		# Sets ratelimit on MOTD query types.
+		[listener_list.ratelimit.motd]
+			# If the rate limit should be enabled.
+			enable = true
+			# Sets the period in the number of seconds.
+			period = 30
+			# Sets the number of requests a single IP address can send in period seconds
+			# before being limited.
+			limit = 5
+			# Sets the number of requests a single IP address can send in period seconds
+			# before being locked out.
+			limit_lockout = 15
+			# Sets the total number of seconds a "lock out" should last on this limiter.
+			lockout_duration = 300
+		# Sets ratelimit on all other query types.
+		[listener_list.ratelimit.query]
+			# If the rate limit should be enabled.
+			enable = true
+			# Sets the period in the number of seconds.
+			period = 30
+			# Sets the number of requests a single IP address can send in period seconds
+			# before being limited.
+			limit = 15
+			# Sets the number of requests a single IP address can send in period seconds
+			# before being locked out.
+			limit_lockout = 25
+			# Sets the total number of seconds a "lock out" should last on this limiter.
+			lockout_duration = 800
+		# Sets ratelimit on non-WebSocket HTTP connections.
+		[listener_list.ratelimit.http]
+			# If the rate limit should be enabled.
+			enable = true
+			# Sets the period in the number of seconds.
+			period = 30
+			# Sets the number of requests a single IP address can send in period seconds
+			# before being limited.
+			limit = 10
+			# Sets the number of requests a single IP address can send in period seconds
+			# before being locked out.
+			limit_lockout = 20
+			# Sets the total number of seconds a "lock out" should last on this limiter.
+			lockout_duration = 300

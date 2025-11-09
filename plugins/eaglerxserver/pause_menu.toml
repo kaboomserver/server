@@ -1,0 +1,93 @@
+# Default value is false, if pause menu customization should be enabled on
+# supported clients or not
+enable_custom_pause_menu = false
+
+# Defines properties of the "Server Info" button, which is always hidden unless
+# pause menu customization is enabled
+[server_info_button]
+	# If the button should be shown or not
+	enable_button = true
+	# The text to display on the button, useful if you want to use this feature for
+	# something other than a "Server Info" button
+	button_text = "Server Info"
+	# Can be used to make the "Server Info" button act as a hyperlink that opens a URL
+	# in a new tab instead of displaying content in an embedded webview iframe in the
+	# client.
+	button_mode_open_new_tab = false
+	# Sets the URL for the "Server Info" button to use if it should open a URL in a
+	# new tab or the webview instead of directly downloading the markup to display
+	# from the EaglerXBungee server itself over the WebSocket.
+	server_info_embed_url = ""
+	# Determines if the "Server Info" button should download the webview markup
+	# directly from the EaglerXBungee server over WebSocket instead of loading an
+	# external URL. Cannot be used with button_mode_open_new_tab!
+	button_mode_embed_file = true
+	# Sets the name of the local file/template containing the markup to display in the
+	# "Server Info" webview if it is not in URL mode, relative to this config file.
+	server_info_embed_file = "server_info.html"
+	# Sets the title string of the screen that displays the webview.
+	server_info_embed_screen_title = "Server Info"
+	# Defines how many chunks of server info data to send per 250ms when downloading
+	# the server info markup to a client.
+	server_info_embed_send_chunk_rate = 1
+	# Defines the size of each chunk of server info data when it is being downloaded
+	# to a client.
+	server_info_embed_send_chunk_size = 24576
+	# if the server info markup should be processed for any eagler template macros
+	# (defined like {% arg1 `arg2` ... %})
+	enable_template_macros = true
+	# If the template processor should allow the "eval" macro to be used in the server
+	# info markup file (not to be confused with the JavaScript function, although
+	# there is never a good reason to use JavaScript's eval function in your code
+	# either)
+	allow_embed_template_eval_macro = false
+	# If the server info webview should allow JavaScript to be executed or not. This
+	# will display an "allow JavaScript" screen to your players the first time they
+	# attempt to view it.
+	enable_webview_javascript = false
+	# If the server info webview has JavaScript enabled and should be permitted to
+	# open a message channel back to your server to exchange arbitrary message
+	# packets. This can be used, for example, to implement a dynamic menu on your
+	# server using JavaScript and HTML that players can access through the server info
+	# webview that integrates directly with your gamemodes.
+	enable_webview_message_api = false
+	# If the csp attribute on the webview iframe should be set or not for added
+	# security, beware this is not supported on all browsers and will be silently
+	# disabled when the client detects it as unsupported.
+	enable_webview_strict_csp = true
+
+	[server_info_button.server_info_embed_template_globals]
+		example_global = "eagler"
+# Section, can be used to turn the "Invite" (formerly "Open to LAN") button on the
+# pause menu into a "Discord" button that players can click to join your discord
+# server
+[discord_button]
+	# Sets if the discord button should be enabled or not.
+	enable_button = true
+	# Sets the text that should be displayed on the button
+	button_text = "Discord"
+	# Defines the URL to open when the button is pressed
+	button_url = "https://invite url here"
+# Section, map of custom images to display on the pause menu, paths are relative
+# to this config file.
+[custom_images]
+	icon_title_L = ""
+	icon_title_R = ""
+	icon_backToGame_L = ""
+	icon_backToGame_R = ""
+	icon_achievements_L = ""
+	icon_achievements_R = ""
+	icon_statistics_L = ""
+	icon_statistics_R = ""
+	icon_serverInfo_L = ""
+	icon_serverInfo_R = ""
+	icon_options_L = ""
+	icon_options_R = ""
+	icon_discord_L = ""
+	icon_discord_R = ""
+	icon_disconnect_L = ""
+	icon_disconnect_R = ""
+	icon_background_pause = "test_image.png"
+	icon_background_all = "test_image.png"
+	icon_watermark_pause = ""
+	icon_watermark_all = ""

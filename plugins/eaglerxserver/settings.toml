@@ -1,0 +1,263 @@
+# Sets the name of this EaglercraftX server that is sent with query responses and
+# used for the default "404 websocket upgrade failure" page
+server_name = "EaglercraftXServer"
+# Sets the UUID of this EaglercraftX server to send with query responses, has no
+# official uses outside of server lists
+server_uuid = "2f696a6d-78de-4d0a-b6cf-f31c111243c2"
+# Default value is 10000, sets the maximum age in milliseconds that a connection
+# can stay in the login phase before being disconnected, this is necessary because
+# WebSocket ping frames could be used to keep a connection from timing out forever
+# without ever having to advance it to the next state
+eagler_login_timeout = 10000
+# Default value is 4096, sets the maximum length for the initial request line
+http_max_initial_line_length = 4096
+# Default value is 16384, sets the maximum combined length of all initial headers
+http_max_header_size = 16384
+# Default value is 16384, sets the maximum length of every request body chunk
+http_max_chunk_size = 16384
+# Default value is 65536, sets the maximum total length of an incoming request
+# body
+http_max_content_length = 65536
+# Default value is 6, sets the ZLIB compression level (0-9) to use for compressing
+# websocket frames, set to 0 to disable if HTTP compression is already handled
+# through a reverse proxy. You almost definitely need some level of compression
+# for the game to be playable on WiFi networks.
+http_websocket_compression_level = 6
+# Default value is 65536, sets the size limit for websocket frames before a frame
+# is split into multiple fragments
+http_websocket_fragment_size = 65536
+# Default value is 2097151, sets the max size for websocket frames
+http_websocket_max_frame_length = 2097151
+# Default value is false, can be used to make EaglerXServer "intervene" when it
+# detects a connection about to time out due to inactivity, by sending a WebSocket
+# ping frame to try and get a response from the client. Chrome has been shown to
+# ignore WebSocket ping frames on an inactive tab, so this won't do anything to
+# prevent the game from timing out when switching tabs.
+http_websocket_ping_intervention = false
+# Default value is 60, how often in seconds to check if any listener TLS
+# certificates have been changed and need to be reloaded.
+tls_certificate_refresh_rate = 60
+# Default value is true, can be used to control if the isEaglerPlayer GameProfile
+# property should be added to EaglercraftX players, this property is primarily
+# used to ensure that EaglercraftX players always only display their custom skins
+# when viewed by another EaglercraftX players on the server instead of showing the
+# skin attached to their Java Edition username, but this property has also caused
+# plugins like ViaVersion to crash.
+enable_is_eagler_player_property = true
+# Default value is '' but was originally 'lax1dude', can be used to set the skin
+# to apply to EaglercraftX players when a player on Minecraft Java Edition sees
+# them in game. The value is the username or (dashed) UUID of a premium Minecraft
+# account to use the skin from. You cannot use a local PNG file due to the profile
+# signature requirements in vanilla Minecraft clients.
+eagler_players_vanilla_skin = ""
+# Default value is false, if the events for hooking into the EaglercraftX client's
+# authentication system and cookie system should be enabled
+enable_authentication_events = false
+# Default value is false, if support for servers running the EaglerXBackendRPC
+# plugin should be enabled or not.
+enable_backend_rpc_api = false
+# Default value is false, if "modernized" plugin channel names compatible with
+# Minecraft 1.13+ should be used for EaglerXBackendRPC plugin message packets.
+# Enable this if you use Minecraft 1.13+ on your backend Spigot servers.
+use_modernized_channel_names = false
+# Default value is -1, allows you to set a separate view distance to use for
+# Eaglercraft players, must be between 3 an 15 chunks or -1 to use the same view
+# distance as vanilla players. Only supported on Paper, if EaglerXServer is
+# installed on the BungeeCord/Velocity proxy then EaglerXBackendRPC is required on
+# the backend Paper servers for the setting to have any effect.
+eagler_players_view_distance = -1
+# Default value is 10, the number of milliseconds to wait before flushing all
+# pending EaglercraftX plugin message packets, saves bandwidth by combining
+# multiple messages into a single plugin message packet. Setting this to 0 has the
+# same effect on clientbound packets as setting eaglerNoDelay to true does on a
+# post-u37 client for all serverbound packets.
+protocol_v4_defrag_send_delay = 10
+# Default value is 64, sets the maximum number of EaglercraftX plugin messages
+# that a client can send in a single plugin message packet. The server will
+# attempt to forward this parameter to V5+ clients joining the server so that they
+# don't accidentally exceed it, but outdated clients will just ignore it.
+# Therefore, any extra packets in an oversized multi-packet are currently just
+# ignored without raising an exception to avoid kicking outdated clients.
+protocol_v4_defrag_max_packets = 64
+# Default value is 240, sets the rate limit per minute for client brand lookup
+# requests.
+brand_lookup_ratelimit = 240
+# Default value is 8, sets the rate limit per minute for webview download
+# requests.
+webview_download_ratelimit = 8
+# Default value is 120, sets the rate limit per minute for webview message
+# packets.
+webview_message_ratelimit = 120
+# Default value is false, if the server should log all inbound TCP connections on
+# Eaglercraft listeners to the console, can be useful for diagnosing certain
+# connection issues. Connection issues are your problem if there's nothing printed
+# in the console with this setting enabled.
+debug_log_new_channels = false
+# Default value is false, if the server should log IP forwarding headers to the
+# console, for verifying if IP forwarding is set up correctly.
+debug_log_real_ip_headers = false
+# Default value is false, if the server should log origin headers to the console.
+# This used to be default on EaglerXBungee and EaglerXVelocity.
+debug_log_origin_headers = false
+# Default value is false, if the server should log client brand information to the
+# console. Can be nice for keeping track of what clients your players are using.
+debug_log_client_brands = false
+
+# Sets the protocol versions Eaglercraft players should be allowed to join this
+# server with.
+[protocols]
+	# Default value is 3, sets the minimum Minecraft protocol version that
+	# EaglercraftX-based clients are allowed to connect with (3 = 1.7)
+	min_minecraft_protocol = 3
+	# Default value is 340, sets the maximum Minecraft protocol version that
+	# EaglercraftX-based clients are allowed to connect with (340 = 1.12.2)
+	max_minecraft_protocol = 340
+	# Default value is -1, sets the maximum Minecraft protocol version that protocol
+	# v5 EaglercraftX-based clients are allowed to connect with (-1 = any Minecraft
+	# protocol version)
+	max_minecraft_protocol_v5 = -1
+	# If legacy clients (like eagler 1.5.2) should be allowed to join (emulates an
+	# EaglercraftX 1.8 connection), has no effect unless the EaglerXRewind plugin is
+	# installed.
+	eaglerxrewind_allowed = true
+	# If v1 and v2 clients should be allowed to join.
+	protocol_legacy_allowed = true
+	# If v3 clients should be allowed to join.
+	protocol_v3_allowed = true
+	# If v4 clients should be allowed to join.
+	protocol_v4_allowed = true
+	# If v5 clients should be allowed to join.
+	protocol_v5_allowed = true
+# Settings for the eagler skins and capes service, and for the skin cache
+# database.
+[skin_service]
+	# Default value is true, sets if the server should download the textures of custom
+	# skulls and skins of vanilla online-mode players from Mojang's servers to cache
+	# locally in an SQLite, MySQL, or MariaDB database, and send to all EaglercraftX
+	# clients on the server that attempt to render them.
+	download_vanilla_skins_to_clients = true
+	# List of strings, default includes only 'textures.minecraft.net', sets the
+	# allowed domains to download custom skulls and skins from that are requested by
+	# EaglercraftX clients, only relevant if download_vanilla_skins_to_clients is
+	# enabled.
+	valid_skin_download_urls = ["textures.minecraft.net"]
+	# Default value is 240, sets the primary rate limit per minute for player skin
+	# requests, including requests for custom skull textures.
+	skin_lookup_ratelimit = 240
+	# Default value is 180, sets the primary rate limit per minute for player cape
+	# requests.
+	cape_lookup_ratelimit = 180
+	# Default value is 'jdbc:sqlite:eaglercraft_skins_cache.db', the URI of JDBC
+	# database the cache to use for skins downloaded from Mojang, for MySQL databases
+	# this should include the username and password
+	skin_cache_db_uri = "jdbc:sqlite:eagler_skins_cache.db"
+	# Default value is 'internal', the full name of the JDBC driver class to use for
+	# the database
+	skin_cache_db_driver_class = "internal"
+	# Default value is 'internal', the path to the JAR containing the JDBC driver to
+	# use for the database. If the driver is already on the classpath, set it to
+	# 'classpath'.
+	skin_cache_db_driver_path = "internal"
+	# Default value is true, if the skin cache should use SQL syntax compatible with
+	# SQLite, if false it is assumed you are using a MySQL or MariaDB database instead
+	# of the default setup.
+	skin_cache_db_sqlite_compatible = true
+	# Default value is -1, sets the number of threads to use for database queries and
+	# compression. Set to -1 to use all available processors.
+	skin_cache_thread_count = -1
+	# Default value is 6, sets the compression level to use for the skin cache
+	# database, value can be between 0-9.
+	skin_cache_compression_level = 6
+	# Default value is 900, sets how many seconds skins and capes should be cached in
+	# memory after being downloaded/loaded from the database.
+	skin_cache_memory_keep_objects_seconds = 900
+	# Default value is 4096, sets the maximum number of skins that should be cached in
+	# memory.
+	skin_cache_memory_max_objects = 4096
+	# Default value is 45, sets the max age for textures (skin/cape files) stored in
+	# the skin cache database, only relevant if download_vanilla_skins_to_clients is
+	# enabled.
+	skin_cache_disk_keep_objects_days = 45
+	# Default value is 32768, sets the max number of textures (skin files) stored in
+	# the skin cache database before the oldest textures begin to be deleted, only
+	# relevant if download_vanilla_skins_to_clients is enabled.
+	skin_cache_disk_max_objects = 32768
+	# Default value is 15, sets the lockout limit for failing skin lookup requests,
+	# intended to reduce the effectiveness of some of the more simplistic types denial
+	# of service attacks that skids may attempt to perform on the skin download
+	# system, only relevant if download_vanilla_skins_to_clients is enabled.
+	skin_cache_antagonists_ratelimit = 15
+	# Default value is true, set to false to make the Five Nights At Winston's skins
+	# render with regular player models, can be used to avoid confused people
+	# complaining about hitboxes.
+	enable_fnaw_skin_models_global = true
+	# If enable_fnaw_skin_models_global is false, sets the list of servers (by name)
+	# where the FNAW should be enabled
+	enable_fnaw_skin_models_servers = []
+	# Default value is true, sets if the skin service should listen for SkinsRestorer
+	# apply events on vanilla players to refresh their skins, usually required for
+	# SkinsRestorer skins to display properly to eagler clients.
+	enable_skinsrestorer_apply_hook = true
+# Settings for the eagler voice chat service.
+[voice_service]
+	# Default value is false, if the voice service should be enabled, using voice chat
+	# on large public servers is discouraged since the eagler voice protocol is very
+	# easy to stress and abuse and lacks proper validation for certain packets
+	enable_voice_service = false
+	# Default value is true, if voice chat should be enabled on all servers.
+	enable_voice_all_servers = true
+	# If enable_voice_all_servers is false, sets the list of servers (by name) where
+	# voice chat should be enabled.
+	enable_voice_on_servers = []
+	# Default value is true, if each server should get its own global voice channel,
+	# or if players on all servers should share the same global voice channel.
+	separate_server_voice_channels = true
+	# Default value is false, if voice packets should be relayed by the backend Spigot
+	# server instead of the EaglerXServer proxy, allows your Spigot plugins to take
+	# full control of the eagler voice service, also allows the voice service to work
+	# while using the supervisor. Requires the EaglerXBackendRPC plugin.
+	voice_backend_relayed_mode = false
+	# Default value is 20, sets the rate limit per minute for players to toggle voice.
+	voice_connect_ratelimit = 20
+	# Default value is 120, sets the rate limit per minute for players initiating a
+	# WebRTC handshake with another client on the server, ignored on older client
+	# versions due to a bug that causes the client to spam requests excessively.
+	voice_request_ratelimit = 120
+	# Default value is 600, sets the rate limit per minute for players to exchange
+	# WebRTC descriptions and ICE candidates once handshaking.
+	voice_ice_ratelimit = 600
+# Settings for the eagler update certificate service.
+[update_service]
+	# Default value is true, if relaying certificates for the client update system
+	# should be enabled.
+	enable_update_system = true
+	# Default value is false, can be used to prevent the server from relaying random
+	# crowdsourced update certificates that were recieved from players who joined the
+	# server using signed clients.
+	discard_login_packet_certs = false
+	# Default value is 524288, can be used to set the global rate limit for how many
+	# bytes per second of certificates the server should send to all players.
+	cert_packet_data_rate_limit = 524288
+	# Default value is true, can be used to enable or disable the "eagcert" folder
+	# used for distributing specific certificates as locally provided .cert files.
+	enable_eagcert_folder = true
+	# Default value is true, can be used to automaticlly download the latest
+	# certificates to the "eagcert" folder.
+	download_latest_certs = true
+	# List of strings, defines the URLs to download the certificates from if
+	# download_latest_certs is enabled
+	download_certs_from = ["https://eaglercraft.com/backup.cert", "https://deev.is/eagler/backup.cert"]
+	# Default value is 28800 seconds, defines how often to check the URL list for
+	# updated certificates
+	check_for_update_every = 28800
+# Settings for the eagler server update checker, please keep your server updated!
+[update_checker]
+	# Default value is true, if EaglerXServer should check for plugin updates from
+	# lax1dude. Updates are never installed automatically.
+	enable_update_checker = true
+	# Default value is 86400 seconds, defines how often EaglerXServer should check for
+	# updates, set to -1 to only check for updates at startup.
+	check_for_update_every = 86400
+	# Default value is true, if the server should print reminders in the chat when a
+	# new plugin update is available.
+	print_chat_messages = true
