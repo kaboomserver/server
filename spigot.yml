@@ -27,7 +27,7 @@ messages:
   outdated-server: The server is outdated. Please join with Minecraft version {0}!
   restart: The server is restarting. Please wait...
 settings:
-  log-named-deaths: true
+  log-named-deaths: false
   timeout-time: 60
   restart-on-crash: true
   restart-script: ../framework/script/stop.sh
@@ -45,9 +45,9 @@ settings:
     maxAbsorption:
       max: 2048.0
     maxHealth:
-      max: 2048.0
+      max: 1024.0
     movementSpeed:
-      max: 2048.0
+      max: 1024.0
     attackDamage:
       max: 2048.0
 players:
@@ -73,8 +73,6 @@ world-settings:
     seed-buriedtreasure: 10387320
     seed-mineshaft: default
     seed-stronghold: default
-    seed-bastion: 30084232
-    seed-fortress: 30084232
     seed-mansion: 10387319
     seed-fossil: 14357921
     seed-portal: 34222645
@@ -104,7 +102,6 @@ world-settings:
     seed-slime: 987234911
     max-tnt-per-tick: 10
     hanging-tick-frequency: 100
-    max-entity-collisions: 1
     growth:
       torchflower-modifier: 100
       twistingvines-modifier: 100
@@ -178,7 +175,5 @@ world-settings:
     max-tick-time:
       tile: 20
       entity: 20
-    squid-spawn-range:
-      min: 45.0
   worldeditregentempworld:
     verbose: false
