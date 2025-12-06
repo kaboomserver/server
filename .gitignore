@@ -13,7 +13,7 @@ cache/
 /plugins/Essentials/worth.yml
 /plugins/FastAsyncWorldEdit/lang/
 /plugins/Geyser-Spigot/locales/
-/plugins/spark/tmp-client/
+/plugins/spark/tmp/
 /.console_history
 /versions/
 /worlds/
