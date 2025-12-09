@@ -8,7 +8,7 @@
         "type": "fill",
         "endpoint": "https://fill.papermc.io",
         "project": "paper",
-        "version": "1.21.10"
+        "version": "1.21.11"
     },
     "plugins": {
         "external": {
@@ -23,9 +23,8 @@
                 "extract": "archive/artifacts/FastAsyncWorldEdit-Paper-*.jar"
             },
             "plugins/Geyser.jar": {
-                "type": "zip",
-                "url": "https://nightly.link/GeyserMC/Geyser/workflows/build/master/Geyser-Spigot.zip",
-                "extract": "Geyser-Spigot.jar"
+                "type": "url",
+                "url": "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot"
             },
             "plugins/ViaVersion.jar": {
                 "type": "zip",
@@ -47,7 +46,7 @@
             "mods/PaperMixins.jar": {
                 "type": "zip",
                 "skip_404": true,
-                "url": "https://nightly.link/kaboomserver/papermixins/workflows/build/1.21.10/Artifacts.zip",
+                "url": "https://nightly.link/kaboomserver/papermixins/workflows/build/1.21.11/Artifacts.zip",
                 "extract": "paper-mixins-master.jar"
             },
             "plugins/CommandSpy.jar": {
