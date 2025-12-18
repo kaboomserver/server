@@ -85,6 +85,7 @@ misc:
   client-interaction-leniency-distance: default
   compression-level: default
   enable-nether: true
+  fix-far-end-terrain-generation: true
   load-permissions-yml-before-plugins: false
   max-joins-per-tick: 5
   prevent-negative-villager-demand: false
