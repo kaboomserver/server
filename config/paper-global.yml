@@ -102,6 +102,10 @@ packet-limiter:
     max-packet-rate: 0.0
   kick-message: <red><lang:disconnect.exceeded_packet_rate>
   overrides:
+    minecraft:client_command:
+      action: DROP
+      interval: 1.0
+      max-packet-rate: 20.0
     minecraft:command_suggestion:
       action: DROP
       interval: 1.0
@@ -113,11 +117,11 @@ packet-limiter:
     minecraft:set_jigsaw_block:
       action: DROP
       interval: 1.0
-      max-packet-rate: 101.0
+      max-packet-rate: 20.0
     minecraft:set_structure_block:
       action: DROP
       interval: 1.0
-      max-packet-rate: 101.0
+      max-packet-rate: 20.0
 player-auto-save:
   max-per-tick: -1
   rate: -1
@@ -147,10 +151,14 @@ unsupported-settings:
   allow-piston-duplication: true
   allow-unsafe-end-portal-teleportation: false
   compression-format: ZLIB
+  oversized-item-component-sanitizer:
+    dont-sanitize: []
   perform-username-validation: false
   skip-tripwire-hook-placement-validation: false
   skip-vanilla-damage-tick-when-shield-blocked: false
   update-equipment-on-player-actions: true
+update-checker:
+  enabled: false
 watchdog:
   early-warning-delay: 10000
   early-warning-every: 5000
