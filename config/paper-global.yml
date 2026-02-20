@@ -117,11 +117,11 @@ packet-limiter:
     minecraft:set_jigsaw_block:
       action: DROP
       interval: 1.0
-      max-packet-rate: 101.0
+      max-packet-rate: 20.0
     minecraft:set_structure_block:
       action: DROP
       interval: 1.0
-      max-packet-rate: 101.0
+      max-packet-rate: 20.0
 player-auto-save:
   max-per-tick: -1
   rate: -1
