@@ -181,6 +181,7 @@ entities:
     - Motion
     - sleeping_pos
     iron-golems-can-spawn-in-air: false
+    max-arrow-despawn-invulnerability: 200
     monster-spawn-max-light-level: default
     non-player-arrow-despawn-rate: default
     per-player-mob-spawns: true
