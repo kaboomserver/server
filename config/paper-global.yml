@@ -102,6 +102,10 @@ packet-limiter:
     max-packet-rate: 0.0
   kick-message: <red><lang:disconnect.exceeded_packet_rate>
   overrides:
+    minecraft:client_command:
+      action: DROP
+      interval: 1.0
+      max-packet-rate: 20.0
     minecraft:command_suggestion:
       action: DROP
       interval: 1.0
