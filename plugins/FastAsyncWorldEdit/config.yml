@@ -1,7 +1,7 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit/issues"
 wiki: "https://intellectualsites.github.io/fastasyncworldedit-documentation/"
-date: "Mon Mar 16 00:00:00 BRT 2026"
+date: "Mon Mar 16 00:00:00 GMT-03:00 2026"
 build: "https://ci.athion.net/job/FastAsyncWorldEdit/1277"
 commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f7fced39"
 platform: "Bukkit"
@@ -383,7 +383,7 @@ limits:
     # If sending creature spawn events should be skipped upon creation.
     #  - Will not work when setting entities directly to a world, rather than using an EditSession(Builder)
     #  - Setting fast-placement to false forces writing directly to the world (for example).
-    skip-creature-spawn-events: false
+    skip-creature-spawn-events: true
     # List of blocks to deny use of. Can be either an entire block type or a block with a specific property value.
     # Where block properties are specified, any blockstate with the property will be disallowed (e.g. all directions
     # of a waterlogged fence). For blocking/remapping of all occurrences of a property like waterlogged, see
