@@ -147,10 +147,14 @@ unsupported-settings:
   allow-piston-duplication: true
   allow-unsafe-end-portal-teleportation: false
   compression-format: ZLIB
+  oversized-item-component-sanitizer:
+    dont-sanitize: []
   perform-username-validation: false
   skip-tripwire-hook-placement-validation: false
   skip-vanilla-damage-tick-when-shield-blocked: false
   update-equipment-on-player-actions: true
+update-checker:
+  enabled: true
 watchdog:
   early-warning-delay: 10000
   early-warning-every: 5000
