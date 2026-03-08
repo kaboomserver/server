@@ -70,7 +70,7 @@ gameplay:
 
   # Bedrock clients can freeze when opening up the command prompt for the first time if given a lot of commands.
   # Disabling this will prevent command suggestions from being sent and solve freezing for Bedrock clients.
-  command-suggestions: true
+  command-suggestions: false
 
   # Controls if coordinates are shown to players.
   show-coordinates: true
