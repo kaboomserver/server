@@ -76,6 +76,7 @@ messages:
     Please contact the server administrators if you believe that this is in error.
   use-display-name-in-quit-message: false
 misc:
+  catchup-ticks: default
   chat-threads:
     chat-executor-core-size: -1
     chat-executor-max-size: -1
