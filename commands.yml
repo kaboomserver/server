@@ -185,4 +185,8 @@ aliases:
   - []
   minecraft:dialog:
   - []
+  perf:
+  - []
+  minecraft:perf:
+  - []
 unrestricted-advancements: false
