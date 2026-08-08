@@ -1,8 +1,7 @@
 {
     "server.jar": {
-        "type": "github",
-        "repo": "vectrix-space/ignite",
-        "asset": "ignite[.]jar"
+        "type": "url",
+        "url": "https://github.com/vectrix-space/ignite/releases/latest/download/ignite.jar"
     },
     "paper.jar": {
         "type": "fill",
@@ -50,34 +49,24 @@
                 "extract": "paper-mixins-master.jar"
             },
             "plugins/CommandSpy.jar": {
-                "type": "zip",
-                "skip_404": true,
-                "url": "https://nightly.link/kaboomserver/commandspy/workflows/main/master/CommandSpy.zip",
-                "extract": "CommandSpy.jar"
+                "type": "url",
+                "url": "https://github.com/kaboomserver/commandspy/releases/latest/download/CommandSpy.jar"
             },
             "plugins/Extras.jar": {
-                "type": "zip",
-                "skip_404": true,
-                "url": "https://nightly.link/kaboomserver/extras/workflows/main/master/Extras.zip",
-                "extract": "Extras.jar"
+                "type": "url",
+                "url": "https://github.com/kaboomserver/extras/releases/latest/download/Extras.jar"
             },
             "plugins/iControlU.jar": {
-                "type": "zip",
-                "skip_404": true,
-                "url": "https://nightly.link/kaboomserver/icontrolu/workflows/main/master/iControlU.zip",
-                "extract": "iControlU.jar"
+                "type": "url",
+                "url": "https://github.com/kaboomserver/icontrolu/releases/latest/download/iControlU.jar"
             },
             "plugins/ParticleTrails.jar": {
-                "type": "zip",
-                "skip_404": true,
-                "url": "https://nightly.link/kaboomserver/particletrails/workflows/main/master/ParticleTrails.zip",
-                "extract": "ParticleTrails.jar"
+                "type": "url",
+                "url": "https://github.com/kaboomserver/particletrails/releases/latest/download/ParticleTrails.jar"
             },
             "plugins/Weapons.jar": {
-                "type": "zip",
-                "skip_404": true,
-                "url": "https://nightly.link/kaboomserver/weapons/workflows/main/master/Weapons.zip",
-                "extract": "Weapons.jar"
+                "type": "url",
+                "url": "https://github.com/kaboomserver/weapons/releases/latest/download/Weapons.jar"
             }
         }
     }
