@@ -50,23 +50,23 @@
             },
             "plugins/CommandSpy.jar": {
                 "type": "url",
-                "url": "https://github.com/kaboomserver/commandspy/releases/latest/download/CommandSpy.jar"
+                "url": "https://github.com/kaboomserver/commandspy/releases/download/latest/CommandSpy.jar"
             },
             "plugins/Extras.jar": {
                 "type": "url",
-                "url": "https://github.com/kaboomserver/extras/releases/latest/download/Extras.jar"
+                "url": "https://github.com/kaboomserver/extras/releases/download/latest/Extras.jar"
             },
             "plugins/iControlU.jar": {
                 "type": "url",
-                "url": "https://github.com/kaboomserver/icontrolu/releases/latest/download/iControlU.jar"
+                "url": "https://github.com/kaboomserver/icontrolu/releases/download/latest/iControlU.jar"
             },
             "plugins/ParticleTrails.jar": {
                 "type": "url",
-                "url": "https://github.com/kaboomserver/particletrails/releases/latest/download/ParticleTrails.jar"
+                "url": "https://github.com/kaboomserver/particletrails/releases/download/latest/ParticleTrails.jar"
             },
             "plugins/Weapons.jar": {
                 "type": "url",
-                "url": "https://github.com/kaboomserver/weapons/releases/latest/download/Weapons.jar"
+                "url": "https://github.com/kaboomserver/weapons/releases/download/latest/Weapons.jar"
             }
         }
     }
