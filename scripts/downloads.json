@@ -7,7 +7,7 @@
         "type": "fill",
         "endpoint": "https://fill.papermc.io",
         "project": "paper",
-        "version": "26.2"
+        "version": "26.3"
     },
     "plugins": {
         "external": {
@@ -23,7 +23,7 @@
             },
             "plugins/Geyser.jar": {
                 "type": "url",
-                "url": "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot"
+                "url": "https://download.geysermc.org/v2/projects/geyserpreview/versions/pr.6712/builds/latest/downloads/spigot"
             },
             "plugins/ViaVersion.jar": {
                 "type": "zip",
@@ -44,7 +44,7 @@
         "internal": {
             "mods/PaperMixins.jar": {
                 "type": "url",
-                "url": "https://github.com/kaboomserver/papermixins/releases/download/papermixins-26.2/paper-mixins-master.jar"
+                "url": "https://github.com/kaboomserver/papermixins/releases/download/papermixins-26.3/paper-mixins-master.jar"
             },
             "plugins/CommandSpy.jar": {
                 "type": "url",
