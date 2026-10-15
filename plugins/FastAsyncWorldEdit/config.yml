@@ -1,9 +1,9 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit/issues"
 wiki: "https://intellectualsites.github.io/fastasyncworldedit-documentation/"
-date: "Sat Aug 08 00:00:00 GMT-03:00 2026"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit/1348"
-commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f4697da2"
+date: "Thu Nov 12 00:00:00 GMT-03:00 2026"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit/0"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f040a36f"
 platform: "Bukkit"
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
@@ -286,8 +286,8 @@ region-restrictions-options:
   #  - Currently only implemented for WorldGuard
   #  - see region-restrictions-options.worldguard-region-blacklist
   allow-blacklists: false
-  # List of plugin mask managers that should be exclusive. Exclusive managers are not 
-  # checked for edit restrictions if another manager already allowed an edit, and further 
+  # List of plugin mask managers that should be exclusive. Exclusive managers are not
+  # checked for edit restrictions if another manager already allowed an edit, and further
   # managers are not checked if an exclusive manager allows an edit.
   #  - May be useful to add PlotSquared if using both P2 and WorldGuard on a server
   #  - Some custom-implementations in other plugins may override this setting
@@ -314,7 +314,7 @@ general:
   limit-unlimited-skips-creature-spawn-events: true
 # The "default" limit group affects those without a specific limit permission.
 # To grant someone different limits, copy the default limits group
-# and give it a different name (e.g. newbie). Then give the user the limit 
+# and give it a different name (e.g. newbie). Then give the user the limit
 # permission node with that limit name (e.g. fawe.limit.newbie  )
 limits:
   default:
@@ -338,8 +338,8 @@ limits:
     max-brush-radius: 10
     # Max allowed butcher radius
     max-butcher-radius: -1
-    # Blockstates include Banner, Beacon, BrewingStand, Chest, CommandBlock, 
-    # CreatureSpawner, Dispenser, Dropper, EndGateway, Furnace, Hopper, Jukebox, 
+    # Blockstates include Banner, Beacon, BrewingStand, Chest, CommandBlock,
+    # CreatureSpawner, Dispenser, Dropper, EndGateway, Furnace, Hopper, Jukebox,
     # NoteBlock, Sign, Skull, Structure
     max-blockstates: 1337
     # Maximum size of the player's history in Megabytes:
