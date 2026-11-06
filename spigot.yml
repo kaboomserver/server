@@ -61,6 +61,7 @@ advancements:
   - '*'
 world-settings:
   default:
+    seed-abandonedcamp: 91231127
     unload-frozen-chunks: false
     seed-trialchambers: 94251327
     below-zero-generation-in-existing-chunks: true
