@@ -181,10 +181,6 @@ aliases:
   - []
   minecraft:test:
   - []
-  dialog:
-  - []
-  minecraft:dialog:
-  - []
   perf:
   - []
   minecraft:perf:
